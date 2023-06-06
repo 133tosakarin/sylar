@@ -1,0 +1,58 @@
+2023-05-26 19:45:32	hello system
+
+2023-05-26 19:45:32	hello system
+
+2023-05-26 19:45:32	name= class.map description= system map person typename= St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6PersonSt4lessIS5_ESaISt4pairIKS5_S6_EEE value= dc01:
+  name: ddc
+  age: 22
+  sex: true
+dc02:
+  name: ddcc
+  age: 23
+  sex: false
+2023-05-26 19:45:32	name= class.person description= system person typename= 6Person value= name: dc
+age: 20
+sex: true
+2023-05-26 19:45:32	name= system.str_int_unordered_map description= system str_int unordered_map typename= St13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4hashIS5_ESt8equal_toIS5_ESaISt4pairIKS5_iEEE value= ily: 66
+rin: 520
+qqq: 133
+2023-05-26 19:45:32	name= system.str_int_map description= system str_int map typename= St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEE value= k: 30
+n: 9999
+z: 111
+2023-05-26 19:45:32	name= system.int_unordered_set description= system int unordered_set typename= St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value= - 589
+- 3131
+- 3654
+- 461
+- 6
+- 46
+- 13
+- 65
+2023-05-26 19:45:32	name= system.int_list description= system int list typename= NSt7__cxx114listIiSaIiEEE value= - 199
+- 500
+2023-05-26 19:45:32	name= system.int_vec description= system int vec typename= St6vectorIiSaIiEE value= - 10
+- 20
+2023-05-26 19:45:32	name= system.value description= system value typename= f value= 15
+2023-05-26 19:45:32	name= system.int_set description= system int set typename= St3setIiSt4lessIiESaIiEE value= - 77
+- 88
+2023-05-26 19:45:32	name= fiber.stack_size description= fiber stack size typename= j value= 1048576
+2023-05-26 19:45:32	name= system.port description= system port typename= i value= 9000
+2023-05-26 19:45:32	name= logs description= logs config typename= St3setIN2dc9LogDefineESt4lessIS1_ESaIS1_EE value= - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: log.txt
+      level: UNKNOWN
+    - type: StdOutLogAppender
+      file: ""
+      level: UNKNOWN
+- name: system
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      level: UNKNOWN
+    - type: StdOutLogAppender
+      file: ""
+      level: UNKNOWN

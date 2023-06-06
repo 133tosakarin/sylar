@@ -1,0 +1,33 @@
+    Logger:
+        属性：
+            name: string
+            level: LogLevel
+            appenders: vector<LogAppender>
+            formatter: LogFormatter
+        方法：
+            log()
+            debuf()
+            info()
+            warn()
+            error()
+            fatal()
+            addAppender()
+            delAppender()
+            clearAppender()
+            setFormatter()
+            setLevel()
+    LogAppender: 纯虚函数,被标准输出和文件输出appender
+        属性： 
+            level: LogLevel
+            formatter: LogFormatter
+        方法：
+            log()
+            toYamlString()
+    LogFormatter: 用于控制日志的输出格式
+        属性: 
+            pattern: string
+            items: vector<FormatterItem>
+            FormatterItem内部类
+        方法:
+            format()
+

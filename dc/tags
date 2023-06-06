@@ -1,0 +1,541 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Alloc	fiber.cc	/^	static void* Alloc(size_t size) {$/;"	f	class:dc::MallocStackAllocator
+Backtrace	util.cc	/^	void Backtrace(std::vector<std::string>& bt, int size, int skip) {$/;"	f	namespace:dc
+BacktraceToString	util.cc	/^	std::string BacktraceToString(int size, int skip, const std::string& prefix) {$/;"	f	namespace:dc
+CASLock	thread.h	/^	CASLock() {$/;"	f	class:dc::CASLock
+CASLock	thread.h	/^class CASLock {$/;"	c	namespace:dc
+Caller	fiber.cc	/^void Fiber::Caller()$/;"	f	class:dc::Fiber
+Comparator	timer.h	/^	struct Comparator$/;"	s	class:dc::Timer
+Config	config.h	/^class Config{$/;"	c	namespace:dc
+ConfigVar	config.h	/^    ConfigVar(const std::string &name,$/;"	f	class:dc::ConfigVar
+ConfigVar	config.h	/^class ConfigVar: public ConfigVarBase{$/;"	c	namespace:dc
+ConfigVarBase	config.h	/^    ConfigVarBase(const std::string &name,const std::string description=""):m_name(name),m_description(description){$/;"	f	class:dc::ConfigVarBase
+ConfigVarBase	config.h	/^class ConfigVarBase{$/;"	c	namespace:dc
+DC_ASSERT	macro.h	6;"	d
+DC_ASSERT2	macro.h	14;"	d
+DC_HOOK_H	hook.h	2;"	d
+DC_IOMANAGER_H	ioManager.h	2;"	d
+DC_LOG_DEBUG	log.h	30;"	d
+DC_LOG_ERROR	log.h	33;"	d
+DC_LOG_FATAL	log.h	34;"	d
+DC_LOG_FMT_DEBUG	log.h	47;"	d
+DC_LOG_FMT_ERROR	log.h	50;"	d
+DC_LOG_FMT_FATAL	log.h	51;"	d
+DC_LOG_FMT_INFO	log.h	48;"	d
+DC_LOG_FMT_LEVEL	log.h	41;"	d
+DC_LOG_FMT_WARN	log.h	49;"	d
+DC_LOG_INFO	log.h	31;"	d
+DC_LOG_LEVEL	log.h	25;"	d
+DC_LOG_NAME	log.h	59;"	d
+DC_LOG_ROOT	log.h	57;"	d
+DC_LOG_WARN	log.h	32;"	d
+DC_NONCOPYABLE_H	noncopyable.h	2;"	d
+DC_TIMER_H	timer.h	2;"	d
+DEBUG	log.h	/^            DEBUG = 1,$/;"	e	enum:dc::LogLevel::Level
+DateFormatItem	log.cc	/^			DateFormatItem(const std::string &format = "%Y-%m-%d %H:%M:%S"):m_format(format){$/;"	f	class:dc::DateFormatItem
+DateFormatItem	log.cc	/^	class DateFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+Dealloc	fiber.cc	/^	static void Dealloc(void* vp, size_t size) {$/;"	f	class:dc::MallocStackAllocator
+ERROR	log.h	/^            ERROR = 4,$/;"	e	enum:dc::LogLevel::Level
+EXCEPT	fiber.h	/^		EXCEPT$/;"	e	enum:dc::Fiber::State
+EXEC	fiber.h	/^		EXEC,$/;"	e	enum:dc::Fiber::State
+ElapseFormatItem	log.cc	/^			ElapseFormatItem(const std::string &str=""){}$/;"	f	class:dc::ElapseFormatItem
+ElapseFormatItem	log.cc	/^	class ElapseFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+Event	ioManager.h	/^    enum Event$/;"	g	class:dc::IOManager
+EventContext	ioManager.h	/^        struct EventContext$/;"	s	struct:dc::IOManager::FdContext
+FATAL	log.h	/^            FATAL  = 5$/;"	e	enum:dc::LogLevel::Level
+FdContext	ioManager.h	/^    struct FdContext$/;"	s	class:dc::IOManager
+Fiber	fiber.cc	/^Fiber::Fiber() {$/;"	f	class:dc::Fiber
+Fiber	fiber.cc	/^Fiber::Fiber(std::function<void()> cb, size_t stacksize, bool use_caller)$/;"	f	class:dc::Fiber
+Fiber	fiber.h	/^class Fiber: public std::enable_shared_from_this<Fiber> {$/;"	c	namespace:dc
+FiberAndThread	scheduler.h	/^		FiberAndThread():threadId(-1) {}$/;"	f	struct:dc::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^		FiberAndThread(Fiber::ptr f, int thr):fiber(f), threadId(thr){}$/;"	f	struct:dc::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^		FiberAndThread(Fiber::ptr* f, int thr):threadId(thr) {$/;"	f	struct:dc::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^		FiberAndThread(std::function<void()> f, int thr):cb(f), threadId(thr) {$/;"	f	struct:dc::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^		FiberAndThread(std::function<void()>* f, int thr): threadId(thr) {$/;"	f	struct:dc::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^	struct FiberAndThread {$/;"	s	class:dc::Scheduler
+FiberIdFormatItem	log.cc	/^			FiberIdFormatItem(const std::string &str=""){}$/;"	f	class:dc::FiberIdFormatItem
+FiberIdFormatItem	log.cc	/^	class FiberIdFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+FileLogAppender	log.cc	/^	FileLogAppender::FileLogAppender(const std::string& filename):m_filename(filename)$/;"	f	class:dc::FileLogAppender
+FileLogAppender	log.h	/^    class FileLogAppender : public LogAppender{$/;"	c	namespace:dc
+FileNameFormatItem	log.cc	/^			FileNameFormatItem(const std::string &str){}$/;"	f	class:dc::FileNameFormatItem
+FileNameFormatItem	log.cc	/^	class FileNameFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+FormatItem	log.h	/^        class FormatItem{$/;"	c	class:dc::LogFormatter
+FromStr	log.cc	/^    LogLevel::Level LogLevel::FromStr(const std::string& val){$/;"	f	class:dc::LogLevel
+GetCurrentMs	util.cc	/^uint64_t GetCurrentMs()$/;"	f	namespace:dc
+GetCurrentUs	util.cc	/^uint64_t GetCurrentUs()$/;"	f	namespace:dc
+GetDatas	config.h	/^    static ConfigVarMap& GetDatas(){$/;"	f	class:dc::Config
+GetFiberId	fiber.cc	/^uint64_t Fiber::GetFiberId() {$/;"	f	class:dc::Fiber
+GetFiberId	util.cc	/^	uint32_t GetFiberId(){$/;"	f	namespace:dc
+GetInstance	singleton.h	/^    static T* GetInstance(){$/;"	f	class:dc::Singleton
+GetInstance	singleton.h	/^    static std::shared_ptr<T> GetInstance(){$/;"	f	class:dc::SingletonPtr
+GetMainFiber	scheduler.cc	/^Fiber* Scheduler::GetMainFiber() {$/;"	f	class:dc::Scheduler
+GetMutex	config.h	/^	static RWMutexType& GetMutex() {$/;"	f	class:dc::Config
+GetName	thread.cc	/^const std::string& Thread::GetName(){$/;"	f	class:dc::Thread
+GetThis	fiber.cc	/^Fiber::ptr Fiber::GetThis() {$/;"	f	class:dc::Fiber
+GetThis	ioManager.cc	/^IOManager*IOManager:: GetThis()$/;"	f	class:IOManager
+GetThis	scheduler.cc	/^Scheduler* Scheduler::GetThis() {$/;"	f	class:dc::Scheduler
+GetThis	thread.cc	/^Thread* Thread::GetThis(){$/;"	f	class:dc::Thread
+GetThreadId	util.cc	/^	pid_t  GetThreadId(){$/;"	f	namespace:dc
+HOLD	fiber.h	/^		HOLD,$/;"	e	enum:dc::Fiber::State
+HOOK_FUN	hook.cc	13;"	d	file:
+INFO	log.h	/^            INFO = 2,$/;"	e	enum:dc::LogLevel::Level
+INIT	fiber.h	/^		INIT,$/;"	e	enum:dc::Fiber::State
+IOManager	ioManager.cc	/^IOManager::IOManager(size_t threads, bool use_caller, const std::string& name)$/;"	f	class:IOManager
+IOManager	ioManager.h	/^class IOManager : public Scheduler, public TimerManager$/;"	c	namespace:dc
+Level	log.h	/^        enum Level{$/;"	g	class:dc::LogLevel
+LevelFormatItem	log.cc	/^			LevelFormatItem(const std::string &str=""){}$/;"	f	class:dc::LevelFormatItem
+LevelFormatItem	log.cc	/^	class LevelFormatItem :public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+LexicalCast	config.h	/^class LexicalCast<std::list<T>, std::string>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::map<std::string,T>, std::string>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::set<T>, std::string>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::string, std::vector<T>>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::string,std::list<T>>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::string,std::map<std::string,T>>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::string,std::set<T>>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::string,std::unordered_map<std::string,T>>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::string,std::unordered_multiset<T>>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::string,std::unordered_set<T>>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::unordered_map<std::string,T>, std::string>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::unordered_multiset<T>, std::string>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::unordered_set<T>, std::string>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast<std::vector<T>, std::string>{$/;"	c	namespace:dc
+LexicalCast	config.h	/^class LexicalCast{$/;"	c	namespace:dc
+LexicalCast	log.cc	/^    class LexicalCast<LogDefine,std::string>{$/;"	c	namespace:dc	file:
+LexicalCast	log.cc	/^    class LexicalCast<std::string,LogDefine>{$/;"	c	namespace:dc	file:
+LineNumFormatItem	log.cc	/^			LineNumFormatItem(const std::string &str){}$/;"	f	class:dc::LineNumFormatItem
+LineNumFormatItem	log.cc	/^	class LineNumFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+ListAllMember	config.cc	/^    static void ListAllMember(const std::string&prefix,$/;"	f	namespace:dc
+LoadFromYaml	config.cc	/^     void Config::LoadFromYaml(const YAML::Node&root){$/;"	f	class:dc::Config
+LogAppender	log.h	/^		LogAppender() : m_level(LogLevel::UNKNOWN)$/;"	f	class:dc::LogAppender
+LogAppender	log.h	/^    class LogAppender{$/;"	c	namespace:dc
+LogAppenderDefine	log.cc	/^	struct LogAppenderDefine{$/;"	s	namespace:dc	file:
+LogDefine	log.cc	/^	struct LogDefine{$/;"	s	namespace:dc	file:
+LogEvent	log.cc	/^	LogEvent::LogEvent(std::shared_ptr<Logger>logger,$/;"	f	class:dc::LogEvent
+LogEvent	log.h	/^    class LogEvent{$/;"	c	namespace:dc
+LogEventPtr	log.h	/^        typedef std::shared_ptr<LogEvent> LogEventPtr;$/;"	t	class:dc::LogEvent
+LogEventWrap	log.cc	/^	LogEventWrap::LogEventWrap(LogEvent::LogEventPtr event):m_event(event){}$/;"	f	class:dc::LogEventWrap
+LogEventWrap	log.h	/^    class LogEventWrap{$/;"	c	namespace:dc
+LogFormatter	log.cc	/^	LogFormatter::LogFormatter(const std::string & pattern):m_pattern(pattern){$/;"	f	class:dc::LogFormatter
+LogFormatter	log.h	/^    class LogFormatter{$/;"	c	namespace:dc
+LogFormatterPtr	log.h	/^        typedef std::shared_ptr<LogFormatter> LogFormatterPtr;$/;"	t	class:dc::LogFormatter
+LogIniter	log.cc	/^		LogIniter(){$/;"	f	struct:dc::LogIniter
+LogIniter	log.cc	/^	struct LogIniter{$/;"	s	namespace:dc	file:
+LogLevel	log.h	/^    class LogLevel{$/;"	c	namespace:dc
+LogNameFormatItem	log.cc	/^			LogNameFormatItem(const std::string &str=""){}$/;"	f	class:dc::LogNameFormatItem
+LogNameFormatItem	log.cc	/^	class LogNameFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+Logger	log.cc	/^	Logger::Logger(const std::string &name):m_name(name),m_level(LogLevel::INFO){$/;"	f	class:dc::Logger
+Logger	log.h	/^    class Logger:public std::enable_shared_from_this<Logger>{$/;"	c	namespace:dc
+LoggerManager	log.cc	/^	LoggerManager::LoggerManager(){$/;"	f	class:dc::LoggerManager
+LoggerManager	log.h	/^    class LoggerManager{$/;"	c	namespace:dc
+LoggerPtr	log.h	/^        typedef std::shared_ptr<Logger> LoggerPtr;$/;"	t	class:dc::Logger
+Lookup	config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string &name,$/;"	f	class:dc::Config
+Lookup	config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string name){$/;"	f	class:dc::Config
+LookupBase	config.cc	/^    ConfigVarBase::ptr Config::LookupBase(const std::string&name){$/;"	f	class:dc::Config
+MainFunc	fiber.cc	/^void Fiber::MainFunc() {$/;"	f	class:dc::Fiber
+MallocStackAllocator	fiber.cc	/^class MallocStackAllocator {$/;"	c	namespace:dc	file:
+MessageFormatItem	log.cc	/^			MessageFormatItem(const std::string &str=""){}$/;"	f	class:dc::MessageFormatItem
+MessageFormatItem	log.cc	/^	class MessageFormatItem :public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+Mutex	thread.h	/^	Mutex(){$/;"	f	class:dc::Mutex
+Mutex	thread.h	/^class Mutex{$/;"	c	namespace:dc
+NewLineFormatItem	log.cc	/^			NewLineFormatItem(const std::string &str =""){}$/;"	f	class:dc::NewLineFormatItem
+NewLineFormatItem	log.cc	/^	class NewLineFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+NullMutex	thread.h	/^	NullMutex() {}$/;"	f	class:dc::NullMutex
+NullMutex	thread.h	/^class NullMutex {$/;"	c	namespace:dc
+NullRWMutex	thread.h	/^	NullRWMutex() {}$/;"	f	class:dc::NullRWMutex
+NullRWMutex	thread.h	/^class NullRWMutex{$/;"	c	namespace:dc
+READY	fiber.h	/^		READY,$/;"	e	enum:dc::Fiber::State
+RWMutex	thread.h	/^	RWMutex() {$/;"	f	class:dc::RWMutex
+RWMutex	thread.h	/^class RWMutex{$/;"	c	namespace:dc
+ReadScopeLockImpl	thread.h	/^	ReadScopeLockImpl(T& mutex):m_mutex(mutex){$/;"	f	struct:dc::ReadScopeLockImpl
+ReadScopeLockImpl	thread.h	/^struct ReadScopeLockImpl {$/;"	s	namespace:dc
+Scheduler	scheduler.cc	/^Scheduler::Scheduler(size_t threads$/;"	f	class:dc::Scheduler
+Scheduler	scheduler.h	/^class Scheduler {$/;"	c	namespace:dc
+ScopeLockImpl	thread.h	/^	ScopeLockImpl(T& mutex):m_mutex(mutex){$/;"	f	struct:dc::ScopeLockImpl
+ScopeLockImpl	thread.h	/^struct ScopeLockImpl {$/;"	s	namespace:dc
+Semaphore	thread.cc	/^Semaphore::Semaphore(uint32_t count){$/;"	f	class:dc::Semaphore
+Semaphore	thread.h	/^class Semaphore{$/;"	c	namespace:dc
+SetName	thread.cc	/^void Thread::SetName(const std::string& name){$/;"	f	class:dc::Thread
+SetThis	fiber.cc	/^ void Fiber::SetThis(Fiber* f) {$/;"	f	class:dc::Fiber
+Singleton	singleton.h	/^class Singleton {$/;"	c	namespace:dc
+SingletonPtr	singleton.h	/^class SingletonPtr{$/;"	c	namespace:dc
+Spinlock	thread.h	/^	Spinlock() {$/;"	f	class:dc::Spinlock
+Spinlock	thread.h	/^class Spinlock {$/;"	c	namespace:dc
+State	fiber.h	/^	enum State {$/;"	g	class:dc::Fiber
+StdOutLogAppender	log.h	/^    class StdOutLogAppender : public LogAppender{$/;"	c	namespace:dc
+StringFormatItem	log.cc	/^			StringFormatItem(const std::string & str=""):m_string(str){}$/;"	f	class:dc::StringFormatItem
+StringFormatItem	log.cc	/^	class StringFormatItem :public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+TERM	fiber.h	/^		TERM,$/;"	e	enum:dc::Fiber::State
+TabFormatItem	log.cc	/^			TabFormatItem(const std::string &str=""){}$/;"	f	class:dc::TabFormatItem
+TabFormatItem	log.cc	/^	class TabFormatItem :public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+Thread	thread.cc	/^Thread::Thread(std::function<void()> cb, const std::string& name)$/;"	f	class:dc::Thread
+Thread	thread.h	/^class Thread : noncopyable$/;"	c	namespace:dc
+ThreadIdFormatItem	log.cc	/^			ThreadIdFormatItem(const std::string &str=""){}$/;"	f	class:dc::ThreadIdFormatItem
+ThreadIdFormatItem	log.cc	/^	class ThreadIdFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+ThreadNameFormatItem	log.cc	/^			ThreadNameFormatItem (const std::string &str=""){}$/;"	f	class:dc::ThreadNameFormatItem
+ThreadNameFormatItem	log.cc	/^	class ThreadNameFormatItem : public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+Timer	timer.cc	/^Timer::Timer(uint64_t ms, Timer::Callback cb,$/;"	f	class:Timer
+Timer	timer.h	/^	Timer(uint64_t ms) : ms_(ms) {}$/;"	f	class:dc::Timer
+Timer	timer.h	/^class Timer : public  std::enable_shared_from_this<Timer>$/;"	c	namespace:dc
+TimerManager	timer.cc	/^TimerManager::TimerManager()$/;"	f	class:TimerManager
+TimerManager	timer.h	/^class TimerManager$/;"	c	namespace:dc
+ToString	log.cc	/^	const char* LogLevel::ToString(LogLevel::Level level)$/;"	f	class:dc::LogLevel
+ToTalFiber	fiber.cc	/^uint64_t Fiber::ToTalFiber() {$/;"	f	class:dc::Fiber
+UNKNOWN	log.h	/^            UNKNOWN = 0,$/;"	e	enum:dc::LogLevel::Level
+Visit	config.cc	/^void Config::Visit(std::function<void(ConfigVarBase::ptr)> cb) {$/;"	f	class:dc::Config
+WARN	log.h	/^            WARN = 3,$/;"	e	enum:dc::LogLevel::Level
+WriteScopeLockImpl	thread.h	/^	WriteScopeLockImpl(T& mutex):m_mutex(mutex){$/;"	f	struct:dc::WriteScopeLockImpl
+WriteScopeLockImpl	thread.h	/^struct WriteScopeLockImpl {$/;"	s	namespace:dc
+XX	hook.cc	/^	HOOK_FUN(XX);$/;"	v
+XX	hook.cc	24;"	d	file:
+XX	hook.cc	26;"	d	file:
+XX	hook.cc	50;"	d	file:
+XX	hook.cc	52;"	d	file:
+XX	log.cc	32;"	d	file:
+XX	log.cc	50;"	d	file:
+XX	log.cc	760;"	d	file:
+XX	log.cc	774;"	d	file:
+YieldToHold	fiber.cc	/^void Fiber::YieldToHold() {$/;"	f	class:dc::Fiber
+YieldToReady	fiber.cc	/^void Fiber::YieldToReady() {$/;"	f	class:dc::Fiber
+_HookIniter	hook.cc	/^	_HookIniter()$/;"	f	struct:_HookIniter
+_HookIniter	hook.cc	/^struct _HookIniter$/;"	s	file:
+__DC_CONFIG_H__	config.h	2;"	d
+__DC_DC_H__	dc.h	2;"	d
+__DC_FIBER_H__	fiber.h	2;"	d
+__DC_LOG_H__	log.h	2;"	d
+__DC_MACRO_H__	macro.h	2;"	d
+__DC_SCHEDULER_H__	scheduler.h	2;"	d
+__DC_SINGLETON_H__	singleton.h	2;"	d
+__DC_THREAD_H__	thread.h	2;"	d
+__DC_UTIL_H__	util.h	2;"	d
+__log_init	log.cc	/^	static LogIniter __log_init;$/;"	m	namespace:dc	file:
+addAppender	log.cc	/^	void Logger::addAppender(LogAppender::LogAppenderPtr appender)$/;"	f	class:dc::Logger
+addConditionTimer	timer.cc	/^Timer::ptr TimerManager::addConditionTimer(uint64_t ms,$/;"	f	class:TimerManager
+addEvent	ioManager.cc	/^int IOManager::addEvent(int fd, Event event, EventCallback cb)$/;"	f	class:IOManager
+addListener	config.h	/^	uint64_t addListener(on_change_cb cb){$/;"	f	class:dc::ConfigVar
+addTimer	timer.cc	/^Timer::ptr TimerManager::addTimer(uint64_t ms, $/;"	f	class:TimerManager
+addTimer	timer.cc	/^void TimerManager::addTimer(Timer::ptr timer, RWMutexType::WriteLock& lock)$/;"	f	class:TimerManager
+appenders	log.cc	/^		std::vector<LogAppenderDefine> appenders;$/;"	m	struct:dc::LogDefine	file:
+back	fiber.cc	/^void Fiber::back()$/;"	f	class:dc::Fiber
+call	fiber.cc	/^void Fiber::call() {$/;"	f	class:dc::Fiber
+cancel	timer.cc	/^bool Timer::cancel()$/;"	f	class:Timer
+cancelAll	ioManager.cc	/^bool IOManager::cancelAll(int fd)$/;"	f	class:IOManager
+cancelEvent	ioManager.cc	/^bool IOManager::cancelEvent(int fd, Event event)$/;"	f	class:IOManager
+cb	ioManager.h	/^            std::function<void()>cb;\/\/event callback func$/;"	m	struct:dc::IOManager::FdContext::EventContext
+cb	scheduler.h	/^		std::function<void()> cb;$/;"	m	struct:dc::Scheduler::FiberAndThread
+cb_	timer.h	/^	Callback cb_;$/;"	m	class:dc::Timer
+clearAppenders	log.cc	/^	void Logger::clearAppenders(){$/;"	f	class:dc::Logger
+clearListener	config.h	/^	void clearListener(){$/;"	f	class:dc::ConfigVar
+contextResize	ioManager.cc	/^void IOManager::contextResize(size_t size)$/;"	f	class:IOManager
+dc	config.cc	/^namespace dc{$/;"	n	file:
+dc	config.h	/^namespace dc{$/;"	n
+dc	fiber.cc	/^namespace dc {$/;"	n	file:
+dc	fiber.h	/^namespace dc{$/;"	n
+dc	hook.cc	/^namespace dc$/;"	n	file:
+dc	hook.h	/^namespace dc$/;"	n
+dc	ioManager.h	/^namespace dc$/;"	n
+dc	log.cc	/^namespace dc$/;"	n	file:
+dc	log.h	/^namespace dc{$/;"	n
+dc	scheduler.cc	/^namespace dc {$/;"	n	file:
+dc	scheduler.h	/^namespace dc {$/;"	n
+dc	singleton.h	/^namespace dc{$/;"	n
+dc	thread.cc	/^namespace dc{$/;"	n	file:
+dc	thread.h	/^namespace dc{$/;"	n
+dc	timer.h	/^namespace dc$/;"	n
+dc	util.cc	/^namespace dc$/;"	n	file:
+dc	util.h	/^namespace dc{$/;"	n
+debug	log.cc	/^	void Logger::debug(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+defaultfunc	fiber.cc	/^void defaultfunc()$/;"	f	namespace:dc
+delAppender	log.cc	/^	void Logger::delAppender(LogAppender::LogAppenderPtr appender)$/;"	f	class:dc::Logger
+delEvent	ioManager.cc	/^bool IOManager::delEvent(int fd, Event event)$/;"	f	class:IOManager
+delListener	config.h	/^	void delListener(uint64_t key){$/;"	f	class:dc::ConfigVar
+epfd_	ioManager.h	/^    int epfd_;$/;"	m	class:dc::IOManager
+error	log.cc	/^	void Logger::error(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+events	ioManager.h	/^        Event events = kNone;$/;"	m	struct:dc::IOManager::FdContext
+fatal	log.cc	/^	void Logger::fatal(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+fd	ioManager.h	/^        int fd; \/\/associated event handle$/;"	m	struct:dc::IOManager::FdContext
+fdContexts_	ioManager.h	/^    std::vector<FdContext*>fdContexts_;$/;"	m	class:dc::IOManager
+fiber	ioManager.h	/^            Fiber::ptr fiber;\/\/event coroutine$/;"	m	struct:dc::IOManager::FdContext::EventContext
+fiber	scheduler.h	/^		Fiber::ptr fiber;$/;"	m	struct:dc::Scheduler::FiberAndThread
+file	log.cc	/^		std::string file;$/;"	m	struct:dc::LogAppenderDefine	file:
+format	log.cc	/^	std::ostream& LogFormatter::format(std::ostream& ofs, std::shared_ptr<Logger> plgtr,LogEvent::LogEventPtr event,LogLevel::Level level){$/;"	f	class:dc::LogFormatter
+format	log.cc	/^	std::string LogFormatter::format(std::shared_ptr<Logger> plgtr,LogEvent::LogEventPtr event,LogLevel::Level level)$/;"	f	class:dc::LogFormatter
+format	log.cc	/^	void LogEvent::format(const char *fmt, ...){$/;"	f	class:dc::LogEvent
+format	log.cc	/^	void LogEvent::format(const char*fmt,va_list al){$/;"	f	class:dc::LogEvent
+formatter	log.cc	/^		std::string formatter;$/;"	m	struct:dc::LogAppenderDefine	file:
+formatter	log.cc	/^		std::string formatter;$/;"	m	struct:dc::LogDefine	file:
+g_fiber_stack_size	fiber.cc	/^static ConfigVar<uint32_t>::ptr g_fiber_stack_size = Config::Lookup<uint32_t>("fiber.stack_size", 1024 * 1024, "fiber stack size");$/;"	m	namespace:dc	file:
+g_log_define	log.cc	/^    dc::ConfigVar<std::set<LogDefine>>::ptr g_log_define = dc::Config::Lookup("logs",std::set<LogDefine>(),"logs config");$/;"	m	namespace:dc	file:
+g_logger	fiber.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	m	namespace:dc	file:
+g_logger	hook.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
+g_logger	ioManager.cc	/^dc::Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v
+g_logger	scheduler.cc	/^static dc::Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	m	namespace:dc	file:
+g_logger	thread.cc	/^static dc::Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	m	namespace:dc	file:
+g_logger	util.cc	/^	dc::Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	m	namespace:dc	file:
+getContent	log.h	/^        const std::string getContent()const {return m_ss.str();}$/;"	f	class:dc::LogEvent
+getContext	ioManager.h	/^        EventContext& getContext(Event event)$/;"	f	struct:dc::IOManager::FdContext
+getDescription	config.h	/^    const std::string &getDescription()const {return m_description;}$/;"	f	class:dc::ConfigVarBase
+getElapse	log.h	/^        uint32_t getElapse()const {return m_elapse;}$/;"	f	class:dc::LogEvent
+getEvent	log.h	/^        LogEvent::LogEventPtr getEvent()const {return m_event;}$/;"	f	class:dc::LogEventWrap
+getFiberId	log.h	/^        uint32_t getFiberId()const {return m_fiberId;}$/;"	f	class:dc::LogEvent
+getFilename	log.h	/^        const char *getFilename()const {return m_filename;}$/;"	f	class:dc::LogEvent
+getFormatter	log.cc	/^	LogFormatter::LogFormatterPtr LogAppender::getFormatter() {$/;"	f	class:dc::LogAppender
+getFormatter	log.h	/^		LogFormatter::LogFormatterPtr getFormatter()const {return m_formatter;}$/;"	f	class:dc::Logger
+getId	fiber.h	/^	uint64_t getId() const {return m_id;}$/;"	f	class:dc::Fiber
+getId	thread.h	/^	pid_t getId() const { return m_id;}$/;"	f	class:dc::Thread
+getLevel	log.h	/^        LogLevel::Level getLevel() const { return m_level;}$/;"	f	class:dc::Logger
+getLevel	log.h	/^        LogLevel::Level getLevel() const {return m_level;}$/;"	f	class:dc::LogEvent
+getLine	log.h	/^        int32_t getLine()const {return m_line;}$/;"	f	class:dc::LogEvent
+getListener	config.h	/^	on_change_cb getListener(uint64_t key){$/;"	f	class:dc::ConfigVar
+getLogger	log.cc	/^	Logger::LoggerPtr LoggerManager::getLogger(std::string loggerName){$/;"	f	class:dc::LoggerManager
+getLogger	log.h	/^        std::shared_ptr<Logger> getLogger()const {return m_logger;}$/;"	f	class:dc::LogEvent
+getName	config.h	/^    const std::string &getName()const{return m_name;}$/;"	f	class:dc::ConfigVarBase
+getName	log.h	/^        const std::string& getName() const {return m_name;}$/;"	f	class:dc::Logger
+getName	scheduler.h	/^	const std::string& getName() const {return m_name;}$/;"	f	class:dc::Scheduler
+getName	thread.h	/^	const std::string& getName() const {return m_name;}\/\/获取线程名$/;"	f	class:dc::Thread
+getNextTimer	timer.cc	/^uint64_t TimerManager::getNextTimer()$/;"	f	class:TimerManager
+getPattern	log.h	/^	const std::string getPattern()const {return m_pattern;}$/;"	f	class:dc::LogFormatter
+getRoot	log.h	/^        Logger::LoggerPtr getRoot()const {return m_rootLogger;}$/;"	f	class:dc::LoggerManager
+getSstream	log.cc	/^	std::stringstream& LogEventWrap::getSstream(){return m_event->getSstream();}$/;"	f	class:dc::LogEventWrap
+getSstream	log.h	/^        std::stringstream &getSstream() {return m_ss;}$/;"	f	class:dc::LogEvent
+getState	fiber.h	/^	State getState() const {return m_state;}$/;"	f	class:dc::Fiber
+getThreadId	log.h	/^        uint32_t getThreadId()const {return m_threadId;}$/;"	f	class:dc::LogEvent
+getThreadName	log.h	/^		const std::string& getThreadName() const {return m_threadName;}$/;"	f	class:dc::LogEvent
+getTime	log.h	/^        uint32_t getTime()const {return m_time;}$/;"	f	class:dc::LogEvent
+getValue	config.h	/^    const T getValue(){$/;"	f	class:dc::ConfigVar
+hasIdleThreads	scheduler.h	/^	bool hasIdleThreads() { return m_idleThreadCount > 0; }$/;"	f	class:dc::Scheduler
+hasTimer	timer.h	/^	bool hasTimer() $/;"	f	class:dc::TimerManager
+hook_init	hook.cc	/^void hook_init() $/;"	f
+idle	ioManager.cc	/^void IOManager::idle()$/;"	f	class:IOManager
+idle	scheduler.cc	/^void Scheduler::idle() {$/;"	f	class:dc::Scheduler
+info	log.cc	/^	void Logger::info(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+init	log.cc	/^	void LogFormatter::init()$/;"	f	class:dc::LogFormatter
+init	log.cc	/^	void LoggerManager::init(){$/;"	f	class:dc::LoggerManager
+isError	log.h	/^		bool isError() const {return m_error;}$/;"	f	class:dc::LogFormatter
+is_hook_enable	hook.cc	/^bool dc::is_hook_enable()$/;"	f	class:dc
+join	thread.cc	/^void Thread::join()$/;"	f	class:dc::Thread
+kNone	ioManager.h	/^        kNone = 0,$/;"	e	enum:dc::IOManager::Event
+kRead	ioManager.h	/^        kRead = POLLIN,$/;"	e	enum:dc::IOManager::Event
+kWrite	ioManager.h	/^        kWrite = POLLOUT,$/;"	e	enum:dc::IOManager::Event
+level	log.cc	/^		LogLevel::Level level = LogLevel::UNKNOWN;$/;"	m	struct:dc::LogDefine	file:
+level	log.cc	/^        LogLevel::Level level = LogLevel::UNKNOWN;$/;"	m	struct:dc::LogAppenderDefine	file:
+listExpiredCb	timer.cc	/^void TimerManager::listExpiredCb( std::vector<Timer::Callback>& cbs )$/;"	f	class:TimerManager
+lock	thread.h	/^	void lock() {$/;"	f	class:dc::CASLock
+lock	thread.h	/^	void lock() {$/;"	f	class:dc::Mutex
+lock	thread.h	/^	void lock() {$/;"	f	class:dc::Spinlock
+lock	thread.h	/^	void lock() {$/;"	f	struct:dc::ReadScopeLockImpl
+lock	thread.h	/^	void lock() {$/;"	f	struct:dc::ScopeLockImpl
+lock	thread.h	/^	void lock() {$/;"	f	struct:dc::WriteScopeLockImpl
+lock	thread.h	/^	void lock() {}$/;"	f	class:dc::NullMutex
+lock	thread.h	/^	void lock() {}$/;"	f	class:dc::NullRWMutex
+log	log.cc	/^	void FileLogAppender::log(std::shared_ptr<Logger> plgtr,LogLevel::Level level,LogEvent::LogEventPtr event)$/;"	f	class:dc::FileLogAppender
+log	log.cc	/^	void Logger::log(LogLevel::Level level,LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+log	log.cc	/^	void StdOutLogAppender::log(std::shared_ptr<Logger> plgtr,LogLevel::Level level,LogEvent::LogEventPtr event)$/;"	f	class:dc::StdOutLogAppender
+m_activeThreadCount	scheduler.h	/^	std::atomic<size_t> m_activeThreadCount ={ 0};$/;"	m	class:dc::Scheduler
+m_appenders	log.h	/^        std::list<LogAppender::LogAppenderPtr> m_appenders;\/\/Appender集合$/;"	m	class:dc::Logger
+m_autoStop	scheduler.h	/^	bool m_autoStop = false;$/;"	m	class:dc::Scheduler
+m_cb	fiber.h	/^	std::function<void()> m_cb;$/;"	m	class:dc::Fiber
+m_cb	thread.h	/^	std::function<void()> m_cb;$/;"	m	class:dc::Thread
+m_cbs	config.h	/^	std::map<uint64_t,on_change_cb>m_cbs;\/\/无法判断两个函数是否相同，所以用map来映射$/;"	m	class:dc::ConfigVar
+m_ctx	fiber.h	/^	ucontext_t m_ctx;$/;"	m	class:dc::Fiber
+m_description	config.h	/^    std::string m_description;$/;"	m	class:dc::ConfigVarBase
+m_elapse	log.h	/^        uint32_t m_elapse = 0;\/\/程序启动开始到现在的毫秒数$/;"	m	class:dc::LogEvent
+m_error	log.h	/^		bool m_error = false;$/;"	m	class:dc::LogFormatter
+m_event	log.h	/^        LogEvent::LogEventPtr m_event;$/;"	m	class:dc::LogEventWrap
+m_fiberId	log.h	/^        uint32_t m_fiberId = 0;\/\/协程id$/;"	m	class:dc::LogEvent
+m_fibers	scheduler.h	/^	std::list<FiberAndThread> m_fibers;$/;"	m	class:dc::Scheduler
+m_filename	log.h	/^        const char * m_filename = nullptr;\/\/文件名$/;"	m	class:dc::LogEvent
+m_filename	log.h	/^        std::string m_filename;$/;"	m	class:dc::FileLogAppender
+m_filestream	log.h	/^        std::ofstream m_filestream;$/;"	m	class:dc::FileLogAppender
+m_format	log.cc	/^			std::string m_format;$/;"	m	class:dc::DateFormatItem	file:
+m_formatter	log.h	/^        LogFormatter::LogFormatterPtr m_formatter;$/;"	m	class:dc::LogAppender
+m_formatter	log.h	/^        LogFormatter::LogFormatterPtr m_formatter;$/;"	m	class:dc::Logger
+m_hasFormatter	log.h	/^        bool m_hasFormatter = false;$/;"	m	class:dc::LogAppender
+m_id	fiber.h	/^	uint64_t m_id = 0;$/;"	m	class:dc::Fiber
+m_id	thread.h	/^	pid_t m_id = -1;\/\/线程id$/;"	m	class:dc::Thread
+m_idleThreadCount	scheduler.h	/^	std::atomic<size_t>  m_idleThreadCount = {0};$/;"	m	class:dc::Scheduler
+m_items	log.h	/^        std::vector<FormatItem::ptr>m_items;$/;"	m	class:dc::LogFormatter
+m_lastTime	log.h	/^		uint64_t m_lastTime;$/;"	m	class:dc::FileLogAppender
+m_level	log.h	/^		LogLevel::Level m_level = LogLevel::DEBUG;$/;"	m	class:dc::LogAppender
+m_level	log.h	/^        LogLevel::Level m_level;$/;"	m	class:dc::LogEvent
+m_level	log.h	/^        LogLevel::Level m_level;\/\/日志级别$/;"	m	class:dc::Logger
+m_line	log.h	/^        int32_t m_line = 0;\/\/行号$/;"	m	class:dc::LogEvent
+m_lock	thread.h	/^	pthread_rwlock_t m_lock;$/;"	m	class:dc::RWMutex
+m_locked	thread.h	/^	bool m_locked;$/;"	m	struct:dc::ReadScopeLockImpl
+m_locked	thread.h	/^	bool m_locked;$/;"	m	struct:dc::ScopeLockImpl
+m_locked	thread.h	/^	bool m_locked;$/;"	m	struct:dc::WriteScopeLockImpl
+m_logger	log.h	/^        std::map<std::string, Logger::LoggerPtr>m_logger;$/;"	m	class:dc::LoggerManager
+m_logger	log.h	/^        std::shared_ptr<Logger> m_logger;$/;"	m	class:dc::LogEvent
+m_mutex	config.h	/^	RWMutexType m_mutex;$/;"	m	class:dc::ConfigVar
+m_mutex	log.h	/^		MutexType m_mutex;	$/;"	m	class:dc::Logger
+m_mutex	log.h	/^		MutexType m_mutex;$/;"	m	class:dc::LogAppender
+m_mutex	log.h	/^		MutexType m_mutex;$/;"	m	class:dc::LoggerManager
+m_mutex	scheduler.h	/^	MutexType m_mutex;$/;"	m	class:dc::Scheduler
+m_mutex	thread.h	/^	T& m_mutex;$/;"	m	struct:dc::ReadScopeLockImpl
+m_mutex	thread.h	/^	T& m_mutex;$/;"	m	struct:dc::ScopeLockImpl
+m_mutex	thread.h	/^	T& m_mutex;$/;"	m	struct:dc::WriteScopeLockImpl
+m_mutex	thread.h	/^	pthread_mutex_t m_mutex;$/;"	m	class:dc::Mutex
+m_mutex	thread.h	/^	pthread_spinlock_t m_mutex;$/;"	m	class:dc::Spinlock
+m_mutex	thread.h	/^	volatile std::atomic_flag m_mutex;$/;"	m	class:dc::CASLock
+m_name	config.h	/^    std::string m_name;$/;"	m	class:dc::ConfigVarBase
+m_name	log.h	/^        std::string m_name;     \/\/日志名称$/;"	m	class:dc::Logger
+m_name	scheduler.h	/^	std::string m_name;$/;"	m	class:dc::Scheduler
+m_name	thread.h	/^	std::string m_name;$/;"	m	class:dc::Thread
+m_pattern	log.h	/^        std::string m_pattern;$/;"	m	class:dc::LogFormatter
+m_root	log.h	/^    	LoggerPtr m_root;$/;"	m	class:dc::Logger
+m_rootFiber	scheduler.h	/^	Fiber::ptr m_rootFiber;$/;"	m	class:dc::Scheduler
+m_rootLogger	log.h	/^        Logger::LoggerPtr m_rootLogger;$/;"	m	class:dc::LoggerManager
+m_rootThread	scheduler.h	/^	int m_rootThread = 0;$/;"	m	class:dc::Scheduler
+m_semaphore	thread.h	/^	Semaphore m_semaphore;$/;"	m	class:dc::Thread
+m_semaphore	thread.h	/^	sem_t m_semaphore;$/;"	m	class:dc::Semaphore
+m_ss	log.h	/^        std::stringstream m_ss;\/\/消息流内容$/;"	m	class:dc::LogEvent
+m_stack	fiber.h	/^	void* m_stack = nullptr;$/;"	m	class:dc::Fiber
+m_stacksize	fiber.h	/^	uint32_t m_stacksize;$/;"	m	class:dc::Fiber
+m_state	fiber.h	/^	State m_state = INIT;$/;"	m	class:dc::Fiber
+m_stopping	scheduler.h	/^	bool m_stopping = true;$/;"	m	class:dc::Scheduler
+m_string	log.cc	/^			std::string m_string;$/;"	m	class:dc::StringFormatItem	file:
+m_string	log.cc	/^			std::string m_string;$/;"	m	class:dc::TabFormatItem	file:
+m_thread	thread.h	/^	pthread_t m_thread = 0;$/;"	m	class:dc::Thread
+m_threadCount	scheduler.h	/^	size_t m_threadCount = 0;$/;"	m	class:dc::Scheduler
+m_threadId	log.h	/^        uint32_t m_threadId = 0;\/\/线程号$/;"	m	class:dc::LogEvent
+m_threadIds	scheduler.h	/^	std::vector<int> m_threadIds;$/;"	m	class:dc::Scheduler
+m_threadName	log.h	/^		std::string m_threadName="";$/;"	m	class:dc::LogEvent
+m_threads	scheduler.h	/^	std::vector<Thread::ptr> m_threads;$/;"	m	class:dc::Scheduler
+m_time	log.h	/^        uint64_t m_time;\/\/时间戳$/;"	m	class:dc::LogEvent
+m_val	config.h	/^    T m_val;$/;"	m	class:dc::ConfigVar
+manager_	timer.h	/^	TimerManager* manager_;$/;"	m	class:dc::Timer
+ms_	timer.h	/^	uint64_t ms_; \/\/执行周期$/;"	m	class:dc::Timer
+mutex	ioManager.h	/^        MutexType mutex;$/;"	m	struct:dc::IOManager::FdContext
+mutex_	ioManager.h	/^    RWMutexType mutex_;$/;"	m	class:dc::IOManager
+mutex_	timer.h	/^	RWMutexType mutex_;$/;"	m	class:dc::TimerManager
+name	log.cc	/^		std::string name;$/;"	m	struct:dc::LogDefine	file:
+next_	timer.h	/^	uint64_t next_; \/\/精确的执行时间$/;"	m	class:dc::Timer
+noncopyable	noncopyable.h	/^class noncopyable$/;"	c
+notify	thread.cc	/^void Semaphore::notify(){$/;"	f	class:dc::Semaphore
+onTimer	timer.cc	/^static void onTimer(std::weak_ptr<void>weak_cond,$/;"	f	file:
+onTimerInsertedAtFront	ioManager.cc	/^void IOManager::onTimerInsertedAtFront()$/;"	f	class:IOManager
+operator ()	config.h	/^    T operator()(const F& v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::list<T> operator() (const std::string &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::map<std::string,T> operator() (const std::string &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::set<T> operator() (const std::string &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::list<T> &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::map<std::string,T> &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::set<T> &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::unordered_map<std::string,T> &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::unordered_set<T> &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::vector<T> &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::unordered_map<std::string,T> operator() (const std::string &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::unordered_set<T> operator() (const std::string &v){$/;"	f	class:dc::LexicalCast
+operator ()	config.h	/^    std::vector<T> operator()(const std::string &v){$/;"	f	class:dc::LexicalCast
+operator ()	log.cc	/^        LogDefine operator() (const std::string& v){$/;"	f	class:dc::LexicalCast
+operator ()	log.cc	/^        std::string operator()(const LogDefine& v){$/;"	f	class:dc::LexicalCast
+operator ()	timer.cc	/^bool Timer::Comparator::operator()(const Timer::ptr& lhs, const Timer::ptr& rhs) const$/;"	f	class:Timer::Comparator
+operator <	log.cc	/^		bool operator<(const LogDefine& rhs) const {$/;"	f	struct:dc::LogDefine
+operator ==	log.cc	/^		bool operator==(const LogAppenderDefine & rhs) const {$/;"	f	struct:dc::LogAppenderDefine
+operator ==	log.cc	/^		bool operator==(const LogDefine& rhs) const {$/;"	f	struct:dc::LogDefine
+override	ioManager.h	/^	bool stopping() override;$/;"	m	class:dc::IOManager
+override	ioManager.h	/^	void onTimerInsertedAtFront() override;$/;"	m	class:dc::IOManager
+override	ioManager.h	/^	void tickle() override;$/;"	m	class:dc::IOManager
+override	ioManager.h	/^    void idle() override;$/;"	m	class:dc::IOManager
+override	log.h	/^        virtual std::string toYamlString() override;$/;"	m	class:dc::FileLogAppender
+override	log.h	/^        virtual std::string toYamlString() override;$/;"	m	class:dc::StdOutLogAppender
+override	log.h	/^        void log(std::shared_ptr<Logger> plgtr,LogLevel::Level level,LogEvent::LogEventPtr event) override;$/;"	m	class:dc::FileLogAppender
+override	log.h	/^        void log(std::shared_ptr<Logger> plgtr,LogLevel::Level level,LogEvent::LogEventPtr event) override;$/;"	m	class:dc::StdOutLogAppender
+override	log.h	/^        ~FileLogAppender() override;$/;"	m	class:dc::FileLogAppender
+pendingEventCount_	ioManager.h	/^    std::atomic<size_t> pendingEventCount_;$/;"	m	class:dc::IOManager
+rdlock	thread.h	/^	void rdlock() {$/;"	f	class:dc::RWMutex
+read	ioManager.h	/^        EventContext read; \/\/read event$/;"	m	struct:dc::IOManager::FdContext
+recurring_	timer.h	/^	bool recurring_; \/\/循环定时器$/;"	m	class:dc::Timer
+refresh	timer.cc	/^bool Timer::refresh()$/;"	f	class:Timer
+reopen	log.cc	/^	bool FileLogAppender::reopen()$/;"	f	class:dc::FileLogAppender
+reset	fiber.cc	/^void Fiber::reset(std::function<void()> cb) {$/;"	f	class:dc::Fiber
+reset	scheduler.h	/^		void reset() {$/;"	f	struct:dc::Scheduler::FiberAndThread
+reset	timer.cc	/^bool Timer::reset( uint64_t ms, bool from_now )$/;"	f	class:Timer
+resetContext	ioManager.h	/^        void resetContext(EventContext& ctx)$/;"	f	struct:dc::IOManager::FdContext
+run	scheduler.cc	/^void Scheduler::run() {$/;"	f	class:dc::Scheduler
+run	thread.cc	/^void* Thread::run(void *arg){$/;"	f	class:dc::Thread
+s_hook_initer	hook.cc	/^static _HookIniter s_hook_initer;$/;"	v	file:
+schedule	scheduler.h	/^	void schedule(FiberOrCb fc, int thread = -1) {$/;"	f	class:dc::Scheduler
+schedule	scheduler.h	/^	void schedule(InputIterator begin, InputIterator end) {$/;"	f	class:dc::Scheduler
+scheduleNoLock	scheduler.h	/^	bool scheduleNoLock(FiberOrCb fc, int thread) {$/;"	f	class:dc::Scheduler
+scheduler	ioManager.h	/^            Scheduler* scheduler = nullptr;\/\/event exec's scheduler$/;"	m	struct:dc::IOManager::FdContext::EventContext
+setElapse	log.h	/^        void setElapse(int32_t elapse){m_elapse = elapse;}$/;"	f	class:dc::LogEvent
+setFiberId	log.h	/^        void setFiberId(int32_t fiberId){m_fiberId = fiberId;}$/;"	f	class:dc::LogEvent
+setFormatter	log.cc	/^	void LogAppender::setFormatter(LogFormatter::LogFormatterPtr formatter){$/;"	f	class:dc::LogAppender
+setFormatter	log.cc	/^	void Logger::setFormatter(LogFormatter::LogFormatterPtr ptr){$/;"	f	class:dc::Logger
+setFormatter	log.cc	/^	void Logger::setFormatter(const std::string& val){$/;"	f	class:dc::Logger
+setLevel	log.h	/^		void setLevel(LogLevel::Level level){m_level = level;}$/;"	f	class:dc::LogAppender
+setLevel	log.h	/^        void setLevel(LogLevel::Level level){m_level = level;}$/;"	f	class:dc::Logger
+setLine	log.h	/^        void setLine(int32_t line){m_line = line;}$/;"	f	class:dc::LogEvent
+setState	fiber.h	/^	void setState(const State& state) {m_state = state;}$/;"	f	class:dc::Fiber
+setThis	scheduler.cc	/^void Scheduler::setThis() {$/;"	f	class:dc::Scheduler
+setThreadId	log.h	/^        void setThreadId(int32_t threadId){m_threadId = threadId;}$/;"	f	class:dc::LogEvent
+setTime	log.h	/^        void setTime(int32_t time){m_time = time;}$/;"	f	class:dc::LogEvent
+setValue	config.h	/^    void setValue(const T & val) {$/;"	f	class:dc::ConfigVar
+set_hook_enable	hook.cc	/^void dc::set_hook_enable(bool flag)$/;"	f	class:dc
+sleep	hook.cc	/^unsigned int sleep(unsigned int seconds)$/;"	f
+start	scheduler.cc	/^void Scheduler::start() {$/;"	f	class:dc::Scheduler
+stop	scheduler.cc	/^void Scheduler::stop() {$/;"	f	class:dc::Scheduler
+stopping	ioManager.cc	/^bool IOManager::stopping()$/;"	f	class:IOManager
+stopping	ioManager.cc	/^bool IOManager::stopping(uint64_t& timeout)$/;"	f	class:IOManager
+stopping	scheduler.cc	/^bool Scheduler::stopping() {$/;"	f	class:dc::Scheduler
+swapIn	fiber.cc	/^void Fiber::swapIn() {$/;"	f	class:dc::Fiber
+swapOut	fiber.cc	/^void Fiber::swapOut() {$/;"	f	class:dc::Fiber
+t_fiber	fiber.cc	/^static thread_local Fiber* t_fiber = nullptr;$/;"	m	namespace:dc	file:
+t_hook_enable	hook.cc	/^static thread_local bool  t_hook_enable = false;$/;"	m	namespace:dc	file:
+t_scheduler	scheduler.cc	/^static thread_local Scheduler* t_scheduler = nullptr;$/;"	m	namespace:dc	file:
+t_scheduler_fiber	scheduler.cc	/^static thread_local Fiber* t_scheduler_fiber = nullptr;$/;"	m	namespace:dc	file:
+t_thread	thread.cc	/^static thread_local Thread* t_thread = nullptr;\/\/定义线程局部变量$/;"	m	namespace:dc	file:
+t_threadFiber	fiber.cc	/^static thread_local Fiber::ptr t_threadFiber = nullptr;$/;"	m	namespace:dc	file:
+t_thread_name	thread.cc	/^static thread_local std::string t_thread_name = "UNKNOWN";$/;"	m	namespace:dc	file:
+threadId	scheduler.h	/^		int threadId;$/;"	m	struct:dc::Scheduler::FiberAndThread
+tickle	ioManager.cc	/^void IOManager::tickle()$/;"	f	class:IOManager
+tickle	scheduler.cc	/^void Scheduler::tickle() {$/;"	f	class:dc::Scheduler
+tickleFds_	ioManager.h	/^    int tickleFds_[2];$/;"	m	class:dc::IOManager
+tickled_	timer.h	/^	bool tickled_;$/;"	m	class:dc::TimerManager
+timers_	timer.h	/^	std::set<Timer::ptr, Timer::Comparator> timers_;$/;"	m	class:dc::TimerManager
+toYamlString	log.cc	/^	std::string FileLogAppender::toYamlString(){$/;"	f	class:dc::FileLogAppender
+toYamlString	log.cc	/^	std::string Logger::toYamlString(){$/;"	f	class:dc::Logger
+toYamlString	log.cc	/^	std::string LoggerManager::toYamlString(){$/;"	f	class:dc::LoggerManager
+toYamlString	log.cc	/^	std::string StdOutLogAppender::toYamlString(){$/;"	f	class:dc::StdOutLogAppender
+triggerEvent	ioManager.h	/^        void triggerEvent(Event event)$/;"	f	struct:dc::IOManager::FdContext
+type	log.cc	/^		int type = 0; \/\/1 File, 2 StdOut$/;"	m	struct:dc::LogAppenderDefine	file:
+unlock	thread.h	/^	void unlock() {$/;"	f	class:dc::CASLock
+unlock	thread.h	/^	void unlock() {$/;"	f	class:dc::Mutex
+unlock	thread.h	/^	void unlock() {$/;"	f	class:dc::RWMutex
+unlock	thread.h	/^	void unlock() {$/;"	f	class:dc::Spinlock
+unlock	thread.h	/^	void unlock() {$/;"	f	struct:dc::ReadScopeLockImpl
+unlock	thread.h	/^	void unlock() {$/;"	f	struct:dc::ScopeLockImpl
+unlock	thread.h	/^	void unlock() {$/;"	f	struct:dc::WriteScopeLockImpl
+unlock	thread.h	/^	void unlock() {}$/;"	f	class:dc::NullMutex
+unlock	thread.h	/^	void unlock() {}$/;"	f	class:dc::NullRWMutex
+usleep	hook.cc	/^int usleep(useconds_t usec)$/;"	f
+wait	thread.cc	/^void Semaphore::wait(){$/;"	f	class:dc::Semaphore
+warn	log.cc	/^	void Logger::warn(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+write	ioManager.h	/^        EventContext write; \/\/ write event$/;"	m	struct:dc::IOManager::FdContext
+wrlock	thread.h	/^	void wrlock() {$/;"	f	class:dc::RWMutex
+~CASLock	thread.h	/^	~CASLock() {$/;"	f	class:dc::CASLock
+~ConfigVarBase	config.h	/^    virtual ~ConfigVarBase(){}$/;"	f	class:dc::ConfigVarBase
+~Fiber	fiber.cc	/^Fiber::~Fiber() {$/;"	f	class:dc::Fiber
+~FileLogAppender	log.cc	/^	FileLogAppender::~FileLogAppender(){$/;"	f	class:dc::FileLogAppender
+~FormatItem	log.h	/^            virtual ~FormatItem(){}$/;"	f	class:dc::LogFormatter::FormatItem
+~IOManager	ioManager.cc	/^IOManager::~IOManager()$/;"	f	class:IOManager
+~LogAppender	log.h	/^        virtual ~LogAppender(){}$/;"	f	class:dc::LogAppender
+~LogEvent	log.cc	/^	LogEvent::~LogEvent(){ $/;"	f	class:dc::LogEvent
+~LogEventWrap	log.cc	/^	LogEventWrap::~LogEventWrap(){$/;"	f	class:dc::LogEventWrap
+~Mutex	thread.h	/^	~Mutex(){$/;"	f	class:dc::Mutex
+~NullMutex	thread.h	/^	~NullMutex() {}$/;"	f	class:dc::NullMutex
+~NullRWMutex	thread.h	/^	~NullRWMutex() {}$/;"	f	class:dc::NullRWMutex
+~RWMutex	thread.h	/^	~RWMutex() {$/;"	f	class:dc::RWMutex
+~ReadScopeLockImpl	thread.h	/^	~ReadScopeLockImpl() {$/;"	f	struct:dc::ReadScopeLockImpl
+~Scheduler	scheduler.cc	/^Scheduler:: ~Scheduler() {$/;"	f	class:dc::Scheduler
+~ScopeLockImpl	thread.h	/^	~ScopeLockImpl() {$/;"	f	struct:dc::ScopeLockImpl
+~Semaphore	thread.cc	/^Semaphore::~Semaphore(){$/;"	f	class:dc::Semaphore
+~Spinlock	thread.h	/^	~Spinlock() {$/;"	f	class:dc::Spinlock
+~Thread	thread.cc	/^Thread::~Thread(){$/;"	f	class:dc::Thread
+~TimerManager	timer.cc	/^TimerManager::~TimerManager()$/;"	f	class:TimerManager
+~WriteScopeLockImpl	thread.h	/^	~WriteScopeLockImpl() {$/;"	f	struct:dc::WriteScopeLockImpl
