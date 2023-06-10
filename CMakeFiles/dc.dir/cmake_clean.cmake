@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dc.dir/dc/address.cc.o"
   "CMakeFiles/dc.dir/dc/address.cc.o.d"
+  "CMakeFiles/dc.dir/dc/bytearray.cc.o"
+  "CMakeFiles/dc.dir/dc/bytearray.cc.o.d"
   "CMakeFiles/dc.dir/dc/config.cc.o"
   "CMakeFiles/dc.dir/dc/config.cc.o.d"
   "CMakeFiles/dc.dir/dc/fd_manager.cc.o"

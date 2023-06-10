@@ -32,3 +32,5 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-u
 
 # Custom defines: CMakeFiles/dc.dir/dc/socket.cc.o_DEFINES = __FILE__="dc/socket.cc"
 
+# Custom defines: CMakeFiles/dc.dir/dc/bytearray.cc.o_DEFINES = __FILE__="dc/bytearray.cc"
+

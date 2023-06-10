@@ -28,6 +28,7 @@ set(LIB_SRC
 	dc/fd_manager.cc
 	dc/address.cc
 	dc/socket.cc
+	dc/bytearray.cc
 	)
 
 add_library(dc SHARED ${LIB_SRC})
@@ -82,6 +83,10 @@ target_link_libraries(test_hook dc ${LIB_LIB})
 
 add_executable(test_address tests/test_address.cc)
 target_link_libraries(test_address dc ${LIB_LIB})
+
+
+add_executable(test_bytearray tests/test_bytearray.cc)
+target_link_libraries(test_bytearray dc ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
