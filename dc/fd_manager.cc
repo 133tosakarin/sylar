@@ -49,16 +49,17 @@ bool FdCtx::init()
 		if( !(flags & O_NONBLOCK) )
 		{
 			fcntl_f(fd_, F_SETFL, flags | O_NONBLOCK);		
-			isSysNonblock_ = true;
 
 		}
-		else
-		{
-			isSysNonblock_ = false;
-		}
-
-
+		isSysNonblock_ = true;
 	}
+	else
+	{
+			isSysNonblock_ = false;
+	}
+
+
+	
 	isUserNonblock_ = false;
 	isClosed_ = false;
 	return isInit_;
@@ -96,6 +97,8 @@ FdManager::FdManager()
 
 FdCtx::ptr FdManager::get(int fd, bool auto_create)
 {
+	if( fd == -1 )
+		return nullptr;
 	{
 		RWMutexType::ReadLock lock( mutex_);
 		if( datas_.size() <= static_cast<size_t>(fd) )
@@ -116,6 +119,8 @@ FdCtx::ptr FdManager::get(int fd, bool auto_create)
 	}
 	RWMutexType::WriteLock lock(mutex_);
 	FdCtx::ptr ctx(new FdCtx(fd));
+	if( fd >= (int)datas_.size())
+		datas_.resize(fd * 1.5);
 	datas_[fd] = ctx;
 	return ctx;
 

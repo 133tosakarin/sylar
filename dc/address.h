@@ -138,6 +138,7 @@ public:
 private:
 	sockaddr addr_;
 };
+std::ostream& operator<<(std::ostream& os, const Address& addr);
 
 }
 #endif

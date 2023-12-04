@@ -254,6 +254,160 @@ CMakeFiles/dc.dir/dc/bytearray.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/bytearray.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/bytearray.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/bytearray.cc -o CMakeFiles/dc.dir/dc/bytearray.cc.s
 
+CMakeFiles/dc.dir/dc/http/http.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/http/http.cc.o: dc/http/http.cc
+CMakeFiles/dc.dir/dc/http/http.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/dc.dir/dc/http/http.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/http/http.cc.o -MF CMakeFiles/dc.dir/dc/http/http.cc.o.d -o CMakeFiles/dc.dir/dc/http/http.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http.cc
+
+CMakeFiles/dc.dir/dc/http/http.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/http/http.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http.cc > CMakeFiles/dc.dir/dc/http/http.cc.i
+
+CMakeFiles/dc.dir/dc/http/http.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/http/http.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http.cc -o CMakeFiles/dc.dir/dc/http/http.cc.s
+
+CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o: dc/http/http11_parser.rl.cc
+CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http11_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o -MF CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o.d -o CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http11_parser.rl.cc
+
+CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http11_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http11_parser.rl.cc > CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.i
+
+CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http11_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http11_parser.rl.cc -o CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.s
+
+CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o: dc/http/httpclient_parser.rl.cc
+CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/httpclient_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o -MF CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o.d -o CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/httpclient_parser.rl.cc
+
+CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/httpclient_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/httpclient_parser.rl.cc > CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.i
+
+CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/httpclient_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/httpclient_parser.rl.cc -o CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.s
+
+CMakeFiles/dc.dir/dc/http/http_parser.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/http/http_parser.cc.o: dc/http/http_parser.cc
+CMakeFiles/dc.dir/dc/http/http_parser.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/dc.dir/dc/http/http_parser.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_parser.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/http/http_parser.cc.o -MF CMakeFiles/dc.dir/dc/http/http_parser.cc.o.d -o CMakeFiles/dc.dir/dc/http/http_parser.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_parser.cc
+
+CMakeFiles/dc.dir/dc/http/http_parser.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/http/http_parser.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_parser.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_parser.cc > CMakeFiles/dc.dir/dc/http/http_parser.cc.i
+
+CMakeFiles/dc.dir/dc/http/http_parser.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/http/http_parser.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_parser.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_parser.cc -o CMakeFiles/dc.dir/dc/http/http_parser.cc.s
+
+CMakeFiles/dc.dir/dc/tcp_server.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/tcp_server.cc.o: dc/tcp_server.cc
+CMakeFiles/dc.dir/dc/tcp_server.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/dc.dir/dc/tcp_server.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/tcp_server.cc.o -MF CMakeFiles/dc.dir/dc/tcp_server.cc.o.d -o CMakeFiles/dc.dir/dc/tcp_server.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/tcp_server.cc
+
+CMakeFiles/dc.dir/dc/tcp_server.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/tcp_server.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/tcp_server.cc > CMakeFiles/dc.dir/dc/tcp_server.cc.i
+
+CMakeFiles/dc.dir/dc/tcp_server.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/tcp_server.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/tcp_server.cc -o CMakeFiles/dc.dir/dc/tcp_server.cc.s
+
+CMakeFiles/dc.dir/dc/stream.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/stream.cc.o: dc/stream.cc
+CMakeFiles/dc.dir/dc/stream.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/dc.dir/dc/stream.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/stream.cc.o -MF CMakeFiles/dc.dir/dc/stream.cc.o.d -o CMakeFiles/dc.dir/dc/stream.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/stream.cc
+
+CMakeFiles/dc.dir/dc/stream.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/stream.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/stream.cc > CMakeFiles/dc.dir/dc/stream.cc.i
+
+CMakeFiles/dc.dir/dc/stream.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/stream.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/stream.cc -o CMakeFiles/dc.dir/dc/stream.cc.s
+
+CMakeFiles/dc.dir/dc/socket_stream.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/socket_stream.cc.o: dc/socket_stream.cc
+CMakeFiles/dc.dir/dc/socket_stream.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/dc.dir/dc/socket_stream.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/socket_stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/socket_stream.cc.o -MF CMakeFiles/dc.dir/dc/socket_stream.cc.o.d -o CMakeFiles/dc.dir/dc/socket_stream.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/socket_stream.cc
+
+CMakeFiles/dc.dir/dc/socket_stream.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/socket_stream.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/socket_stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/socket_stream.cc > CMakeFiles/dc.dir/dc/socket_stream.cc.i
+
+CMakeFiles/dc.dir/dc/socket_stream.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/socket_stream.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/socket_stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/socket_stream.cc -o CMakeFiles/dc.dir/dc/socket_stream.cc.s
+
+CMakeFiles/dc.dir/dc/http/session.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/http/session.cc.o: dc/http/session.cc
+CMakeFiles/dc.dir/dc/http/session.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/dc.dir/dc/http/session.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/http/session.cc.o -MF CMakeFiles/dc.dir/dc/http/session.cc.o.d -o CMakeFiles/dc.dir/dc/http/session.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/session.cc
+
+CMakeFiles/dc.dir/dc/http/session.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/http/session.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/session.cc > CMakeFiles/dc.dir/dc/http/session.cc.i
+
+CMakeFiles/dc.dir/dc/http/session.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/http/session.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/session.cc -o CMakeFiles/dc.dir/dc/http/session.cc.s
+
+CMakeFiles/dc.dir/dc/http/http_server.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/http/http_server.cc.o: dc/http/http_server.cc
+CMakeFiles/dc.dir/dc/http/http_server.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/dc.dir/dc/http/http_server.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/http/http_server.cc.o -MF CMakeFiles/dc.dir/dc/http/http_server.cc.o.d -o CMakeFiles/dc.dir/dc/http/http_server.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_server.cc
+
+CMakeFiles/dc.dir/dc/http/http_server.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/http/http_server.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_server.cc > CMakeFiles/dc.dir/dc/http/http_server.cc.i
+
+CMakeFiles/dc.dir/dc/http/http_server.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/http/http_server.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_server.cc -o CMakeFiles/dc.dir/dc/http/http_server.cc.s
+
+CMakeFiles/dc.dir/dc/http/servlet.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/http/servlet.cc.o: dc/http/servlet.cc
+CMakeFiles/dc.dir/dc/http/servlet.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/dc.dir/dc/http/servlet.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/http/servlet.cc.o -MF CMakeFiles/dc.dir/dc/http/servlet.cc.o.d -o CMakeFiles/dc.dir/dc/http/servlet.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/servlet.cc
+
+CMakeFiles/dc.dir/dc/http/servlet.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/http/servlet.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/servlet.cc > CMakeFiles/dc.dir/dc/http/servlet.cc.i
+
+CMakeFiles/dc.dir/dc/http/servlet.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/http/servlet.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/servlet.cc -o CMakeFiles/dc.dir/dc/http/servlet.cc.s
+
+CMakeFiles/dc.dir/dc/http/http_connection.cc.o: CMakeFiles/dc.dir/flags.make
+CMakeFiles/dc.dir/dc/http/http_connection.cc.o: dc/http/http_connection.cc
+CMakeFiles/dc.dir/dc/http/http_connection.cc.o: CMakeFiles/dc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/dc.dir/dc/http/http_connection.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_connection.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dc.dir/dc/http/http_connection.cc.o -MF CMakeFiles/dc.dir/dc/http/http_connection.cc.o.d -o CMakeFiles/dc.dir/dc/http/http_connection.cc.o -c /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_connection.cc
+
+CMakeFiles/dc.dir/dc/http/http_connection.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dc.dir/dc/http/http_connection.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_connection.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_connection.cc > CMakeFiles/dc.dir/dc/http/http_connection.cc.i
+
+CMakeFiles/dc.dir/dc/http/http_connection.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dc.dir/dc/http/http_connection.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"dc/http/http_connection.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tohsakarin/Documents/sylar/sylar_server_frame/dc/http/http_connection.cc -o CMakeFiles/dc.dir/dc/http/http_connection.cc.s
+
 # Object files for target dc
 dc_OBJECTS = \
 "CMakeFiles/dc.dir/dc/log.cc.o" \
@@ -268,7 +422,18 @@ dc_OBJECTS = \
 "CMakeFiles/dc.dir/dc/fd_manager.cc.o" \
 "CMakeFiles/dc.dir/dc/address.cc.o" \
 "CMakeFiles/dc.dir/dc/socket.cc.o" \
-"CMakeFiles/dc.dir/dc/bytearray.cc.o"
+"CMakeFiles/dc.dir/dc/bytearray.cc.o" \
+"CMakeFiles/dc.dir/dc/http/http.cc.o" \
+"CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o" \
+"CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o" \
+"CMakeFiles/dc.dir/dc/http/http_parser.cc.o" \
+"CMakeFiles/dc.dir/dc/tcp_server.cc.o" \
+"CMakeFiles/dc.dir/dc/stream.cc.o" \
+"CMakeFiles/dc.dir/dc/socket_stream.cc.o" \
+"CMakeFiles/dc.dir/dc/http/session.cc.o" \
+"CMakeFiles/dc.dir/dc/http/http_server.cc.o" \
+"CMakeFiles/dc.dir/dc/http/servlet.cc.o" \
+"CMakeFiles/dc.dir/dc/http/http_connection.cc.o"
 
 # External object files for target dc
 dc_EXTERNAL_OBJECTS =
@@ -286,9 +451,20 @@ lib/libdc.so: CMakeFiles/dc.dir/dc/fd_manager.cc.o
 lib/libdc.so: CMakeFiles/dc.dir/dc/address.cc.o
 lib/libdc.so: CMakeFiles/dc.dir/dc/socket.cc.o
 lib/libdc.so: CMakeFiles/dc.dir/dc/bytearray.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/http/http.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/http/http_parser.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/tcp_server.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/stream.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/socket_stream.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/http/session.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/http/http_server.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/http/servlet.cc.o
+lib/libdc.so: CMakeFiles/dc.dir/dc/http/http_connection.cc.o
 lib/libdc.so: CMakeFiles/dc.dir/build.make
 lib/libdc.so: CMakeFiles/dc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library lib/libdc.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX shared library lib/libdc.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

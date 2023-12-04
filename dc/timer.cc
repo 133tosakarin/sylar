@@ -98,7 +98,11 @@ bool Timer::reset( uint64_t ms, bool from_now )
 	{
 		return false;
 	}
+	Timer::ptr cp;
 	auto it = manager_->timers_.find(shared_from_this());
+	if(it->use_count() == 1 )
+		cp = *it;
+
 	if( it == manager_->timers_.end() )
 	{
 		return false;

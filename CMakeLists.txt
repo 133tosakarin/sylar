@@ -5,7 +5,7 @@ project(dc)
 include(cmake/utils.cmake)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -lyaml-cpp -Wno-builtin-macro-redefined ")
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O2 -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -lyaml-cpp -Wno-builtin-macro-redefined ")
 
 
 include_directories(.)
@@ -29,6 +29,17 @@ set(LIB_SRC
 	dc/address.cc
 	dc/socket.cc
 	dc/bytearray.cc
+	dc/http/http.cc
+	dc/http/http11_parser.rl.cc
+	dc/http/httpclient_parser.rl.cc
+	dc/http/http_parser.cc
+	dc/tcp_server.cc
+	dc/stream.cc
+	dc/socket_stream.cc
+	dc/http/session.cc
+	dc/http/http_server.cc
+	dc/http/servlet.cc
+	dc/http/http_connection.cc
 	)
 
 add_library(dc SHARED ${LIB_SRC})
@@ -87,6 +98,28 @@ target_link_libraries(test_address dc ${LIB_LIB})
 
 add_executable(test_bytearray tests/test_bytearray.cc)
 target_link_libraries(test_bytearray dc ${LIB_LIB})
+
+add_executable(test_http tests/test_http.cc)
+target_link_libraries(test_http dc ${LIB_LIB})
+
+
+add_executable(test_http_parser tests/test_http_parser.cc)
+target_link_libraries(test_http_parser dc ${LIB_LIB})
+
+
+add_executable(test_tcp tests/test_tcp.cc)
+target_link_libraries(test_tcp dc ${LIB_LIB})
+
+add_executable(test_echo tests/test_echo.cc)
+target_link_libraries(test_echo dc ${LIB_LIB})
+
+
+add_executable(test_http_server tests/test_http_server.cc)
+target_link_libraries(test_http_server dc ${LIB_LIB})
+
+
+add_executable(test_conn tests/test_conn.cc)
+target_link_libraries(test_conn dc ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

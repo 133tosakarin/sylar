@@ -41,6 +41,7 @@ private:
                 default:
                     DC_ASSERT2(false, "getContext");
             }
+			throw std::invalid_argument("getContext invalid event");
         }
         void resetContext(EventContext& ctx)
         {
@@ -55,11 +56,11 @@ private:
             EventContext& ctx = getContext(event);
             if( ctx.cb )
             {
-                ctx.scheduler->schedule(ctx.cb);
+                ctx.scheduler->schedule(&ctx.cb);
             }
             else
             {
-                ctx.scheduler->schedule(ctx.fiber);
+                ctx.scheduler->schedule(&ctx.fiber);
             }
             ctx.scheduler = nullptr;
         }

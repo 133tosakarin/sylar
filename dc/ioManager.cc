@@ -256,7 +256,7 @@ void IOManager::idle()
 			{
 				next_timeout = MAX_TIMEOUT;
 			}
-			DC_LOG_INFO(g_logger) << "next_timeout " << next_timeout;	
+			//DC_LOG_INFO(g_logger) << "next_timeout " << next_timeout;	
 			ret = epoll_wait(epfd_, events, 64, (int)next_timeout);
 			if( ret < 0 && errno == EINTR )
 			{
@@ -331,21 +331,22 @@ void IOManager::idle()
 				}
 
 			}
-			Fiber::ptr cur = Fiber::GetThis();
-			auto raw_ptr = cur.get();
-			cur.reset();
-			raw_ptr->swapOut();
 		}
 		else if( ret == 0 )
 		{
-			DC_LOG_INFO( g_logger ) << "nothing to do";
+			//DC_LOG_INFO( g_logger ) << "nothing to do";
 		}
 		else 
 		{
 				DC_LOG_ERROR( g_logger ) << "idle" << this;
-				break;
+				//break;
 
 		}
+		Fiber::ptr cur = Fiber::GetThis();
+		auto raw_ptr = cur.get();
+		cur.reset();
+		raw_ptr->swapOut();
+
 
 	}
 }

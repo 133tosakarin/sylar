@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.Shell.PortalHelper.desktop" score="1" last-seen="1686238979"/>
-    <application id="gnome-control-center.desktop" score="1" last-seen="1686058760"/>
-    <application id="org.gnome.Terminal.desktop" score="3481" last-seen="1686326490"/>
-    <application id="update-manager.desktop" score="1" last-seen="1686198952"/>
+    <application id="code_code.desktop" score="13992" last-seen="1692688006"/>
+    <application id="org.gnome.Terminal.desktop" score="5901" last-seen="1701265546"/>
+    <application id="update-manager.desktop" score="0" last-seen="1700712747"/>
   </context>
 </application-state>

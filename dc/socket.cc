@@ -262,8 +262,9 @@ int Socket::recv( iovec* buffers, size_t length, int flags )
 {
 	if( isConnected() )
 	{
+		DC_LOG_INFO(g_logger) << "recv msg from " << sock_;
 		msghdr msg;
-		msg.msg_iov = (iovec*)buffers;
+		msg.msg_iov = buffers;
 		msg.msg_iovlen = length;
 		return ::recvmsg(sock_, &msg, flags);
 	}
@@ -365,8 +366,8 @@ Address::ptr Socket::getLocalAddress()
 		UnixAddress::ptr addr = std::dynamic_pointer_cast<UnixAddress>(ret);
 		addr->setAddrlen(addrlen);
 	}
-	peerAddress_ = ret;
-	return peerAddress_;
+	localAddress_ = ret;
+	return localAddress_;
 }
 inline bool Socket::isValid() const
 {
@@ -483,4 +484,9 @@ Socket::ptr Socket::CreateUdpSocket6()
 {
 	
 	return Socket::ptr(new Socket(kIPv6, kUDP, 0));
+}
+
+std::ostream& dc::operator<<(std::ostream& os, const Socket& addr)
+{
+	return addr.dump(os);	
 }

@@ -83,6 +83,8 @@ Address	dc/address.h	/^class Address$/;"	c	namespace:dc
 Alloc	dc/fiber.cc	/^	static void* Alloc(size_t size) {$/;"	f	class:dc::MallocStackAllocator
 Backtrace	dc/util.cc	/^	void Backtrace(std::vector<std::string>& bt, int size, int skip) {$/;"	f	namespace:dc
 BacktraceToString	dc/util.cc	/^	std::string BacktraceToString(int size, int skip, const std::string& prefix) {$/;"	f	namespace:dc
+ByteArray	dc/bytearray.cc	/^ByteArray::ByteArray(size_t base_size)$/;"	f	class:ByteArray
+ByteArray	dc/bytearray.h	/^class ByteArray {$/;"	c	namespace:dc
 CASLock	dc/thread.h	/^	CASLock() {$/;"	f	class:dc::CASLock
 CASLock	dc/thread.h	/^class CASLock : noncopyable{$/;"	c	namespace:dc
 CMAKE_BINARY_DIR	Makefile	/^CMAKE_BINARY_DIR = \/home\/tohsakarin\/Documents\/sylar\/sylar_server_frame$/;"	m
@@ -404,6 +406,7 @@ C_VERSION	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	748;"	d	file:
 C_VERSION	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	750;"	d	file:
 C_VERSION	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	752;"	d	file:
 Caller	dc/fiber.cc	/^void Fiber::Caller()$/;"	f	class:dc::Fiber
+CaseInsensitiveLess	dc/http/http.h	/^struct CaseInsensitiveLess$/;"	s	namespace:dc::http
 Comparator	dc/timer.h	/^	struct Comparator$/;"	s	class:dc::Timer
 Config	dc/config.h	/^class Config{$/;"	c	namespace:dc
 ConfigVar	dc/config.h	/^    ConfigVar(const std::string &name,$/;"	f	class:dc::ConfigVar
@@ -412,20 +415,32 @@ ConfigVarBase	dc/config.h	/^    ConfigVarBase(const std::string &name,const std:
 ConfigVarBase	dc/config.h	/^class ConfigVarBase{$/;"	c	namespace:dc
 CountBytes	dc/address.cc	/^static uint32_t CountBytes(T value)$/;"	f	file:
 Create	dc/address.cc	/^Address::ptr Address::Create(const sockaddr* addr, socklen_t addrlen)$/;"	f	class:Address
-Create	dc/address.cc	/^IPAddress::ptr IPAddress::Create(const char* address, uint32_t port)$/;"	f	class:IPAddress
-Create	dc/address.cc	/^IPv4Address::ptr IPv4Address::Create(const char* address, uint32_t port)$/;"	f	class:IPv4Address
-Create	dc/address.cc	/^IPv6Address::ptr IPv6Address::Create(const char* address, uint32_t port)$/;"	f	class:IPv6Address
+Create	dc/address.cc	/^IPAddress::ptr IPAddress::Create(const char* address, uint16_t port)$/;"	f	class:IPAddress
+Create	dc/address.cc	/^IPv4Address::ptr IPv4Address::Create(const char* address, uint16_t port)$/;"	f	class:IPv4Address
+Create	dc/address.cc	/^IPv6Address::ptr IPv6Address::Create(const char* address, uint16_t port)$/;"	f	class:IPv6Address
 CreateMask	dc/address.cc	/^static T CreateMask(uint32_t bits)$/;"	f	namespace:dc
+CreateTcp	dc/socket.cc	/^Socket::ptr Socket::CreateTcp(Address::ptr address)$/;"	f	class:Socket
+CreateTcpSocket	dc/socket.cc	/^Socket::ptr Socket::CreateTcpSocket()$/;"	f	class:Socket
+CreateTcpSocket6	dc/socket.cc	/^Socket::ptr Socket::CreateTcpSocket6()$/;"	f	class:Socket
+CreateUdp	dc/socket.cc	/^Socket::ptr Socket::CreateUdp(Address::ptr address)$/;"	f	class:Socket
+CreateUdpSocket	dc/socket.cc	/^Socket::ptr Socket::CreateUdpSocket()$/;"	f	class:Socket
+CreateUdpSocket6	dc/socket.cc	/^Socket::ptr Socket::CreateUdpSocket6()$/;"	f	class:Socket
+CreateUnixTcpSocket	dc/socket.cc	/^Socket::ptr Socket::CreateUnixTcpSocket()$/;"	f	class:Socket
+CreateUnixUdaSocket	dc/socket.cc	/^Socket::ptr Socket::CreateUnixUdaSocket()$/;"	f	class:Socket
 DC_ADDRESS_H	dc/address.h	2;"	d
-DC_ASSERT	dc/macro.h	6;"	d
-DC_ASSERT2	dc/macro.h	14;"	d
+DC_ASSERT	dc/macro.h	15;"	d
+DC_ASSERT2	dc/macro.h	23;"	d
 DC_BIG_ENDIAN	dc/endian.h	5;"	d
 DC_BYTE_ORDER	dc/endian.h	33;"	d
 DC_BYTE_ORDER	dc/endian.h	35;"	d
 DC_ENDIAN_H	dc/endian.h	2;"	d
 DC_FD_MANAGER_H	dc/fd_manager.h	2;"	d
 DC_HOOK_H	dc/hook.h	2;"	d
+DC_HTTP_HTTPPARSER_H	dc/http/http_parser.h	2;"	d
+DC_HTTP_HTTP_H	dc/http/http.h	3;"	d
 DC_IOMANAGER_H	dc/ioManager.h	2;"	d
+DC_LICKLY	dc/macro.h	11;"	d
+DC_LICKLY	dc/macro.h	8;"	d
 DC_LITTLE_ENDIAN	dc/endian.h	4;"	d
 DC_LOG_DEBUG	dc/log.h	30;"	d
 DC_LOG_ERROR	dc/log.h	33;"	d
@@ -442,22 +457,33 @@ DC_LOG_NAME	dc/log.h	59;"	d
 DC_LOG_ROOT	dc/log.h	57;"	d
 DC_LOG_WARN	dc/log.h	32;"	d
 DC_NONCOPYABLE_H	dc/noncopyable.h	2;"	d
+DC_SOCKET_H	dc/socket.h	2;"	d
+DC_TCP_SERVER_H	dc/tcp_server.h	2;"	d
 DC_TIMER_H	dc/timer.h	2;"	d
+DC_UNLIKLY	dc/macro.h	12;"	d
+DC_UNLIKLY	dc/macro.h	9;"	d
 DEBUG	dc/log.h	/^            DEBUG = 1,$/;"	e	enum:dc::LogLevel::Level
 DEC	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	656;"	d	file:
 DEC	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	641;"	d	file:
 DateFormatItem	dc/log.cc	/^			DateFormatItem(const std::string &format = "%Y-%m-%d %H:%M:%S"):m_format(format){$/;"	f	class:dc::DateFormatItem
 DateFormatItem	dc/log.cc	/^	class DateFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
 Dealloc	dc/fiber.cc	/^	static void Dealloc(void* vp, size_t size) {$/;"	f	class:dc::MallocStackAllocator
+DecodeZigzag32	dc/bytearray.cc	/^static int32_t DecodeZigzag32(const uint32_t& v)$/;"	f	file:
+DecodeZigzag64	dc/bytearray.cc	/^static int64_t DecodeZigzag64(const uint64_t& v)$/;"	f	file:
 EQUALS	Makefile	/^EQUALS = =$/;"	m
 ERROR	dc/log.h	/^            ERROR = 4,$/;"	e	enum:dc::LogLevel::Level
 EXCEPT	dc/fiber.h	/^		EXCEPT$/;"	e	enum:dc::Fiber::State
 EXEC	dc/fiber.h	/^		EXEC,$/;"	e	enum:dc::Fiber::State
+EchoServer	tests/test_echo.cc	/^EchoServer::EchoServer(int type)$/;"	f	class:EchoServer
+EchoServer	tests/test_echo.cc	/^class EchoServer : public TcpServer$/;"	c	file:
 ElapseFormatItem	dc/log.cc	/^			ElapseFormatItem(const std::string &str=""){}$/;"	f	class:dc::ElapseFormatItem
 ElapseFormatItem	dc/log.cc	/^	class ElapseFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+EncodeZigzag32	dc/bytearray.cc	/^static uint32_t EncodeZigzag32(const int32_t& v)$/;"	f	file:
+EncodeZigzag64	dc/bytearray.cc	/^static uint64_t EncodeZigzag64(const int64_t& v)$/;"	f	file:
 Event	dc/ioManager.h	/^    enum Event$/;"	g	class:dc::IOManager
 EventContext	dc/ioManager.h	/^        struct EventContext$/;"	s	struct:dc::IOManager::FdContext
 FATAL	dc/log.h	/^            FATAL  = 5$/;"	e	enum:dc::LogLevel::Level
+Family	dc/socket.h	/^	enum Family$/;"	g	class:dc::Socket
 FdContext	dc/ioManager.h	/^    struct FdContext$/;"	s	class:dc::IOManager
 FdCtx	dc/fd_manager.cc	/^FdCtx::FdCtx(int fd)$/;"	f	class:FdCtx
 FdCtx	dc/fd_manager.h	/^class FdCtx : public std::enable_shared_from_this<FdCtx>$/;"	c	namespace:dc
@@ -480,15 +506,19 @@ FileNameFormatItem	dc/log.cc	/^			FileNameFormatItem(const std::string &str){}$/
 FileNameFormatItem	dc/log.cc	/^	class FileNameFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
 FormatItem	dc/log.h	/^        class FormatItem{$/;"	c	class:dc::LogFormatter
 FromStr	dc/log.cc	/^    LogLevel::Level LogLevel::FromStr(const std::string& val){$/;"	f	class:dc::LogLevel
+FunctionServlet	dc/http/servlet.cc	/^FunctionServlet::FunctionServlet(Callback cb)$/;"	f	class:FunctionServlet
+FunctionServlet	dc/http/servlet.h	/^class FunctionServlet : public Servlet$/;"	c	namespace:dc::http
 GetCurrentMs	dc/util.cc	/^uint64_t GetCurrentMs()$/;"	f	namespace:dc
 GetCurrentUs	dc/util.cc	/^uint64_t GetCurrentUs()$/;"	f	namespace:dc
 GetDatas	dc/config.h	/^    static ConfigVarMap& GetDatas(){$/;"	f	class:dc::Config
 GetFiberId	dc/fiber.cc	/^uint64_t Fiber::GetFiberId() {$/;"	f	class:dc::Fiber
 GetFiberId	dc/util.cc	/^	uint32_t GetFiberId(){$/;"	f	namespace:dc
+GetHttpRequestBufferSize	dc/http/http_parser.cc	/^uint64_t HttpRequestParser::GetHttpRequestBufferSize()$/;"	f	class:HttpRequestParser
+GetHttpRequestMaxBodySize	dc/http/http_parser.cc	/^uint64_t HttpRequestParser::GetHttpRequestMaxBodySize()$/;"	f	class:HttpRequestParser
 GetInstance	dc/singleton.h	/^    static T* GetInstance(){$/;"	f	class:dc::Singleton
 GetInstance	dc/singleton.h	/^    static std::shared_ptr<T> GetInstance(){$/;"	f	class:dc::SingletonPtr
-GetInterfaceAddresses	dc/address.cc	/^bool Address::GetInterfaceAddresses( std::multimap<std::string, std::pair<Address::ptr, uint32_t>>& result, int family)$/;"	f	class:Address
-GetInterfaceAddresses	dc/address.cc	/^bool Address::GetInterfaceAddresses( std::vector<std::pair<Address::ptr, uint32_t>>& result, const std::string& iface,  int family)$/;"	f	class:Address
+GetInterfaceAddresses	dc/address.cc	/^bool Address::GetInterfaceAddresses( std::multimap<std::string, std::pair<Address::ptr, uint16_t>>& result, int family)$/;"	f	class:Address
+GetInterfaceAddresses	dc/address.cc	/^bool Address::GetInterfaceAddresses( std::vector<std::pair<Address::ptr, uint16_t>>& result, const std::string& iface,  int family)$/;"	f	class:Address
 GetMainFiber	dc/scheduler.cc	/^Fiber* Scheduler::GetMainFiber() {$/;"	f	class:dc::Scheduler
 GetMutex	dc/config.h	/^	static RWMutexType& GetMutex() {$/;"	f	class:dc::Config
 GetName	dc/thread.cc	/^const std::string& Thread::GetName(){$/;"	f	class:dc::Thread
@@ -501,19 +531,40 @@ HEX	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	667;"	d	file:
 HEX	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	652;"	d	file:
 HOLD	dc/fiber.h	/^		HOLD,$/;"	e	enum:dc::Fiber::State
 HOOK_FUN	dc/hook.cc	19;"	d	file:
+HTTP_METHOD_MAP	dc/http/http.h	77;"	d
+HTTP_STATUS_MAP	dc/http/http.h	15;"	d
+HttpMethod	dc/http/http.h	/^enum class HttpMethod$/;"	c	namespace:dc::http
+HttpMethodToString	dc/http/http.cc	/^const char* HttpMethodToString(const HttpMethod m)$/;"	f	namespace:dc::http
+HttpRequest	dc/http/http.cc	/^HttpRequest::HttpRequest(uint8_t version, bool close)$/;"	f	class:HttpRequest
+HttpRequest	dc/http/http.h	/^class HttpRequest$/;"	c	namespace:dc::http
+HttpRequestParser	dc/http/http_parser.cc	/^HttpRequestParser::HttpRequestParser()$/;"	f	class:HttpRequestParser
+HttpRequestParser	dc/http/http_parser.h	/^class HttpRequestParser$/;"	c	namespace:dc::http
+HttpResponse	dc/http/http.cc	/^HttpResponse::HttpResponse(uint8_t version, bool close)$/;"	f	class:HttpResponse
+HttpResponse	dc/http/http.h	/^class HttpResponse$/;"	c	namespace:dc::http
+HttpResponseParser	dc/http/http_parser.cc	/^HttpResponseParser::HttpResponseParser()$/;"	f	class:HttpResponseParser
+HttpResponseParser	dc/http/http_parser.h	/^class HttpResponseParser$/;"	c	namespace:dc::http
+HttpServer	dc/http/http_server.cc	/^HttpServer::HttpServer(bool keepalive,$/;"	f	class:HttpServer
+HttpServer	dc/http/http_server.h	/^class HttpServer :public TcpServer$/;"	c	namespace:dc::http
+HttpSession	dc/http/session.cc	/^HttpSession::HttpSession(std::shared_ptr<Socket> sock, bool owner)$/;"	f	class:HttpSession
+HttpSession	dc/http/session.h	/^class HttpSession : public SocketStream$/;"	c	namespace:dc::http
+HttpStatus	dc/http/http.h	/^enum class HttpStatus$/;"	c	namespace:dc::http
+HttpStatusToString	dc/http/http.cc	/^const char* HttpStatusToString(const HttpStatus s)$/;"	f	namespace:dc::http
 ID_VOID_MAIN	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 INFO	dc/log.h	/^            INFO = 2,$/;"	e	enum:dc::LogLevel::Level
 INIT	dc/fiber.h	/^		INIT,$/;"	e	enum:dc::Fiber::State
+INVALID_METHOD	dc/http/http.h	/^  INVALID_METHOD,$/;"	m	class:dc::http::HttpMethod
 IOManager	dc/ioManager.cc	/^IOManager::IOManager(size_t threads, bool use_caller, const std::string& name)$/;"	f	class:IOManager
 IOManager	dc/ioManager.h	/^class IOManager : public Scheduler, public TimerManager$/;"	c	namespace:dc
 IPAddress	dc/address.h	/^class IPAddress : public Address$/;"	c	namespace:dc
 IPv4Address	dc/address.cc	/^IPv4Address::IPv4Address(const sockaddr_in& address)$/;"	f	class:IPv4Address
-IPv4Address	dc/address.cc	/^IPv4Address::IPv4Address(uint32_t address , uint32_t port)$/;"	f	class:IPv4Address
+IPv4Address	dc/address.cc	/^IPv4Address::IPv4Address(uint32_t address , uint16_t port)$/;"	f	class:IPv4Address
 IPv4Address	dc/address.h	/^class IPv4Address : public IPAddress$/;"	c	namespace:dc
 IPv6Address	dc/address.cc	/^IPv6Address::IPv6Address()$/;"	f	class:IPv6Address
 IPv6Address	dc/address.cc	/^IPv6Address::IPv6Address(const sockaddr_in6& addr)$/;"	f	class:IPv6Address
-IPv6Address	dc/address.cc	/^IPv6Address::IPv6Address(const uint8_t address[16], uint32_t port)$/;"	f	class:IPv6Address
+IPv6Address	dc/address.cc	/^IPv6Address::IPv6Address(const uint8_t address[16], uint16_t port)$/;"	f	class:IPv6Address
 IPv6Address	dc/address.h	/^class IPv6Address : public IPAddress$/;"	c	namespace:dc
+LEN	dc/http/http11_parser.rl.cc	45;"	d	file:
+LEN	dc/http/httpclient_parser.rl.cc	46;"	d	file:
 Level	dc/log.h	/^        enum Level{$/;"	g	class:dc::LogLevel
 LevelFormatItem	dc/log.cc	/^			LevelFormatItem(const std::string &str=""){}$/;"	f	class:dc::LevelFormatItem
 LevelFormatItem	dc/log.cc	/^	class LevelFormatItem :public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
@@ -568,6 +619,8 @@ Lookup	dc/config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::str
 LookupAny	dc/address.cc	/^Address::ptr Address::LookupAny(const std::string& host, int family, int type, int protocol)$/;"	f	class:Address
 LookupAnyIPAddress	dc/address.cc	/^IPAddress::ptr Address::LookupAnyIPAddress(const std::string& host,$/;"	f	class:Address
 LookupBase	dc/config.cc	/^    ConfigVarBase::ptr Config::LookupBase(const std::string&name){$/;"	f	class:dc::Config
+MARK	dc/http/http11_parser.rl.cc	46;"	d	file:
+MARK	dc/http/httpclient_parser.rl.cc	47;"	d	file:
 MAX_PATH_LEN	dc/address.cc	/^static const size_t MAX_PATH_LEN = sizeof(((sockaddr_un*)0)->sun_path) - 1;$/;"	v	file:
 MainFunc	dc/fiber.cc	/^void Fiber::MainFunc() {$/;"	f	class:dc::Fiber
 MallocStackAllocator	dc/fiber.cc	/^class MallocStackAllocator {$/;"	c	namespace:dc	file:
@@ -577,6 +630,11 @@ Mutex	dc/thread.h	/^	Mutex(){$/;"	f	class:dc::Mutex
 Mutex	dc/thread.h	/^class Mutex : noncopyable{$/;"	c	namespace:dc
 NewLineFormatItem	dc/log.cc	/^			NewLineFormatItem(const std::string &str =""){}$/;"	f	class:dc::NewLineFormatItem
 NewLineFormatItem	dc/log.cc	/^	class NewLineFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+Node	dc/bytearray.cc	/^ByteArray::Node::Node()$/;"	f	class:ByteArray::Node
+Node	dc/bytearray.cc	/^ByteArray::Node::Node(size_t s)$/;"	f	class:ByteArray::Node
+Node	dc/bytearray.h	/^    struct Node {$/;"	s	class:dc::ByteArray
+NotFoundServlet	dc/http/servlet.h	/^	NotFoundServlet() : Servlet("NotFoundServlet") {}$/;"	f	class:dc::http::NotFoundServlet
+NotFoundServlet	dc/http/servlet.h	/^class NotFoundServlet : public Servlet$/;"	c	namespace:dc::http
 NullMutex	dc/thread.h	/^	NullMutex() {}$/;"	f	class:dc::NullMutex
 NullMutex	dc/thread.h	/^class NullMutex : noncopyable{$/;"	c	namespace:dc
 NullRWMutex	dc/thread.h	/^	NullRWMutex() {}$/;"	f	class:dc::NullRWMutex
@@ -649,6 +707,8 @@ PLATFORM_ID	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	497;"	d	file:
 PLATFORM_ID	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	502;"	d	file:
 PLATFORM_ID	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	505;"	d	file:
 PLATFORM_ID	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	509;"	d	file:
+PTR_TO	dc/http/http11_parser.rl.cc	47;"	d	file:
+PTR_TO	dc/http/httpclient_parser.rl.cc	48;"	d	file:
 Person	tests/test_config.cc	/^class Person{$/;"	c	file:
 READY	dc/fiber.h	/^		READY,$/;"	e	enum:dc::Fiber::State
 RM	Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
@@ -711,19 +771,31 @@ ScopeLockImpl	dc/thread.h	/^	ScopeLockImpl(T& mutex):m_mutex(mutex){$/;"	f	struc
 ScopeLockImpl	dc/thread.h	/^struct ScopeLockImpl {$/;"	s	namespace:dc
 Semaphore	dc/thread.cc	/^Semaphore::Semaphore(uint32_t count){$/;"	f	class:dc::Semaphore
 Semaphore	dc/thread.h	/^class Semaphore : noncopyable{$/;"	c	namespace:dc
+Servlet	dc/http/servlet.h	/^	Servlet(const std::string& name) : name_(name) {}$/;"	f	class:dc::http::Servlet
+Servlet	dc/http/servlet.h	/^class Servlet$/;"	c	namespace:dc::http
+ServletDispatch	dc/http/servlet.cc	/^ServletDispatch::ServletDispatch()$/;"	f	class:ServletDispatch
+ServletDispatch	dc/http/servlet.h	/^class ServletDispatch : public Servlet\/\/ resovle to choose which servlet$/;"	c	namespace:dc::http
 SetName	dc/thread.cc	/^void Thread::SetName(const std::string& name){$/;"	f	class:dc::Thread
 SetThis	dc/fiber.cc	/^ void Fiber::SetThis(Fiber* f) {$/;"	f	class:dc::Fiber
 Singleton	dc/singleton.h	/^class Singleton {$/;"	c	namespace:dc
 SingletonPtr	dc/singleton.h	/^class SingletonPtr{$/;"	c	namespace:dc
+Socket	dc/socket.cc	/^Socket::Socket(int family, int type, int protocol)$/;"	f	class:Socket
+Socket	dc/socket.h	/^class Socket : public std::enable_shared_from_this<Socket>, noncopyable$/;"	c	namespace:dc
+SocketStream	dc/socket_stream.cc	/^SocketStream::SocketStream(std::shared_ptr<Socket> sock, bool owner )$/;"	f	class:SocketStream
+SocketStream	dc/socket_stream.h	/^class SocketStream : public Stream$/;"	c	namespace:dc
 Spinlock	dc/thread.h	/^	Spinlock() {$/;"	f	class:dc::Spinlock
 Spinlock	dc/thread.h	/^class Spinlock : noncopyable{$/;"	c	namespace:dc
 State	dc/fiber.h	/^	enum State {$/;"	g	class:dc::Fiber
 StdOutLogAppender	dc/log.h	/^    class StdOutLogAppender : public LogAppender{$/;"	c	namespace:dc
+Stream	dc/stream.h	/^class Stream$/;"	c	namespace:dc
 StringFormatItem	dc/log.cc	/^			StringFormatItem(const std::string & str=""):m_string(str){}$/;"	f	class:dc::StringFormatItem
 StringFormatItem	dc/log.cc	/^	class StringFormatItem :public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+StringToHttpMethod	dc/http/http.cc	/^HttpMethod StringToHttpMethod(const std::string& m)$/;"	f	namespace:dc::http
 TERM	dc/fiber.h	/^		TERM,$/;"	e	enum:dc::Fiber::State
 TabFormatItem	dc/log.cc	/^			TabFormatItem(const std::string &str=""){}$/;"	f	class:dc::TabFormatItem
 TabFormatItem	dc/log.cc	/^	class TabFormatItem :public LogFormatter::FormatItem{$/;"	c	namespace:dc	file:
+TcpServer	dc/tcp_server.cc	/^TcpServer::TcpServer(IOManager* woker,IOManager* awoker )$/;"	f	class:TcpServer
+TcpServer	dc/tcp_server.h	/^class TcpServer : public  std::enable_shared_from_this<TcpServer>$/;"	c	namespace:dc
 Thread	dc/thread.cc	/^Thread::Thread(std::function<void()> cb, const std::string& name)$/;"	f	class:dc::Thread
 Thread	dc/thread.h	/^class Thread : noncopyable$/;"	c	namespace:dc
 ThreadIdFormatItem	dc/log.cc	/^			ThreadIdFormatItem(const std::string &str=""){}$/;"	f	class:dc::ThreadIdFormatItem
@@ -737,6 +809,7 @@ TimerManager	dc/timer.cc	/^TimerManager::TimerManager()$/;"	f	class:TimerManager
 TimerManager	dc/timer.h	/^class TimerManager$/;"	c	namespace:dc
 ToString	dc/log.cc	/^	const char* LogLevel::ToString(LogLevel::Level level)$/;"	f	class:dc::LogLevel
 ToTalFiber	dc/fiber.cc	/^uint64_t Fiber::ToTalFiber() {$/;"	f	class:dc::Fiber
+Type	dc/socket.h	/^	enum Type$/;"	g	class:dc::Socket
 UNKNOWN	dc/log.h	/^            UNKNOWN = 0,$/;"	e	enum:dc::LogLevel::Level
 UnixAddress	dc/address.cc	/^UnixAddress::UnixAddress()$/;"	f	class:UnixAddress
 UnixAddress	dc/address.cc	/^UnixAddress::UnixAddress(const std::string& path)$/;"	f	class:UnixAddress
@@ -749,15 +822,37 @@ Visit	dc/config.cc	/^void Config::Visit(std::function<void(ConfigVarBase::ptr)> 
 WARN	dc/log.h	/^            WARN = 3,$/;"	e	enum:dc::LogLevel::Level
 WriteScopeLockImpl	dc/thread.h	/^	WriteScopeLockImpl(T& mutex):m_mutex(mutex){$/;"	f	struct:dc::WriteScopeLockImpl
 WriteScopeLockImpl	dc/thread.h	/^struct WriteScopeLockImpl {$/;"	s	namespace:dc
+XX	dc/bytearray.cc	259;"	d	file:
+XX	dc/bytearray.cc	291;"	d	file:
 XX	dc/hook.cc	/^	HOOK_FUN(XX);$/;"	v
 XX	dc/hook.cc	179;"	d	file:
 XX	dc/hook.cc	181;"	d	file:
 XX	dc/hook.cc	50;"	d	file:
 XX	dc/hook.cc	52;"	d	file:
+XX	dc/http/http.cc	109;"	d	file:
+XX	dc/http/http.cc	125;"	d	file:
+XX	dc/http/http.cc	127;"	d	file:
+XX	dc/http/http.cc	146;"	d	file:
+XX	dc/http/http.cc	14;"	d	file:
+XX	dc/http/http.cc	20;"	d	file:
+XX	dc/http/http.cc	25;"	d	file:
+XX	dc/http/http.cc	31;"	d	file:
+XX	dc/http/http.cc	34;"	d	file:
+XX	dc/http/http.cc	50;"	d	file:
+XX	dc/http/http.cc	54;"	d	file:
+XX	dc/http/http.cc	9;"	d	file:
+XX	dc/http/http.h	123;"	d
+XX	dc/http/http.h	125;"	d
+XX	dc/http/http.h	131;"	d
+XX	dc/http/http.h	133;"	d
 XX	dc/log.cc	32;"	d	file:
 XX	dc/log.cc	50;"	d	file:
 XX	dc/log.cc	760;"	d	file:
 XX	dc/log.cc	774;"	d	file:
+XX	tests/test_bytearray.cc	39;"	d	file:
+XX	tests/test_bytearray.cc	40;"	d	file:
+XX	tests/test_bytearray.cc	80;"	d	file:
+XX	tests/test_bytearray.cc	8;"	d	file:
 XX	tests/test_config.cc	112;"	d	file:
 XX_X	tests/test_config.cc	120;"	d	file:
 XX_XX	tests/test_config.cc	128;"	d	file:
@@ -765,6 +860,9 @@ YieldToHold	dc/fiber.cc	/^void Fiber::YieldToHold() {$/;"	f	class:dc::Fiber
 YieldToReady	dc/fiber.cc	/^void Fiber::YieldToReady() {$/;"	f	class:dc::Fiber
 _HookIniter	dc/hook.cc	/^	_HookIniter()$/;"	f	struct:_HookIniter
 _HookIniter	dc/hook.cc	/^struct _HookIniter$/;"	s	file:
+_RequestSizeIniter	dc/http/http_parser.cc	/^	_RequestSizeIniter()$/;"	f	struct:__anon1::_RequestSizeIniter
+_RequestSizeIniter	dc/http/http_parser.cc	/^struct _RequestSizeIniter$/;"	s	namespace:__anon1	file:
+__DC_BYTEARRAY_H__	dc/bytearray.h	10;"	d
 __DC_CONFIG_H__	dc/config.h	2;"	d
 __DC_DC_H__	dc/dc.h	2;"	d
 __DC_FIBER_H__	dc/fiber.h	2;"	d
@@ -777,19 +875,37 @@ __DC_UTIL_H__	dc/util.h	2;"	d
 __has_include	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	17;"	d	file:
 __has_include	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	11;"	d	file:
 __log_init	dc/log.cc	/^	static LogIniter __log_init;$/;"	m	namespace:dc	file:
+_http11_common_h	dc/http/http11_common.h	2;"	d
+_init	dc/http/http_parser.cc	/^static _RequestSizeIniter _init;$/;"	m	namespace:__anon1	file:
 accept	dc/hook.cc	/^int accept(int sockfd, struct sockaddr* addr, socklen_t* addrlen)$/;"	f
+accept	dc/socket.cc	/^Socket::ptr Socket::accept()$/;"	f	class:Socket
 addAppender	dc/log.cc	/^	void Logger::addAppender(LogAppender::LogAppenderPtr appender)$/;"	f	class:dc::Logger
+addCapacity	dc/bytearray.cc	/^void ByteArray::addCapacity(size_t size)$/;"	f	class:ByteArray
 addConditionTimer	dc/timer.cc	/^Timer::ptr TimerManager::addConditionTimer(uint64_t ms,$/;"	f	class:TimerManager
 addEvent	dc/ioManager.cc	/^int IOManager::addEvent(int fd, Event event, EventCallback cb)$/;"	f	class:IOManager
+addGlobServlet	dc/http/servlet.cc	/^void ServletDispatch::addGlobServlet(const std::string& uri, FunctionServlet::Callback cb)$/;"	f	class:ServletDispatch
+addGlobServlet	dc/http/servlet.cc	/^void ServletDispatch::addGlobServlet(const std::string& uri, Servlet::ptr servlet)$/;"	f	class:ServletDispatch
 addListener	dc/config.h	/^	uint64_t addListener(on_change_cb cb){$/;"	f	class:dc::ConfigVar
+addServlet	dc/http/servlet.cc	/^void ServletDispatch::addServlet(const std::string& uri, FunctionServlet::Callback cb)$/;"	f	class:ServletDispatch
+addServlet	dc/http/servlet.cc	/^void ServletDispatch::addServlet(const std::string& uri, Servlet::ptr servlet)$/;"	f	class:ServletDispatch
 addTimer	dc/timer.cc	/^Timer::ptr TimerManager::addTimer(uint64_t ms, $/;"	f	class:TimerManager
 addTimer	dc/timer.cc	/^void TimerManager::addTimer(Timer::ptr timer, RWMutexType::WriteLock& lock)$/;"	f	class:TimerManager
 addr_	dc/address.h	/^	sockaddr addr_;$/;"	m	class:dc::UnknownAddress
 addr_	dc/address.h	/^	sockaddr_in addr_;$/;"	m	class:dc::IPv4Address
 addr_	dc/address.h	/^	sockaddr_in6 addr_;$/;"	m	class:dc::IPv6Address
 addr_	dc/address.h	/^	struct sockaddr_un addr_;$/;"	m	class:dc::UnixAddress	typeref:struct:dc::UnixAddress::sockaddr_un
+alive_	dc/http/http_server.h	/^	bool alive_;$/;"	m	class:dc::http::HttpServer
 appenders	dc/log.cc	/^		std::vector<LogAppenderDefine> appenders;$/;"	m	struct:dc::LogDefine	file:
+aworker_	dc/tcp_server.h	/^	IOManager* aworker_;$/;"	m	class:dc::TcpServer
 back	dc/fiber.cc	/^void Fiber::back()$/;"	f	class:dc::Fiber
+baseSize_	dc/bytearray.h	/^    size_t baseSize_;$/;"	m	class:dc::ByteArray
+bind	dc/socket.cc	/^bool Socket::bind(const Address::ptr addr)$/;"	f	class:Socket
+bind	dc/tcp_server.cc	/^bool TcpServer::bind(const std::vector<std::shared_ptr<Address>>& addrs,std::vector<std::shared_ptr<Address>>& fails)$/;"	f	class:TcpServer
+bind	dc/tcp_server.cc	/^bool TcpServer::bind(std::shared_ptr<Address> addr)$/;"	f	class:TcpServer
+body_	dc/http/http.h	/^	std::string body_;$/;"	m	class:dc::http::HttpRequest
+body_	dc/http/http.h	/^	std::string body_;$/;"	m	class:dc::http::HttpResponse
+body_start	dc/http/http11_parser.h	/^  size_t body_start;$/;"	m	struct:http_parser
+body_start	dc/http/httpclient_parser.h	/^  size_t body_start;$/;"	m	struct:httpclient_parser
 broadcastAddress	dc/address.cc	/^IPAddress::ptr IPv4Address::broadcastAddress(uint32_t prefix_len)  $/;"	f	class:IPv4Address
 broadcastAddress	dc/address.cc	/^IPAddress::ptr IPv6Address::broadcastAddress(uint32_t prefix_len)  $/;"	f	class:IPv6Address
 byteswap	dc/endian.h	/^typename std::enable_if<sizeof(T) == sizeof(uint16_t), T>::type byteswap(T value)$/;"	f	namespace:dc
@@ -799,23 +915,58 @@ byteswapOnBigEndian	dc/endian.h	/^T byteswapOnBigEndian(T t)$/;"	f	namespace:dc
 byteswapOnLittleEndian	dc/endian.h	/^T byteswapOnLittleEndian(T t)$/;"	f	namespace:dc
 call	dc/fiber.cc	/^void Fiber::call() {$/;"	f	class:dc::Fiber
 cancel	dc/timer.cc	/^bool Timer::cancel()$/;"	f	class:Timer
+cancelAccept	dc/socket.cc	/^bool Socket::cancelAccept()$/;"	f	class:Socket
 cancelAll	dc/ioManager.cc	/^bool IOManager::cancelAll(int fd)$/;"	f	class:IOManager
+cancelAll	dc/socket.cc	/^bool Socket::cancelAll()$/;"	f	class:Socket
 cancelEvent	dc/ioManager.cc	/^bool IOManager::cancelEvent(int fd, Event event)$/;"	f	class:IOManager
+cancelRead	dc/socket.cc	/^bool Socket::cancelRead()$/;"	f	class:Socket
+cancelWrite	dc/socket.cc	/^bool Socket::cancelWrite()$/;"	f	class:Socket
 cancelled	dc/hook.cc	/^	int cancelled;$/;"	m	struct:timer_info	file:
+capacity_	dc/bytearray.h	/^    size_t capacity_;$/;"	m	class:dc::ByteArray
 cb	dc/ioManager.h	/^            std::function<void()>cb;\/\/event callback func$/;"	m	struct:dc::IOManager::FdContext::EventContext
 cb	dc/scheduler.h	/^		std::function<void()> cb;$/;"	m	struct:dc::Scheduler::FiberAndThread
+cb_	dc/http/servlet.h	/^	Callback cb_;$/;"	m	class:dc::http::FunctionServlet
 cb_	dc/timer.h	/^	Callback cb_;$/;"	m	class:dc::Timer
+charsToHttpMethod	dc/http/http.cc	/^HttpMethod charsToHttpMethod(const char* m)$/;"	f	namespace:dc::http
+check	dc/http/httpclient_parser.rl.cc	49;"	d	file:
+checkGetAs	dc/http/http.h	/^bool checkGetAs(const Map& m, const std::string& key, T& val, const T def = T())$/;"	f	namespace:dc::http
+checkGetCookieAs	dc/http/http.h	/^	bool checkGetCookieAs(const std::string& key, T& val, const T& def = T())$/;"	f	class:dc::http::HttpRequest
+checkGetHeaderAs	dc/http/http.h	/^	bool checkGetHeaderAs(const std::string& key, T& val, const T& def = T())$/;"	f	class:dc::http::HttpRequest
+checkGetHeaderAs	dc/http/http.h	/^	bool checkGetHeaderAs(const std::string& key, T& val, const T& def = T())$/;"	f	class:dc::http::HttpResponse
+checkGetParamAs	dc/http/http.h	/^	bool checkGetParamAs(const std::string& key, T& val, const T& def = T())$/;"	f	class:dc::http::HttpRequest
+chunk_size	dc/http/httpclient_parser.h	/^  element_cb chunk_size;$/;"	m	struct:httpclient_parser
+chunked	dc/http/httpclient_parser.h	/^  int chunked;$/;"	m	struct:httpclient_parser
+chunks_done	dc/http/httpclient_parser.h	/^  int chunks_done;$/;"	m	struct:httpclient_parser
+clear	dc/bytearray.cc	/^void ByteArray::clear()$/;"	f	class:ByteArray
 clearAppenders	dc/log.cc	/^	void Logger::clearAppenders(){$/;"	f	class:dc::Logger
 clearListener	dc/config.h	/^	void clearListener(){$/;"	f	class:dc::ConfigVar
 close	dc/hook.cc	/^int close(int fd)$/;"	f
+close	dc/http/httpclient_parser.h	/^  int close;$/;"	m	struct:httpclient_parser
+close	dc/socket.cc	/^bool Socket::close()$/;"	f	class:Socket
+close	dc/socket_stream.cc	/^void SocketStream::close()$/;"	f	class:SocketStream
+close_	dc/http/http.h	/^	bool close_;$/;"	m	class:dc::http::HttpRequest
+close_	dc/http/http.h	/^	bool close_;$/;"	m	class:dc::http::HttpResponse
 connect	dc/hook.cc	/^int connect(int sockfd, const struct sockaddr* addr, socklen_t addrlen)$/;"	f
+connect	dc/socket.cc	/^bool Socket::connect(const Address::ptr addr, uint64_t timeout_ms)$/;"	f	class:Socket
 connect_with_timeout	dc/hook.cc	/^int connect_with_timeout(int sockfd, const struct sockaddr* addr, socklen_t addrlen, uint64_t timeout_ms)$/;"	f
 const	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+content_len	dc/http/http11_parser.h	/^  int content_len;$/;"	m	struct:http_parser
+content_len	dc/http/httpclient_parser.h	/^  int content_len;$/;"	m	struct:httpclient_parser
 contextResize	dc/ioManager.cc	/^void IOManager::contextResize(size_t size)$/;"	f	class:IOManager
+cookies_	dc/http/http.h	/^	std::map<std::string, std::string, CaseInsensitiveLess> cookies_;$/;"	m	class:dc::http::HttpRequest
 count	tests/test_thread.cc	/^int count = 0;$/;"	v
+cs	dc/http/http11_parser.h	/^  int cs;$/;"	m	struct:http_parser
+cs	dc/http/httpclient_parser.h	/^  int cs;$/;"	m	struct:httpclient_parser
+cur_	dc/bytearray.h	/^    Node* cur_;$/;"	m	class:dc::ByteArray
+data	dc/http/http11_parser.h	/^  void *data;$/;"	m	struct:http_parser
+data	dc/http/httpclient_parser.h	/^  void *data;$/;"	m	struct:httpclient_parser
+data_	dc/http/http_parser.h	/^	HttpRequest::ptr data_;$/;"	m	class:dc::http::HttpRequestParser
+data_	dc/http/http_parser.h	/^	HttpResponse::ptr data_;$/;"	m	class:dc::http::HttpResponseParser
 datas_	dc/fd_manager.h	/^	std::vector<FdCtx::ptr> datas_;$/;"	m	class:dc::FdManager
+datas_	dc/http/servlet.h	/^	std::unordered_map<std::string, Servlet::ptr> datas_;$/;"	m	class:dc::http::ServletDispatch
 dc	dc/address.cc	/^namespace dc$/;"	n	file:
 dc	dc/address.h	/^namespace dc$/;"	n
+dc	dc/bytearray.h	/^namespace dc {$/;"	n
 dc	dc/config.cc	/^namespace dc{$/;"	n	file:
 dc	dc/config.h	/^namespace dc{$/;"	n
 dc	dc/endian.h	/^namespace dc$/;"	n
@@ -824,12 +975,22 @@ dc	dc/fiber.cc	/^namespace dc {$/;"	n	file:
 dc	dc/fiber.h	/^namespace dc{$/;"	n
 dc	dc/hook.cc	/^namespace dc$/;"	n	file:
 dc	dc/hook.h	/^namespace dc$/;"	n
+dc	dc/http/http.cc	/^namespace dc$/;"	n	file:
+dc	dc/http/http.h	/^namespace dc$/;"	n
+dc	dc/http/http_parser.h	/^namespace dc$/;"	n
+dc	dc/http/http_server.h	/^namespace dc$/;"	n
+dc	dc/http/servlet.h	/^namespace dc$/;"	n
+dc	dc/http/session.h	/^namespace dc$/;"	n
 dc	dc/ioManager.h	/^namespace dc$/;"	n
 dc	dc/log.cc	/^namespace dc$/;"	n	file:
 dc	dc/log.h	/^namespace dc{$/;"	n
 dc	dc/scheduler.cc	/^namespace dc {$/;"	n	file:
 dc	dc/scheduler.h	/^namespace dc {$/;"	n
 dc	dc/singleton.h	/^namespace dc{$/;"	n
+dc	dc/socket.h	/^namespace dc$/;"	n
+dc	dc/socket_stream.h	/^namespace dc$/;"	n
+dc	dc/stream.h	/^namespace dc$/;"	n
+dc	dc/tcp_server.h	/^namespace dc$/;"	n
 dc	dc/thread.cc	/^namespace dc{$/;"	n	file:
 dc	dc/thread.h	/^namespace dc{$/;"	n
 dc	dc/timer.h	/^namespace dc$/;"	n
@@ -837,15 +998,31 @@ dc	dc/util.cc	/^namespace dc$/;"	n	file:
 dc	dc/util.h	/^namespace dc{$/;"	n
 dc	tests/test_config.cc	/^namespace dc{$/;"	n	file:
 debug	dc/log.cc	/^	void Logger::debug(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+default_	dc/http/servlet.h	/^	Servlet::ptr default_;$/;"	m	class:dc::http::ServletDispatch
 defaultfunc	dc/fiber.cc	/^void defaultfunc()$/;"	f	namespace:dc
 del	dc/fd_manager.cc	/^void FdManager::del(int fd)$/;"	f	class:FdManager
 delAppender	dc/log.cc	/^	void Logger::delAppender(LogAppender::LogAppenderPtr appender)$/;"	f	class:dc::Logger
+delCookie	dc/http/http.cc	/^void HttpRequest::delCookie(const std::string& key)$/;"	f	class:HttpRequest
 delEvent	dc/ioManager.cc	/^bool IOManager::delEvent(int fd, Event event)$/;"	f	class:IOManager
+delHeader	dc/http/http.cc	/^void HttpRequest::delHeader(const std::string& key)$/;"	f	class:HttpRequest
+delHeader	dc/http/http.cc	/^void HttpResponse::delHeader(const std::string& key)$/;"	f	class:HttpResponse
 delListener	dc/config.h	/^	void delListener(uint64_t key){$/;"	f	class:dc::ConfigVar
+delParam	dc/http/http.cc	/^void HttpRequest::delParam(const std::string& key)$/;"	f	class:HttpRequest
+dispatch_	dc/http/http_server.h	/^	ServletDispatch::ptr dispatch_;$/;"	m	class:dc::http::HttpServer
 do_io	dc/hook.cc	/^static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,$/;"	f	file:
+dump	dc/http/http.cc	/^std::ostream& HttpRequest::dump (std::ostream& os) const$/;"	f	class:HttpRequest
+dump	dc/http/http.cc	/^std::ostream& HttpResponse::dump(std::ostream& os) const$/;"	f	class:HttpResponse
+dump	dc/socket.cc	/^std::ostream& Socket::dump(std::ostream& os) const$/;"	f	class:Socket
+element_cb	dc/http/http11_common.h	/^typedef void (*element_cb)(void *data, const char *at, size_t length);$/;"	t
+endian_	dc/bytearray.h	/^    int8_t endian_;$/;"	m	class:dc::ByteArray
 epfd_	dc/ioManager.h	/^    int epfd_;$/;"	m	class:dc::IOManager
 error	dc/log.cc	/^	void Logger::error(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+error_	dc/http/http_parser.h	/^	int error_;$/;"	m	class:dc::http::HttpRequestParser
+error_	dc/http/http_parser.h	/^	int error_;$/;"	m	class:dc::http::HttpResponseParser
 events	dc/ioManager.h	/^        Event events = kNone;$/;"	m	struct:dc::IOManager::FdContext
+execute	dc/http/http_parser.cc	/^size_t HttpRequestParser::execute(char* data, size_t len )$/;"	f	class:HttpRequestParser
+execute	dc/http/http_parser.cc	/^size_t HttpResponseParser::execute(char* data, size_t len )$/;"	f	class:HttpResponseParser
+family_	dc/socket.h	/^	int family_;$/;"	m	class:dc::Socket
 fatal	dc/log.cc	/^	void Logger::fatal(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
 fcntl	dc/hook.cc	/^int fcntl(int fd, int cmd, ...)$/;"	f
 fd	dc/ioManager.h	/^        int fd; \/\/associated event handle$/;"	m	struct:dc::IOManager::FdContext
@@ -853,6 +1030,11 @@ fdContexts_	dc/ioManager.h	/^    std::vector<FdContext*>fdContexts_;$/;"	m	class
 fd_	dc/fd_manager.h	/^	int fd_;$/;"	m	class:dc::FdCtx
 fiber	dc/ioManager.h	/^            Fiber::ptr fiber;\/\/event coroutine$/;"	m	struct:dc::IOManager::FdContext::EventContext
 fiber	dc/scheduler.h	/^		Fiber::ptr fiber;$/;"	m	struct:dc::Scheduler::FiberAndThread
+field_cb	dc/http/http11_common.h	/^typedef void (*field_cb)(void *data, const char *field, size_t flen, const char *value, size_t vlen);$/;"	t
+field_len	dc/http/http11_parser.h	/^  size_t field_len;$/;"	m	struct:http_parser
+field_len	dc/http/httpclient_parser.h	/^  size_t field_len;$/;"	m	struct:httpclient_parser
+field_start	dc/http/http11_parser.h	/^  size_t field_start;$/;"	m	struct:http_parser
+field_start	dc/http/httpclient_parser.h	/^  size_t field_start;$/;"	m	struct:httpclient_parser
 file	dc/log.cc	/^		std::string file;$/;"	m	struct:dc::LogAppenderDefine	file:
 format	dc/log.cc	/^	std::ostream& LogFormatter::format(std::ostream& ofs, std::shared_ptr<Logger> plgtr,LogEvent::LogEventPtr event,LogLevel::Level level){$/;"	f	class:dc::LogFormatter
 format	dc/log.cc	/^	std::string LogFormatter::format(std::shared_ptr<Logger> plgtr,LogEvent::LogEventPtr event,LogLevel::Level level)$/;"	f	class:dc::LogFormatter
@@ -860,12 +1042,16 @@ format	dc/log.cc	/^	void LogEvent::format(const char *fmt, ...){$/;"	f	class:dc:
 format	dc/log.cc	/^	void LogEvent::format(const char*fmt,va_list al){$/;"	f	class:dc::LogEvent
 formatter	dc/log.cc	/^		std::string formatter;$/;"	m	struct:dc::LogAppenderDefine	file:
 formatter	dc/log.cc	/^		std::string formatter;$/;"	m	struct:dc::LogDefine	file:
+fragment	dc/http/http11_parser.h	/^  element_cb fragment;$/;"	m	struct:http_parser
+fragment_	dc/http/http.h	/^	std::string fragment_;$/;"	m	class:dc::http::HttpRequest
 fun1	tests/test_thread.cc	/^void fun1() {$/;"	f
 fun2	tests/test_thread.cc	/^void fun2() {$/;"	f
 fun3	tests/test_thread.cc	/^void fun3() {$/;"	f
 g_fiber_stack_size	dc/fiber.cc	/^static ConfigVar<uint32_t>::ptr g_fiber_stack_size = Config::Lookup<uint32_t>("fiber.stack_size", 1024 * 1024, "fiber stack size");$/;"	m	namespace:dc	file:
 g_float_value_config	tests/test_config.cc	/^dc::ConfigVar<float>:: ptr g_float_value_config = dc::Config::Lookup("system.value",(float)8080.11,"system value");$/;"	v
 g_float_valuex_config	tests/test_config.cc	/^dc::ConfigVar<float>:: ptr g_float_valuex_config = dc::Config::Lookup("system.port",(float)8070.0f,"system port");$/;"	v
+g_http_request_buffer_size	dc/http/http_parser.cc	/^static ConfigVar<uint64_t>::ptr g_http_request_buffer_size = Config::Lookup("http.request.buffer_size",(uint64_t)(4 * 1024ull), "http request buffer size");$/;"	v	file:
+g_http_request_max_body_size	dc/http/http_parser.cc	/^static ConfigVar<uint64_t>::ptr g_http_request_max_body_size = Config::Lookup("http.request.max_body_size",(uint64_t)(64 * 1024ull * 1024ull), "http request max body size");$/;"	v	file:
 g_int_list_value_config	tests/test_config.cc	/^dc::ConfigVar<std::list<int>>:: ptr g_int_list_value_config = dc::Config::Lookup("system.int_list",std::list<int>{3,5},"system int list");$/;"	v
 g_int_set_value_config	tests/test_config.cc	/^dc::ConfigVar<std::set<int>>:: ptr g_int_set_value_config = dc::Config::Lookup("system.int_set",std::set<int>{99,111},"system int set");$/;"	v
 g_int_unordered_set_value_config	tests/test_config.cc	/^dc::ConfigVar<std::unordered_set<int>>:: ptr g_int_unordered_set_value_config = dc::Config::Lookup("system.int_unordered_set",std::unordered_set<int>{111,333,15},"system int unordered_set");$/;"	v
@@ -873,22 +1059,34 @@ g_int_value_config	tests/test_config.cc	/^dc::ConfigVar<int>:: ptr g_int_value_c
 g_int_vec_value_config	tests/test_config.cc	/^dc::ConfigVar<std::vector<int>>:: ptr g_int_vec_value_config = dc::Config::Lookup("system.int_vec",std::vector<int>{1,2},"system int vec");$/;"	v
 g_log_define	dc/log.cc	/^    dc::ConfigVar<std::set<LogDefine>>::ptr g_log_define = dc::Config::Lookup("logs",std::set<LogDefine>(),"logs config");$/;"	m	namespace:dc	file:
 g_logger	dc/address.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
+g_logger	dc/bytearray.cc	/^static	Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
 g_logger	dc/fiber.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	m	namespace:dc	file:
 g_logger	dc/hook.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
+g_logger	dc/http/http_parser.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
+g_logger	dc/http/http_server.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
+g_logger	dc/http/servlet.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
 g_logger	dc/ioManager.cc	/^dc::Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v
 g_logger	dc/scheduler.cc	/^static dc::Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	m	namespace:dc	file:
+g_logger	dc/socket.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
+g_logger	dc/tcp_server.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	v	file:
 g_logger	dc/thread.cc	/^static dc::Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	m	namespace:dc	file:
 g_logger	dc/util.cc	/^	dc::Logger::LoggerPtr g_logger = DC_LOG_NAME("system");$/;"	m	namespace:dc	file:
 g_logger	tests/test_address.cc	/^dc::Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v
+g_logger	tests/test_bytearray.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v	file:
 g_logger	tests/test_fiber.cc	/^dc::Logger::LoggerPtr  g_logger = DC_LOG_ROOT();$/;"	v
+g_logger	tests/test_http_parser.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v	file:
+g_logger	tests/test_http_server.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v	file:
 g_logger	tests/test_iomanager.cc	/^dc::Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v
 g_logger	tests/test_scheduler.cc	/^dc::Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v
+g_logger	tests/test_socket.cc	/^static dc::Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v	file:
+g_logger	tests/test_tcp.cc	/^static Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v	file:
 g_logger	tests/test_thread.cc	/^dc::Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v
 g_logger	tests/test_util.cc	/^dc::Logger::LoggerPtr g_logger = DC_LOG_ROOT();$/;"	v
 g_mperson	tests/test_config.cc	/^dc::ConfigVar<std::map<std::string,Person>>::ptr g_mperson = dc::Config::Lookup("class.map",std::map<std::string,Person>(),"system map person");$/;"	v
 g_str_int_map_value_config	tests/test_config.cc	/^dc::ConfigVar<std::map<std::string,int>>:: ptr g_str_int_map_value_config = dc::Config::Lookup("system.str_int_map",std::map<std::string,int>{{"k",30}},"system str_int map");$/;"	v
 g_str_int_unordered_map_value_config	tests/test_config.cc	/^dc::ConfigVar<std::unordered_map<std::string,int>>:: ptr g_str_int_unordered_map_value_config = dc::Config::Lookup("system.str_int_unordered_map",std::unordered_map<std::string,int>{{"j",31}},"system str_int unordered_map");$/;"	v
 g_tcp_connect_timeout	dc/hook.cc	/^static ConfigVar<int>::ptr g_tcp_connect_timeout = $/;"	m	namespace:dc	file:
+g_tcp_server_read_timeout	dc/tcp_server.cc	/^static ConfigVar<uint64_t>::ptr g_tcp_server_read_timeout = $/;"	v	file:
 g_timer	tests/test_iomanager.cc	/^Timer::ptr g_timer;$/;"	v
 get	dc/fd_manager.cc	/^FdCtx::ptr FdManager::get(int fd, bool auto_create)$/;"	f	class:FdManager
 getAddr	dc/address.cc	/^const sockaddr* IPv4Address::getAddr() const  $/;"	f	class:IPv4Address
@@ -899,47 +1097,154 @@ getAddrlen	dc/address.cc	/^socklen_t IPv4Address::getAddrlen() const  $/;"	f	cla
 getAddrlen	dc/address.cc	/^socklen_t IPv6Address::getAddrlen() const  $/;"	f	class:IPv6Address
 getAddrlen	dc/address.cc	/^socklen_t UnixAddress::getAddrlen() const$/;"	f	class:UnixAddress
 getAddrlen	dc/address.cc	/^socklen_t UnknownAddress::getAddrlen() const  $/;"	f	class:UnknownAddress
+getAs	dc/http/http.h	/^T  getAs(const Map& m, const std::string& key, const T def = T())$/;"	f	namespace:dc::http
+getBaseSize	dc/bytearray.h	/^    size_t getBaseSize() const { return baseSize_;}$/;"	f	class:dc::ByteArray
+getBody	dc/http/http.h	/^	const std::string& getBody() const { return body_; }$/;"	f	class:dc::http::HttpRequest
+getBody	dc/http/http.h	/^	const std::string& getBody() const { return body_; }$/;"	f	class:dc::http::HttpResponse
+getCapacity	dc/bytearray.h	/^    size_t getCapacity() const { return capacity_ - position_;}$/;"	f	class:dc::ByteArray
+getClose	dc/http/http.h	/^	bool getClose() const { return close_; }$/;"	f	class:dc::http::HttpRequest
 getContent	dc/log.h	/^        const std::string getContent()const {return m_ss.str();}$/;"	f	class:dc::LogEvent
+getContentLength	dc/http/http_parser.cc	/^uint64_t HttpRequestParser::getContentLength() const$/;"	f	class:HttpRequestParser
+getContentLength	dc/http/http_parser.cc	/^uint64_t HttpResponseParser::getContentLength() const$/;"	f	class:HttpResponseParser
 getContext	dc/ioManager.h	/^        EventContext& getContext(Event event)$/;"	f	struct:dc::IOManager::FdContext
+getCookie	dc/http/http.cc	/^std::string HttpRequest::getCookie(const std::string& key, const std::string def )$/;"	f	class:HttpRequest
+getCookieAs	dc/http/http.h	/^	T getCookieAs(const std::string& key, const T& def = T())$/;"	f	class:dc::http::HttpRequest
+getCookies	dc/http/http.h	/^	const Map& getCookies() const { return cookies_; }$/;"	f	class:dc::http::HttpRequest
+getData	dc/http/http_parser.h	/^	HttpRequest::ptr getData() { return data_; }$/;"	f	class:dc::http::HttpRequestParser
+getData	dc/http/http_parser.h	/^	HttpResponse::ptr getData() { return data_; }$/;"	f	class:dc::http::HttpResponseParser
+getDefault	dc/http/servlet.h	/^	Servlet::ptr getDefault() const { return default_; }$/;"	f	class:dc::http::ServletDispatch
 getDescription	dc/config.h	/^    const std::string &getDescription()const {return m_description;}$/;"	f	class:dc::ConfigVarBase
 getElapse	dc/log.h	/^        uint32_t getElapse()const {return m_elapse;}$/;"	f	class:dc::LogEvent
+getError	dc/socket.cc	/^int Socket::getError()$/;"	f	class:Socket
 getEvent	dc/log.h	/^        LogEvent::LogEventPtr getEvent()const {return m_event;}$/;"	f	class:dc::LogEventWrap
 getFamily	dc/address.cc	/^int Address::getFamily() const $/;"	f	class:Address
+getFamily	dc/socket.h	/^	int getFamily() const { return family_; }  $/;"	f	class:dc::Socket
 getFiberId	dc/log.h	/^        uint32_t getFiberId()const {return m_fiberId;}$/;"	f	class:dc::LogEvent
 getFilename	dc/log.h	/^        const char *getFilename()const {return m_filename;}$/;"	f	class:dc::LogEvent
 getFormatter	dc/log.cc	/^	LogFormatter::LogFormatterPtr LogAppender::getFormatter() {$/;"	f	class:dc::LogAppender
 getFormatter	dc/log.h	/^		LogFormatter::LogFormatterPtr getFormatter()const {return m_formatter;}$/;"	f	class:dc::Logger
+getGlobServlet	dc/http/servlet.cc	/^Servlet::ptr ServletDispatch::getGlobServlet(const std::string& uri)$/;"	f	class:ServletDispatch
+getHeader	dc/http/http.cc	/^std::string HttpRequest::getHeader(const std::string& key, const std::string def )$/;"	f	class:HttpRequest
+getHeader	dc/http/http.cc	/^std::string HttpResponse::getHeader(const std::string& key, const std::string def)$/;"	f	class:HttpResponse
+getHeaderAs	dc/http/http.h	/^	T getHeaderAs(const std::string& key, const T& def = T())$/;"	f	class:dc::http::HttpRequest
+getHeaderAs	dc/http/http.h	/^	T getHeaderAs(const std::string& key, const T& def = T())$/;"	f	class:dc::http::HttpResponse
+getHeaders	dc/http/http.h	/^	const Map& getHeaders() const { return headers_; }$/;"	f	class:dc::http::HttpRequest
+getHeaders	dc/http/http.h	/^	const Map& getHeaders() const { return headers_; }$/;"	f	class:dc::http::HttpResponse
 getId	dc/fiber.h	/^	uint64_t getId() const {return m_id;}$/;"	f	class:dc::Fiber
 getId	dc/thread.h	/^	pid_t getId() const { return m_id;}$/;"	f	class:dc::Thread
 getLevel	dc/log.h	/^        LogLevel::Level getLevel() const { return m_level;}$/;"	f	class:dc::Logger
 getLevel	dc/log.h	/^        LogLevel::Level getLevel() const {return m_level;}$/;"	f	class:dc::LogEvent
 getLine	dc/log.h	/^        int32_t getLine()const {return m_line;}$/;"	f	class:dc::LogEvent
 getListener	dc/config.h	/^	on_change_cb getListener(uint64_t key){$/;"	f	class:dc::ConfigVar
+getLocalAddress	dc/socket.cc	/^Address::ptr Socket::getLocalAddress()$/;"	f	class:Socket
 getLogger	dc/log.cc	/^	Logger::LoggerPtr LoggerManager::getLogger(std::string loggerName){$/;"	f	class:dc::LoggerManager
 getLogger	dc/log.h	/^        std::shared_ptr<Logger> getLogger()const {return m_logger;}$/;"	f	class:dc::LogEvent
+getMatchedServlet	dc/http/servlet.cc	/^Servlet::ptr ServletDispatch::getMatchedServlet(const std::string& uri)$/;"	f	class:ServletDispatch
+getMethod	dc/http/http.h	/^	HttpMethod getMethod() const { return method_; }$/;"	f	class:dc::http::HttpRequest
 getName	dc/config.h	/^    const std::string &getName()const{return m_name;}$/;"	f	class:dc::ConfigVarBase
 getName	dc/log.h	/^        const std::string& getName() const {return m_name;}$/;"	f	class:dc::Logger
 getName	dc/scheduler.h	/^	const std::string& getName() const {return m_name;}$/;"	f	class:dc::Scheduler
+getName	dc/tcp_server.h	/^	std::string getName() const { return name_; }$/;"	f	class:dc::TcpServer
 getName	dc/thread.h	/^	const std::string& getName() const {return m_name;}\/\/获取线程名$/;"	f	class:dc::Thread
 getNextTimer	dc/timer.cc	/^uint64_t TimerManager::getNextTimer()$/;"	f	class:TimerManager
+getOption	dc/socket.cc	/^bool Socket::getOption(int level, int option, void* result, size_t*len)$/;"	f	class:Socket
+getOption	dc/socket.h	/^	bool getOption(int level, int option, T& result)$/;"	f	class:dc::Socket
+getParam	dc/http/http.cc	/^std::string HttpRequest::getParam(const std::string& key, const std::string def )$/;"	f	class:HttpRequest
+getParamAs	dc/http/http.h	/^	T getParamAs(const std::string& key, const T& def = T())$/;"	f	class:dc::http::HttpRequest
+getParams	dc/http/http.h	/^	const Map& getParams() const { return params_; }$/;"	f	class:dc::http::HttpRequest
+getPath	dc/http/http.h	/^	const std::string& getPath() const { return path_; }$/;"	f	class:dc::http::HttpRequest
 getPattern	dc/log.h	/^	const std::string getPattern()const {return m_pattern;}$/;"	f	class:dc::LogFormatter
-getPort	dc/address.cc	/^uint32_t IPv4Address::getPort() const  $/;"	f	class:IPv4Address
-getPort	dc/address.cc	/^uint32_t IPv6Address::getPort() const  $/;"	f	class:IPv6Address
+getPeerAddress	dc/socket.cc	/^Address::ptr Socket::getPeerAddress()$/;"	f	class:Socket
+getPort	dc/address.cc	/^uint16_t IPv4Address::getPort() const  $/;"	f	class:IPv4Address
+getPort	dc/address.cc	/^uint16_t IPv6Address::getPort() const  $/;"	f	class:IPv6Address
+getPosition	dc/bytearray.h	/^    size_t getPosition() const { return position_;}$/;"	f	class:dc::ByteArray
+getProtocol	dc/socket.h	/^	int getProtocol() const { return protocol_; }$/;"	f	class:dc::Socket
+getQuery	dc/http/http.h	/^	const std::string& getQuery() const { return query_; }$/;"	f	class:dc::http::HttpRequest
+getReadBuffers	dc/bytearray.cc	/^uint64_t ByteArray::getReadBuffers(std::vector<iovec>& buffers, uint64_t len) const$/;"	f	class:ByteArray
+getReadBuffers	dc/bytearray.cc	/^uint64_t ByteArray::getReadBuffers(std::vector<iovec>& buffers, uint64_t len, uint64_t position) const$/;"	f	class:ByteArray
+getReadSize	dc/bytearray.h	/^    size_t getReadSize() const { return size_ - position_;}$/;"	f	class:dc::ByteArray
+getReadTimeout	dc/tcp_server.h	/^	uint64_t getReadTimeout() const { return readTimeout_;  }$/;"	f	class:dc::TcpServer
+getReason	dc/http/http.h	/^	const std::string& getReason() const { return reason_; }$/;"	f	class:dc::http::HttpResponse
+getRecvTimeout	dc/socket.cc	/^int64_t Socket::getRecvTimeout()$/;"	f	class:Socket
 getRoot	dc/log.h	/^        Logger::LoggerPtr getRoot()const {return m_rootLogger;}$/;"	f	class:dc::LoggerManager
+getSendTimeout	dc/socket.cc	/^int64_t Socket::getSendTimeout()$/;"	f	class:Socket
+getServlet	dc/http/servlet.cc	/^Servlet::ptr ServletDispatch::getServlet(const std::string& uri)$/;"	f	class:ServletDispatch
+getServletDispatch	dc/http/http_server.h	/^	ServletDispatch::ptr getServletDispatch() const { return dispatch_; }$/;"	f	class:dc::http::HttpServer
+getSize	dc/bytearray.h	/^    size_t getSize() const { return size_;}$/;"	f	class:dc::ByteArray
+getSocket	dc/socket.h	/^	int getSocket() const { return sock_; }$/;"	f	class:dc::Socket
 getSstream	dc/log.cc	/^	std::stringstream& LogEventWrap::getSstream(){return m_event->getSstream();}$/;"	f	class:dc::LogEventWrap
 getSstream	dc/log.h	/^        std::stringstream &getSstream() {return m_ss;}$/;"	f	class:dc::LogEvent
 getState	dc/fiber.h	/^	State getState() const {return m_state;}$/;"	f	class:dc::Fiber
+getStatus	dc/http/http.h	/^	HttpStatus getStatus() const { return status_; }$/;"	f	class:dc::http::HttpRequest
+getStatus	dc/http/http.h	/^	HttpStatus getStatus() const { return status_; }$/;"	f	class:dc::http::HttpResponse
 getSysNonblock	dc/fd_manager.h	/^	bool getSysNonblock() const { return isSysNonblock_; }$/;"	f	class:dc::FdCtx
 getThreadId	dc/log.h	/^        uint32_t getThreadId()const {return m_threadId;}$/;"	f	class:dc::LogEvent
 getThreadName	dc/log.h	/^		const std::string& getThreadName() const {return m_threadName;}$/;"	f	class:dc::LogEvent
 getTime	dc/log.h	/^        uint32_t getTime()const {return m_time;}$/;"	f	class:dc::LogEvent
 getTimeout	dc/fd_manager.cc	/^uint64_t FdCtx::getTimeout(int type)$/;"	f	class:FdCtx
+getType	dc/socket.h	/^	int getType() const { return type_; } $/;"	f	class:dc::Socket
 getUseNonblock	dc/fd_manager.h	/^	bool getUseNonblock() const { return isUserNonblock_; } $/;"	f	class:dc::FdCtx
 getValue	dc/config.h	/^    const T getValue(){$/;"	f	class:dc::ConfigVar
+getVersion	dc/http/http.h	/^	uint8_t getVersion() const { return version_; }$/;"	f	class:dc::http::HttpRequest
+getVersion	dc/http/http.h	/^	uint8_t getVersion() const { return version_; }$/;"	f	class:dc::http::HttpResponse
+getWriteBuffers	dc/bytearray.cc	/^uint64_t ByteArray::getWriteBuffers(std::vector<iovec>& buffers, uint64_t len)$/;"	f	class:ByteArray
 getsockopt	dc/hook.cc	/^int getsockopt(int sockfd, int level, int optname, void* optval, socklen_t * optlen)$/;"	f
+globs_	dc/http/servlet.h	/^	std::vector<Entry> globs_;$/;"	m	class:dc::http::ServletDispatch
+handle	dc/http/servlet.cc	/^int32_t FunctionServlet::handle(HttpRequest::ptr request,HttpResponse::ptr response,HttpSession::ptr session)$/;"	f	class:FunctionServlet
+handle	dc/http/servlet.cc	/^int32_t NotFoundServlet::handle( HttpRequest::ptr req, HttpResponse::ptr resp, HttpSession::ptr session)$/;"	f	class:NotFoundServlet
+handle	dc/http/servlet.cc	/^int32_t ServletDispatch::handle(HttpRequest::ptr request,HttpResponse::ptr response,HttpSession::ptr session)$/;"	f	class:ServletDispatch
+handleClient	dc/http/http_server.cc	/^void HttpServer::handleClient(Socket::ptr client)$/;"	f	class:HttpServer
+handleClient	dc/tcp_server.cc	/^void TcpServer::handleClient(std::shared_ptr<Socket> client)$/;"	f	class:TcpServer
+handleClient	tests/test_echo.cc	/^void EchoServer::handleClient(Socket::ptr client)$/;"	f	class:EchoServer
+hasCookie	dc/http/http.cc	/^bool HttpRequest::hasCookie(const std::string& key, std::string* val)$/;"	f	class:HttpRequest
+hasError	dc/http/http_parser.cc	/^int HttpRequestParser::hasError() const$/;"	f	class:HttpRequestParser
+hasError	dc/http/http_parser.cc	/^int HttpResponseParser::hasError() const$/;"	f	class:HttpResponseParser
+hasHeader	dc/http/http.cc	/^bool HttpRequest::hasHeader(const std::string& key, std::string* val)$/;"	f	class:HttpRequest
+hasHeader	dc/http/http.cc	/^bool HttpResponse::hasHeader(const std::string& key, std::string* val)$/;"	f	class:HttpResponse
 hasIdleThreads	dc/scheduler.h	/^	bool hasIdleThreads() { return m_idleThreadCount > 0; }$/;"	f	class:dc::Scheduler
+hasParam	dc/http/http.cc	/^bool HttpRequest::hasParam(const std::string& key, std::string* val)$/;"	f	class:HttpRequest
 hasTimer	dc/timer.h	/^	bool hasTimer() $/;"	f	class:dc::TimerManager
+header_done	dc/http/http11_parser.h	/^  element_cb header_done;$/;"	m	struct:http_parser
+header_done	dc/http/httpclient_parser.h	/^  element_cb header_done;$/;"	m	struct:httpclient_parser
+headers_	dc/http/http.h	/^	Map headers_;$/;"	m	class:dc::http::HttpResponse
+headers_	dc/http/http.h	/^	std::map<std::string, std::string, CaseInsensitiveLess> headers_;$/;"	m	class:dc::http::HttpRequest
 hook_init	dc/hook.cc	/^void hook_init() $/;"	f
+http	dc/http/http.cc	/^namespace http$/;"	n	namespace:dc	file:
+http	dc/http/http.h	/^namespace http\/\/http$/;"	n	namespace:dc
+http	dc/http/http_parser.h	/^namespace http$/;"	n	namespace:dc
+http	dc/http/http_server.h	/^namespace http$/;"	n	namespace:dc
+http	dc/http/servlet.h	/^namespace http$/;"	n	namespace:dc
+http	dc/http/session.h	/^namespace http$/;"	n	namespace:dc
+http11_parser_h	dc/http/http11_parser.h	10;"	d
+http_field	dc/http/http11_parser.h	/^  field_cb http_field;$/;"	m	struct:http_parser
+http_field	dc/http/httpclient_parser.h	/^  field_cb http_field;$/;"	m	struct:httpclient_parser
+http_parser	dc/http/http11_parser.h	/^typedef struct http_parser { $/;"	s
+http_parser	dc/http/http11_parser.h	/^} http_parser;$/;"	t	typeref:struct:http_parser
+http_parser_en_main	dc/http/http11_parser.rl.cc	/^static const int http_parser_en_main = 1;$/;"	v	file:
+http_parser_error	dc/http/http11_parser.rl.cc	/^static const int http_parser_error = 0;$/;"	v	file:
+http_parser_execute	dc/http/http11_parser.rl.cc	/^size_t http_parser_execute(http_parser *parser, const char *buffer, size_t len, size_t off)  $/;"	f
+http_parser_finish	dc/http/http11_parser.rl.cc	/^int http_parser_finish(http_parser *parser)$/;"	f
+http_parser_first_final	dc/http/http11_parser.rl.cc	/^static const int http_parser_first_final = 348;$/;"	v	file:
+http_parser_has_error	dc/http/http11_parser.rl.cc	/^int http_parser_has_error(http_parser *parser) {$/;"	f
+http_parser_init	dc/http/http11_parser.rl.cc	/^int http_parser_init(http_parser *parser) {$/;"	f
+http_parser_is_finished	dc/http/http11_parser.rl.cc	/^int http_parser_is_finished(http_parser *parser) {$/;"	f
+http_parser_nread	dc/http/http11_parser.h	46;"	d
+http_parser_start	dc/http/http11_parser.rl.cc	/^static const int http_parser_start = 1;$/;"	v	file:
+http_version	dc/http/http11_parser.h	/^  element_cb http_version;$/;"	m	struct:http_parser
+http_version	dc/http/httpclient_parser.h	/^  element_cb http_version;$/;"	m	struct:httpclient_parser
+httpclient_parser	dc/http/httpclient_parser.h	/^typedef struct httpclient_parser { $/;"	s
+httpclient_parser	dc/http/httpclient_parser.h	/^} httpclient_parser;$/;"	t	typeref:struct:httpclient_parser
+httpclient_parser_en_main	dc/http/httpclient_parser.rl.cc	/^static const int httpclient_parser_en_main = 1;$/;"	v	file:
+httpclient_parser_error	dc/http/httpclient_parser.rl.cc	/^static const int httpclient_parser_error = 0;$/;"	v	file:
+httpclient_parser_execute	dc/http/httpclient_parser.rl.cc	/^int httpclient_parser_execute(httpclient_parser *parser, const char *buffer, size_t len, size_t off)  $/;"	f
+httpclient_parser_finish	dc/http/httpclient_parser.rl.cc	/^int httpclient_parser_finish(httpclient_parser *parser)$/;"	f
+httpclient_parser_first_final	dc/http/httpclient_parser.rl.cc	/^static const int httpclient_parser_first_final = 120;$/;"	v	file:
+httpclient_parser_h	dc/http/httpclient_parser.h	36;"	d
+httpclient_parser_has_error	dc/http/httpclient_parser.rl.cc	/^int httpclient_parser_has_error(httpclient_parser *parser) {$/;"	f
+httpclient_parser_init	dc/http/httpclient_parser.rl.cc	/^int httpclient_parser_init(httpclient_parser *parser)  {$/;"	f
+httpclient_parser_is_finished	dc/http/httpclient_parser.rl.cc	/^int httpclient_parser_is_finished(httpclient_parser *parser) {$/;"	f
+httpclient_parser_nread	dc/http/httpclient_parser.h	72;"	d
+httpclient_parser_start	dc/http/httpclient_parser.rl.cc	/^static const int httpclient_parser_start = 1;$/;"	v	file:
 idle	dc/ioManager.cc	/^void IOManager::idle()$/;"	f	class:IOManager
 idle	dc/scheduler.cc	/^void Scheduler::idle() {$/;"	f	class:dc::Scheduler
 info	dc/log.cc	/^	void Logger::info(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
@@ -970,29 +1275,51 @@ info_version_internal	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^c
 init	dc/fd_manager.cc	/^bool FdCtx::init()$/;"	f	class:FdCtx
 init	dc/log.cc	/^	void LogFormatter::init()$/;"	f	class:dc::LogFormatter
 init	dc/log.cc	/^	void LoggerManager::init(){$/;"	f	class:dc::LoggerManager
+init	dc/socket.cc	/^bool Socket::init(int sock)$/;"	f	class:Socket
+initSock	dc/socket.cc	/^void Socket::initSock()$/;"	f	class:Socket
 insert	dc/address.cc	/^std::ostream& IPv4Address::insert(std::ostream& os) const  $/;"	f	class:IPv4Address
 insert	dc/address.cc	/^std::ostream& IPv6Address::insert(std::ostream& os) const  $/;"	f	class:IPv6Address
 insert	dc/address.cc	/^std::ostream& UnixAddress::insert(std::ostream& os) const $/;"	f	class:UnixAddress
 insert	dc/address.cc	/^std::ostream& UnknownAddress::insert(std::ostream& os) const$/;"	f	class:UnknownAddress
 ioctl	dc/hook.cc	/^int ioctl(int fd, unsigned long request, ...)$/;"	f
 isClose	dc/fd_manager.h	/^	bool isClose() const { return isClosed_; }$/;"	f	class:dc::FdCtx
+isClose	dc/http/http.h	/^	bool isClose() const { return close_; }$/;"	f	class:dc::http::HttpRequest
+isClose	dc/http/http.h	/^	bool isClose() const { return close_; }$/;"	f	class:dc::http::HttpResponse
 isClosed_	dc/fd_manager.h	/^	bool isClosed_;$/;"	m	class:dc::FdCtx
+isConnected	dc/socket.h	/^	bool isConnected() const { return isConnected_; }$/;"	f	class:dc::Socket
+isConnected	dc/socket_stream.cc	/^bool SocketStream::isConnected() const$/;"	f	class:SocketStream
+isConnected_	dc/socket.h	/^	bool isConnected_;$/;"	m	class:dc::Socket
 isError	dc/log.h	/^		bool isError() const {return m_error;}$/;"	f	class:dc::LogFormatter
+isFinished	dc/http/http_parser.cc	/^int HttpRequestParser::isFinished()const$/;"	f	class:HttpRequestParser
+isFinished	dc/http/http_parser.cc	/^int HttpResponseParser::isFinished()const$/;"	f	class:HttpResponseParser
 isInit	dc/fd_manager.h	/^	bool isInit() const { return isInit_; }$/;"	f	class:dc::FdCtx
 isInit_	dc/fd_manager.h	/^	bool isInit_;$/;"	m	class:dc::FdCtx
+isLittleEndian	dc/bytearray.cc	/^bool ByteArray::isLittleEndian() const$/;"	f	class:ByteArray
 isSocket	dc/fd_manager.h	/^	bool isSocket() const { return isSocket_; }$/;"	f	class:dc::FdCtx
 isSocket_	dc/fd_manager.h	/^	bool isSocket_;$/;"	m	class:dc::FdCtx
+isStop	dc/tcp_server.h	/^	bool isStop() const { return isStop_; }$/;"	f	class:dc::TcpServer
+isStop_	dc/tcp_server.h	/^	bool isStop_;$/;"	m	class:dc::TcpServer
 isSysNonblock_	dc/fd_manager.h	/^	bool isSysNonblock_;$/;"	m	class:dc::FdCtx
 isUserNonblock_	dc/fd_manager.h	/^	bool isUserNonblock_;$/;"	m	class:dc::FdCtx
+isValid	dc/socket.cc	/^inline bool Socket::isValid() const$/;"	f	class:Socket
 is_hook_enable	dc/hook.cc	/^bool dc::is_hook_enable()$/;"	f	class:dc
 join	dc/thread.cc	/^void Thread::join()$/;"	f	class:dc::Thread
+json_sent	dc/http/http11_parser.h	/^  int json_sent;$/;"	m	struct:http_parser
+kIPv4	dc/socket.h	/^		kIPv4 = AF_INET,$/;"	e	enum:dc::Socket::Family
+kIPv6	dc/socket.h	/^		kIPv6 = AF_INET6,$/;"	e	enum:dc::Socket::Family
 kNone	dc/ioManager.h	/^        kNone = 0,$/;"	e	enum:dc::IOManager::Event
 kRead	dc/ioManager.h	/^        kRead = POLLIN,$/;"	e	enum:dc::IOManager::Event
+kTCP	dc/socket.h	/^		kTCP = SOCK_STREAM,$/;"	e	enum:dc::Socket::Type
+kUDP	dc/socket.h	/^		kUDP = SOCK_DGRAM,$/;"	e	enum:dc::Socket::Type
+kUnix	dc/socket.h	/^		kUnix = AF_UNIX,$/;"	e	enum:dc::Socket::Family
 kWrite	dc/ioManager.h	/^        kWrite = POLLOUT,$/;"	e	enum:dc::IOManager::Event
+last_chunk	dc/http/httpclient_parser.h	/^  element_cb last_chunk;$/;"	m	struct:httpclient_parser
 length_	dc/address.h	/^	socklen_t length_;$/;"	m	class:dc::UnixAddress
 level	dc/log.cc	/^		LogLevel::Level level = LogLevel::UNKNOWN;$/;"	m	struct:dc::LogDefine	file:
 level	dc/log.cc	/^        LogLevel::Level level = LogLevel::UNKNOWN;$/;"	m	struct:dc::LogAppenderDefine	file:
 listExpiredCb	dc/timer.cc	/^void TimerManager::listExpiredCb( std::vector<Timer::Callback>& cbs )$/;"	f	class:TimerManager
+listen	dc/socket.cc	/^bool Socket::listen(int backlog)$/;"	f	class:Socket
+localAddress_	dc/socket.h	/^	Address::ptr localAddress_;$/;"	m	class:dc::Socket
 lock	dc/thread.h	/^	void lock() {$/;"	f	class:dc::CASLock
 lock	dc/thread.h	/^	void lock() {$/;"	f	class:dc::Mutex
 lock	dc/thread.h	/^	void lock() {$/;"	f	class:dc::Spinlock
@@ -1084,30 +1411,63 @@ main	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
 main	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	tests/test.cc	/^int main(int argc,char **argv)$/;"	f
 main	tests/test_address.cc	/^int main()$/;"	f
+main	tests/test_bytearray.cc	/^int main(int argc, char** argv)$/;"	f
 main	tests/test_config.cc	/^int main(int argc,char **argv){$/;"	f
+main	tests/test_echo.cc	/^int main(int argc, char** argv)$/;"	f
 main	tests/test_fiber.cc	/^int main(int argc, char** argv) {$/;"	f
 main	tests/test_hook.cc	/^int main()$/;"	f
+main	tests/test_http.cc	/^int main()$/;"	f
+main	tests/test_http_parser.cc	/^int main()$/;"	f
+main	tests/test_http_server.cc	/^int main()$/;"	f
 main	tests/test_iomanager.cc	/^main ( int argc, char *argv[] )$/;"	f
 main	tests/test_log.cc	/^int main()$/;"	f
 main	tests/test_scheduler.cc	/^int main(int argc, char** argv) {$/;"	f
+main	tests/test_socket.cc	/^int main(int argc, char** argv)$/;"	f
+main	tests/test_tcp.cc	/^int main()$/;"	f
 main	tests/test_thread.cc	/^int main(){$/;"	f
 main	tests/test_util.cc	/^int main(int argc, char** argv) {$/;"	f
 manager_	dc/timer.h	/^	TimerManager* manager_;$/;"	m	class:dc::Timer
+mark	dc/http/http11_parser.h	/^  size_t mark;$/;"	m	struct:http_parser
+mark	dc/http/httpclient_parser.h	/^  size_t mark;$/;"	m	struct:httpclient_parser
+method_	dc/http/http.h	/^	HttpMethod method_;$/;"	m	class:dc::http::HttpRequest
 ms_	dc/timer.h	/^	uint64_t ms_; \/\/执行周期$/;"	m	class:dc::Timer
 mutex	dc/ioManager.h	/^        MutexType mutex;$/;"	m	struct:dc::IOManager::FdContext
 mutex_	dc/fd_manager.h	/^	RWMutexType mutex_;$/;"	m	class:dc::FdManager
+mutex_	dc/http/servlet.h	/^	RWMutexType mutex_;$/;"	m	class:dc::http::ServletDispatch
 mutex_	dc/ioManager.h	/^    RWMutexType mutex_;$/;"	m	class:dc::IOManager
 mutex_	dc/timer.h	/^	RWMutexType mutex_;$/;"	m	class:dc::TimerManager
 myfunc	tests/test_log.cc	/^void myfunc()$/;"	f
+name	dc/http/servlet.h	/^	const std::string& name() const { return name_; }$/;"	f	class:dc::http::Servlet
 name	dc/log.cc	/^		std::string name;$/;"	m	struct:dc::LogDefine	file:
+name_	dc/http/servlet.h	/^	std::string name_;$/;"	m	class:dc::http::Servlet
+name_	dc/tcp_server.h	/^	std::string name_;$/;"	m	class:dc::TcpServer
 nanosleep	dc/hook.cc	/^int nanosleep(const struct timespec* req, struct timespec* rem)$/;"	f
 netwrokAddress	dc/address.cc	/^IPAddress::ptr IPv4Address::netwrokAddress(uint32_t prefix_len)  $/;"	f	class:IPv4Address
 netwrokAddress	dc/address.cc	/^IPAddress::ptr IPv6Address::netwrokAddress(uint32_t prefix_len)  $/;"	f	class:IPv6Address
+newSock	dc/socket.cc	/^void Socket::newSock()$/;"	f	class:Socket
+next	dc/bytearray.h	/^        Node* next;$/;"	m	struct:dc::ByteArray::Node
 next_	dc/timer.h	/^	uint64_t next_; \/\/精确的执行时间$/;"	m	class:dc::Timer
 noncopyable	dc/noncopyable.h	/^class noncopyable$/;"	c
 notify	dc/thread.cc	/^void Semaphore::notify(){$/;"	f	class:dc::Semaphore
+nread	dc/http/http11_parser.h	/^  size_t nread;$/;"	m	struct:http_parser
+nread	dc/http/httpclient_parser.h	/^  size_t nread;$/;"	m	struct:httpclient_parser
 onTimer	dc/timer.cc	/^static void onTimer(std::weak_ptr<void>weak_cond,$/;"	f	file:
 onTimerInsertedAtFront	dc/ioManager.cc	/^void IOManager::onTimerInsertedAtFront()$/;"	f	class:IOManager
+on_request_fragment	dc/http/http_parser.cc	/^void on_request_fragment(void* data, const char* at, size_t length)$/;"	f
+on_request_header_done	dc/http/http_parser.cc	/^void on_request_header_done(void* data, const char* at, size_t length)$/;"	f
+on_request_http_field	dc/http/http_parser.cc	/^void on_request_http_field(void* data, const char* field, size_t flen, const  char* value,  size_t vlength)$/;"	f
+on_request_method	dc/http/http_parser.cc	/^void on_request_method(void* data, const char* at, size_t length)$/;"	f
+on_request_path	dc/http/http_parser.cc	/^void on_request_path(void* data, const char* at, size_t length)$/;"	f
+on_request_query	dc/http/http_parser.cc	/^void on_request_query(void* data, const char* at, size_t length)$/;"	f
+on_request_uri	dc/http/http_parser.cc	/^void on_request_uri(void* data, const char* at, size_t length)$/;"	f
+on_request_version	dc/http/http_parser.cc	/^void on_request_version(void* data, const char* at, size_t length)$/;"	f
+on_response_chunk	dc/http/http_parser.cc	/^void on_response_chunk(void* data, const char* at, size_t length)$/;"	f
+on_response_header_done	dc/http/http_parser.cc	/^void on_response_header_done(void* data, const char* at, size_t length)$/;"	f
+on_response_http_field	dc/http/http_parser.cc	/^void on_response_http_field(void* data, const char* field, size_t flen, const char* value,size_t vlength)$/;"	f
+on_response_last_chunk	dc/http/http_parser.cc	/^void on_response_last_chunk(void* data, const char* at, size_t length)$/;"	f
+on_response_reason	dc/http/http_parser.cc	/^void on_response_reason(void* data, const char* at, size_t length)$/;"	f
+on_response_status	dc/http/http_parser.cc	/^void on_response_status(void* data, const char* at, size_t length)$/;"	f
+on_response_version	dc/http/http_parser.cc	/^void on_response_version(void* data, const char* at, size_t length)$/;"	f
 operator !=	dc/address.cc	/^bool Address::operator!=(const Address& rhs) const$/;"	f	class:Address
 operator ()	dc/config.h	/^    T operator()(const F& v){$/;"	f	class:dc::LexicalCast
 operator ()	dc/config.h	/^    std::list<T> operator() (const std::string &v){$/;"	f	class:dc::LexicalCast
@@ -1122,6 +1482,7 @@ operator ()	dc/config.h	/^    std::string operator()(const std::vector<T> &v){$/
 operator ()	dc/config.h	/^    std::unordered_map<std::string,T> operator() (const std::string &v){$/;"	f	class:dc::LexicalCast
 operator ()	dc/config.h	/^    std::unordered_set<T> operator() (const std::string &v){$/;"	f	class:dc::LexicalCast
 operator ()	dc/config.h	/^    std::vector<T> operator()(const std::string &v){$/;"	f	class:dc::LexicalCast
+operator ()	dc/http/http.cc	/^bool CaseInsensitiveLess::operator()(const std::string& lhs, const std::string& rhs) const$/;"	f	class:CaseInsensitiveLess
 operator ()	dc/log.cc	/^        LogDefine operator() (const std::string& v){$/;"	f	class:dc::LexicalCast
 operator ()	dc/log.cc	/^        std::string operator()(const LogDefine& v){$/;"	f	class:dc::LexicalCast
 operator ()	dc/timer.cc	/^bool Timer::Comparator::operator()(const Timer::ptr& lhs, const Timer::ptr& rhs) const$/;"	f	class:Timer::Comparator
@@ -1129,6 +1490,10 @@ operator ()	tests/test_config.cc	/^    Person  operator() (const std::string &v)
 operator ()	tests/test_config.cc	/^    std::string operator()(const Person &v){$/;"	f	class:dc::LexicalCast
 operator <	dc/address.cc	/^bool Address::operator<(const Address& rhs) const$/;"	f	class:Address
 operator <	dc/log.cc	/^		bool operator<(const LogDefine& rhs) const {$/;"	f	struct:dc::LogDefine
+operator <<	dc/address.cc	/^std::ostream& dc::operator<<(std::ostream& os, const Address& addr)$/;"	f	class:dc
+operator <<	dc/http/http.cc	/^std::ostream& dc::http::operator<<(std::ostream& os,const HttpRequest& r)$/;"	f	class:dc::http
+operator <<	dc/http/http.cc	/^std::ostream& dc::http::operator<<(std::ostream& os,const HttpResponse& r)$/;"	f	class:dc::http
+operator <<	dc/socket.cc	/^std::ostream& dc::operator<<(std::ostream& os, const Socket& addr)$/;"	f	class:dc
 operator ==	dc/address.cc	/^bool Address::operator==(const Address& rhs) const$/;"	f	class:Address
 operator ==	dc/log.cc	/^		bool operator==(const LogAppenderDefine & rhs) const {$/;"	f	struct:dc::LogAppenderDefine
 operator ==	dc/log.cc	/^		bool operator==(const LogDefine& rhs) const {$/;"	f	struct:dc::LogDefine
@@ -1151,10 +1516,14 @@ override	dc/address.h	/^	std::ostream& insert(std::ostream& os) const  override;
 override	dc/address.h	/^	std::ostream& insert(std::ostream& os) const  override;$/;"	m	class:dc::IPv6Address
 override	dc/address.h	/^	std::ostream& insert(std::ostream& os) const  override;$/;"	m	class:dc::UnknownAddress
 override	dc/address.h	/^	std::ostream& insert(std::ostream& os) const override;$/;"	m	class:dc::UnixAddress
-override	dc/address.h	/^	uint32_t getPort() const  override;$/;"	m	class:dc::IPv4Address
-override	dc/address.h	/^	uint32_t getPort() const  override;$/;"	m	class:dc::IPv6Address
-override	dc/address.h	/^	void setPort(uint32_t v)  override;$/;"	m	class:dc::IPv4Address
-override	dc/address.h	/^	void setPort(uint32_t v)  override;$/;"	m	class:dc::IPv6Address
+override	dc/address.h	/^	uint16_t getPort() const  override;$/;"	m	class:dc::IPv4Address
+override	dc/address.h	/^	uint16_t getPort() const  override;$/;"	m	class:dc::IPv6Address
+override	dc/address.h	/^	void setPort(uint16_t v)  override;$/;"	m	class:dc::IPv4Address
+override	dc/address.h	/^	void setPort(uint16_t v)  override;$/;"	m	class:dc::IPv6Address
+override	dc/http/http_server.h	/^	 void handleClient(std::shared_ptr<Socket> client) override;$/;"	m	class:dc::http::HttpServer
+override	dc/http/servlet.h	/^						   HttpSession::ptr session) override;$/;"	m	class:dc::http::FunctionServlet
+override	dc/http/servlet.h	/^	int32_t handle(HttpRequest::ptr req, HttpResponse::ptr resp, HttpSession::ptr) override;$/;"	m	class:dc::http::NotFoundServlet
+override	dc/http/servlet.h	/^	int32_t handle(HttpRequest::ptr,HttpResponse::ptr, HttpSession::ptr)override;$/;"	m	class:dc::http::ServletDispatch
 override	dc/ioManager.h	/^	bool stopping() override;$/;"	m	class:dc::IOManager
 override	dc/ioManager.h	/^	void onTimerInsertedAtFront() override;$/;"	m	class:dc::IOManager
 override	dc/ioManager.h	/^	void tickle() override;$/;"	m	class:dc::IOManager
@@ -1164,63 +1533,178 @@ override	dc/log.h	/^        virtual std::string toYamlString() override;$/;"	m	c
 override	dc/log.h	/^        void log(std::shared_ptr<Logger> plgtr,LogLevel::Level level,LogEvent::LogEventPtr event) override;$/;"	m	class:dc::FileLogAppender
 override	dc/log.h	/^        void log(std::shared_ptr<Logger> plgtr,LogLevel::Level level,LogEvent::LogEventPtr event) override;$/;"	m	class:dc::StdOutLogAppender
 override	dc/log.h	/^        ~FileLogAppender() override;$/;"	m	class:dc::FileLogAppender
+override	dc/socket_stream.h	/^	virtual int read(ByteArray::ptr ba, size_t length)override;$/;"	m	class:dc::SocketStream
+override	dc/socket_stream.h	/^	virtual int read(void* buffer, size_t length)override;$/;"	m	class:dc::SocketStream
+override	dc/socket_stream.h	/^	virtual int write(ByteArray::ptr ba, size_t length)override;$/;"	m	class:dc::SocketStream
+override	dc/socket_stream.h	/^	virtual int write(const void* buffer, size_t length)override;$/;"	m	class:dc::SocketStream
+override	dc/socket_stream.h	/^	virtual void close()override;$/;"	m	class:dc::SocketStream
+override	tests/test_echo.cc	/^	void handleClient(Socket::ptr client) override;$/;"	m	class:EchoServer	file:
+owner_	dc/socket_stream.h	/^	bool owner_;$/;"	m	class:dc::SocketStream
+params_	dc/http/http.h	/^	std::map<std::string, std::string, CaseInsensitiveLess> params_;$/;"	m	class:dc::http::HttpRequest
+parser_	dc/http/http_parser.h	/^	mutable http_parser parser_;$/;"	m	class:dc::http::HttpRequestParser
+parser_	dc/http/http_parser.h	/^	mutable httpclient_parser parser_;$/;"	m	class:dc::http::HttpResponseParser
+path_	dc/http/http.h	/^	std::string path_;$/;"	m	class:dc::http::HttpRequest
+peerAddress_	dc/socket.h	/^	Address::ptr peerAddress_;$/;"	m	class:dc::Socket
 pendingEventCount_	dc/ioManager.h	/^    std::atomic<size_t> pendingEventCount_;$/;"	m	class:dc::IOManager
+position_	dc/bytearray.h	/^    size_t position_;$/;"	m	class:dc::ByteArray
 print_yaml	tests/test_config.cc	/^void print_yaml(const YAML::Node& node,int level){$/;"	f
+protocol_	dc/socket.h	/^	int protocol_;$/;"	m	class:dc::Socket
+ptr	dc/bytearray.h	/^        char* ptr;$/;"	m	struct:dc::ByteArray::Node
+ptr	dc/bytearray.h	/^    typedef std::shared_ptr<ByteArray> ptr;$/;"	t	class:dc::ByteArray
 qnxnto	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 qnxnto	CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+query_	dc/http/http.h	/^	std::string query_;$/;"	m	class:dc::http::HttpRequest
+query_start	dc/http/http11_parser.h	/^  size_t query_start;$/;"	m	struct:http_parser
+query_string	dc/http/http11_parser.h	/^  element_cb query_string;$/;"	m	struct:http_parser
 rdlock	dc/thread.h	/^	void rdlock() {$/;"	f	class:dc::RWMutex
+read	dc/bytearray.cc	/^void ByteArray::read(void* buf, size_t size)$/;"	f	class:ByteArray
+read	dc/bytearray.cc	/^void ByteArray::read(void* buf, size_t size, size_t position) const$/;"	f	class:ByteArray
 read	dc/hook.cc	/^ssize_t read(int fd, void* buf, size_t count)$/;"	f
 read	dc/ioManager.h	/^        EventContext read; \/\/read event$/;"	m	struct:dc::IOManager::FdContext
+read	dc/socket_stream.cc	/^int SocketStream::read(ByteArray::ptr ba, size_t length)$/;"	f	class:SocketStream
+read	dc/socket_stream.cc	/^int SocketStream::read(void* buffer, size_t length)$/;"	f	class:SocketStream
+readDouble	dc/bytearray.cc	/^double ByteArray::readDouble()$/;"	f	class:ByteArray
+readFint16	dc/bytearray.cc	/^int16_t ByteArray::readFint16() $/;"	f	class:ByteArray
+readFint32	dc/bytearray.cc	/^int32_t ByteArray::readFint32() $/;"	f	class:ByteArray
+readFint64	dc/bytearray.cc	/^int64_t ByteArray::readFint64() $/;"	f	class:ByteArray
+readFint8	dc/bytearray.cc	/^int8_t ByteArray::readFint8()$/;"	f	class:ByteArray
+readFixSize	dc/stream.cc	/^int Stream::readFixSize(ByteArray::ptr ba, size_t length)$/;"	f	class:Stream
+readFixSize	dc/stream.cc	/^int Stream::readFixSize(void* buffer, size_t length)$/;"	f	class:Stream
+readFloat	dc/bytearray.cc	/^float ByteArray::readFloat()$/;"	f	class:ByteArray
+readFromFile	dc/bytearray.cc	/^bool ByteArray::readFromFile( const std::string& name)$/;"	f	class:ByteArray
+readFuint16	dc/bytearray.cc	/^uint16_t ByteArray::readFuint16() $/;"	f	class:ByteArray
+readFuint32	dc/bytearray.cc	/^uint32_t ByteArray::readFuint32() $/;"	f	class:ByteArray
+readFuint64	dc/bytearray.cc	/^uint64_t ByteArray::readFuint64() $/;"	f	class:ByteArray
+readFuint8	dc/bytearray.cc	/^uint8_t ByteArray::readFuint8()$/;"	f	class:ByteArray
+readInt32	dc/bytearray.cc	/^int32_t ByteArray::readInt32()$/;"	f	class:ByteArray
+readInt64	dc/bytearray.cc	/^int64_t ByteArray::readInt64()$/;"	f	class:ByteArray
+readStringF16	dc/bytearray.cc	/^std::string ByteArray::readStringF16()$/;"	f	class:ByteArray
+readStringF32	dc/bytearray.cc	/^std::string ByteArray::readStringF32()$/;"	f	class:ByteArray
+readStringF64	dc/bytearray.cc	/^std::string ByteArray::readStringF64()$/;"	f	class:ByteArray
+readStringVint	dc/bytearray.cc	/^std::string ByteArray::readStringVint()$/;"	f	class:ByteArray
+readTimeout_	dc/tcp_server.h	/^	uint64_t readTimeout_;$/;"	m	class:dc::TcpServer
+readUint32	dc/bytearray.cc	/^uint32_t ByteArray::readUint32()$/;"	f	class:ByteArray
+readUint64	dc/bytearray.cc	/^uint64_t ByteArray::readUint64()$/;"	f	class:ByteArray
 readv	dc/hook.cc	/^ssize_t readv(int fd, const struct iovec* iov, int iovcnt)$/;"	f
+reason_	dc/http/http.h	/^	std::string reason_;$/;"	m	class:dc::http::HttpResponse
+reason_phrase	dc/http/httpclient_parser.h	/^  element_cb reason_phrase;$/;"	m	struct:httpclient_parser
 recurring_	dc/timer.h	/^	bool recurring_; \/\/循环定时器$/;"	m	class:dc::Timer
 recv	dc/hook.cc	/^ssize_t recv(int sockfd, void* buf, size_t len, int flags)$/;"	f
+recv	dc/socket.cc	/^int Socket::recv( iovec* buffers, size_t length, int flags )$/;"	f	class:Socket
+recv	dc/socket.cc	/^int Socket::recv( void* buffer, size_t length, int flags )$/;"	f	class:Socket
+recvRequest	dc/http/session.cc	/^HttpRequest::ptr HttpSession::recvRequest()$/;"	f	class:HttpSession
 recvTimeout_	dc/fd_manager.h	/^	uint64_t recvTimeout_;$/;"	m	class:dc::FdCtx
 recvfrom	dc/hook.cc	/^ssize_t recvfrom(int sockfd, void * buf, size_t len, int flags, struct sockaddr* src_addr, socklen_t *addrlen)$/;"	f
+recvfrom	dc/socket.cc	/^int Socket::recvfrom( iovec* buffers, size_t length,  Address::ptr from, int flags )$/;"	f	class:Socket
+recvfrom	dc/socket.cc	/^int Socket::recvfrom( void* buffer, size_t length,  Address::ptr from, int flags )$/;"	f	class:Socket
 recvmsg	dc/hook.cc	/^ssize_t recvmsg(int sockfd, struct msghdr* msg, int flags)$/;"	f
 refresh	dc/timer.cc	/^bool Timer::refresh()$/;"	f	class:Timer
 reopen	dc/log.cc	/^	bool FileLogAppender::reopen()$/;"	f	class:dc::FileLogAppender
+request_data	tests/test_http_parser.cc	/^const char* request_data = "GET \/ HTTP\/1.1\\r\\n"$/;"	v
+request_method	dc/http/http11_parser.h	/^  element_cb request_method;$/;"	m	struct:http_parser
+request_path	dc/http/http11_parser.h	/^  element_cb request_path;$/;"	m	struct:http_parser
+request_uri	dc/http/http11_parser.h	/^  element_cb request_uri;$/;"	m	struct:http_parser
 reset	dc/fiber.cc	/^void Fiber::reset(std::function<void()> cb) {$/;"	f	class:dc::Fiber
 reset	dc/scheduler.h	/^		void reset() {$/;"	f	struct:dc::Scheduler::FiberAndThread
 reset	dc/timer.cc	/^bool Timer::reset( uint64_t ms, bool from_now )$/;"	f	class:Timer
 resetContext	dc/ioManager.h	/^        void resetContext(EventContext& ctx)$/;"	f	struct:dc::IOManager::FdContext
+response_data	tests/test_http_parser.cc	/^const char* response_data = " HTTP\/1.1 200 OK\\r\\n"$/;"	v
+root_	dc/bytearray.h	/^    Node* root_;$/;"	m	class:dc::ByteArray
 run	dc/scheduler.cc	/^void Scheduler::run() {$/;"	f	class:dc::Scheduler
 run	dc/thread.cc	/^void* Thread::run(void *arg){$/;"	f	class:dc::Thread
+run	tests/test_echo.cc	/^void run()$/;"	f
+run	tests/test_http_server.cc	/^void run()$/;"	f
+run	tests/test_tcp.cc	/^void run()$/;"	f
 run_in_fiber	tests/test_fiber.cc	/^void run_in_fiber() {$/;"	f
 s_connect_timeout	dc/hook.cc	/^static uint64_t s_connect_timeout = -1;$/;"	v	file:
 s_hook_initer	dc/hook.cc	/^static _HookIniter s_hook_initer;$/;"	v	file:
+s_http_max_body_size	dc/http/http_parser.cc	/^static uint64_t s_http_max_body_size = g_http_request_max_body_size->getValue();$/;"	v	file:
+s_http_request_buffer_size	dc/http/http_parser.cc	/^static uint64_t s_http_request_buffer_size = g_http_request_buffer_size->getValue();$/;"	v	file:
+s_method_string	dc/http/http.cc	/^static const char* s_method_string[]$/;"	m	namespace:dc::http	file:
 s_mutex	tests/test_thread.cc	/^dc::Mutex s_mutex;$/;"	v
 schedule	dc/scheduler.h	/^	void schedule(FiberOrCb fc, int thread = -1) {$/;"	f	class:dc::Scheduler
 schedule	dc/scheduler.h	/^	void schedule(InputIterator begin, InputIterator end) {$/;"	f	class:dc::Scheduler
 scheduleNoLock	dc/scheduler.h	/^	bool scheduleNoLock(FiberOrCb fc, int thread) {$/;"	f	class:dc::Scheduler
 scheduler	dc/ioManager.h	/^            Scheduler* scheduler = nullptr;\/\/event exec's scheduler$/;"	m	struct:dc::IOManager::FdContext::EventContext
 send	dc/hook.cc	/^ssize_t send(int sockfd, const void* buf, size_t len, int flags )$/;"	f
+send	dc/socket.cc	/^int Socket::send(const iovec* buffers, size_t length, int flags )$/;"	f	class:Socket
+send	dc/socket.cc	/^int Socket::send(const void* buffer, size_t length, int flags )$/;"	f	class:Socket
+sendResponse	dc/http/session.cc	/^int HttpSession::sendResponse(HttpResponse::ptr resp)$/;"	f	class:HttpSession
 sendTimeout_	dc/fd_manager.h	/^	uint64_t sendTimeout_;$/;"	m	class:dc::FdCtx
 sendmsg	dc/hook.cc	/^ssize_t sendmsg(int sockfd, const struct msghdr* msg, int flags)$/;"	f
 sendto	dc/hook.cc	/^ssize_t sendto(int sockfd, const void* buf, size_t len, int flags, const struct sockaddr* dest_addr, socklen_t addrlen)$/;"	f
+sendto	dc/socket.cc	/^int Socket::sendto(const iovec* buffers, size_t length, const Address::ptr to, int flags )$/;"	f	class:Socket
+sendto	dc/socket.cc	/^int Socket::sendto(const void* buffer, size_t length, const Address::ptr to, int flags )$/;"	f	class:Socket
+setAddrlen	dc/address.h	/^	void setAddrlen(socklen_t len) { length_ = len; }$/;"	f	class:dc::UnixAddress
+setBody	dc/http/http.h	/^	void setBody(const std::string& body) { body_ = body; }$/;"	f	class:dc::http::HttpRequest
+setBody	dc/http/http.h	/^	void setBody(const std::string& body) { body_ = body; }$/;"	f	class:dc::http::HttpResponse
+setClose	dc/http/http.h	/^	void setClose(bool v) { close_ = v; }$/;"	f	class:dc::http::HttpRequest
+setClose	dc/http/http.h	/^	void setClose(bool v) { close_ = v; }$/;"	f	class:dc::http::HttpResponse
+setCookie	dc/http/http.cc	/^void HttpRequest::setCookie(const std::string& key, const std::string& val)$/;"	f	class:HttpRequest
+setCookies	dc/http/http.h	/^	void setCookies(const Map& v) { headers_ = v; }$/;"	f	class:dc::http::HttpRequest
+setDefault	dc/http/servlet.h	/^	void setDefault(Servlet::ptr v) { default_ = v; }$/;"	f	class:dc::http::ServletDispatch
 setElapse	dc/log.h	/^        void setElapse(int32_t elapse){m_elapse = elapse;}$/;"	f	class:dc::LogEvent
+setError	dc/http/http_parser.h	/^	void setError(int v) { error_ = v; }$/;"	f	class:dc::http::HttpRequestParser
+setError	dc/http/http_parser.h	/^	void setError(int v) { error_ = v; }$/;"	f	class:dc::http::HttpResponseParser
 setFiberId	dc/log.h	/^        void setFiberId(int32_t fiberId){m_fiberId = fiberId;}$/;"	f	class:dc::LogEvent
 setFormatter	dc/log.cc	/^	void LogAppender::setFormatter(LogFormatter::LogFormatterPtr formatter){$/;"	f	class:dc::LogAppender
 setFormatter	dc/log.cc	/^	void Logger::setFormatter(LogFormatter::LogFormatterPtr ptr){$/;"	f	class:dc::Logger
 setFormatter	dc/log.cc	/^	void Logger::setFormatter(const std::string& val){$/;"	f	class:dc::Logger
+setFragment	dc/http/http.h	/^	void setFragment(const std::string frag) { fragment_ = frag; }$/;"	f	class:dc::http::HttpRequest
+setHeader	dc/http/http.cc	/^void HttpRequest::setHeader(const std::string& key, const std::string& val)$/;"	f	class:HttpRequest
+setHeader	dc/http/http.cc	/^void HttpResponse::setHeader(const std::string& key, const std::string& val)$/;"	f	class:HttpResponse
+setHeaders	dc/http/http.h	/^	void setHeaders(const Map& v) { headers_ = v; }$/;"	f	class:dc::http::HttpRequest
+setHeaders	dc/http/http.h	/^	void setHeaders(const Map& v) { headers_ = v; }$/;"	f	class:dc::http::HttpResponse
+setIsLittleEndian	dc/bytearray.cc	/^void ByteArray::setIsLittleEndian(bool val)$/;"	f	class:ByteArray
 setLevel	dc/log.h	/^		void setLevel(LogLevel::Level level){m_level = level;}$/;"	f	class:dc::LogAppender
 setLevel	dc/log.h	/^        void setLevel(LogLevel::Level level){m_level = level;}$/;"	f	class:dc::Logger
 setLine	dc/log.h	/^        void setLine(int32_t line){m_line = line;}$/;"	f	class:dc::LogEvent
-setPort	dc/address.cc	/^void IPv4Address::setPort(uint32_t v)  $/;"	f	class:IPv4Address
-setPort	dc/address.cc	/^void IPv6Address::setPort(uint32_t v) $/;"	f	class:IPv6Address
+setMethod	dc/http/http.h	/^	void setMethod(HttpMethod  m) { method_ = m; }$/;"	f	class:dc::http::HttpRequest
+setName	dc/tcp_server.h	/^	void setName(const std::string& v) { name_ = std::move(v); }$/;"	f	class:dc::TcpServer
+setOption	dc/socket.cc	/^bool Socket::setOption(int level, int option, const void* result, size_t len)$/;"	f	class:Socket
+setOption	dc/socket.h	/^	bool setOption(int level, int option, const T& value)$/;"	f	class:dc::Socket
+setParam	dc/http/http.cc	/^void HttpRequest::setParam(const std::string& key, const std::string& val)$/;"	f	class:HttpRequest
+setParams	dc/http/http.h	/^	void setParams(const Map& v) { headers_ = v; }$/;"	f	class:dc::http::HttpRequest
+setPath	dc/http/http.h	/^	void setPath(const std::string& path) { path_ = path; }$/;"	f	class:dc::http::HttpRequest
+setPort	dc/address.cc	/^void IPv4Address::setPort(uint16_t v)  $/;"	f	class:IPv4Address
+setPort	dc/address.cc	/^void IPv6Address::setPort(uint16_t v) $/;"	f	class:IPv6Address
+setPosition	dc/bytearray.cc	/^void ByteArray::setPosition(size_t v)$/;"	f	class:ByteArray
+setQuery	dc/http/http.h	/^	void setQuery(const std::string& query) { query_  =query; }$/;"	f	class:dc::http::HttpRequest
+setReadTimeout	dc/tcp_server.h	/^	void setReadTimeout( uint64_t v ) { readTimeout_ = v; }$/;"	f	class:dc::TcpServer
+setReason	dc/http/http.h	/^	void setReason(const std::string& v) { reason_ = v; }$/;"	f	class:dc::http::HttpResponse
+setRecvTimeout	dc/socket.cc	/^void Socket::setRecvTimeout(int64_t v)$/;"	f	class:Socket
+setSendTimeout	dc/socket.cc	/^void Socket::setSendTimeout(int64_t v)$/;"	f	class:Socket
+setServletDispatch	dc/http/http_server.h	/^	void setServletDispatch(ServletDispatch::ptr v) { dispatch_ = v; }$/;"	f	class:dc::http::HttpServer
 setState	dc/fiber.h	/^	void setState(const State& state) {m_state = state;}$/;"	f	class:dc::Fiber
+setStatus	dc/http/http.h	/^	void setStatus(HttpStatus s) { status_ = s; }$/;"	f	class:dc::http::HttpRequest
+setStatus	dc/http/http.h	/^	void setStatus(HttpStatus s) { status_ = s; }$/;"	f	class:dc::http::HttpResponse
 setThis	dc/scheduler.cc	/^void Scheduler::setThis() {$/;"	f	class:dc::Scheduler
 setThreadId	dc/log.h	/^        void setThreadId(int32_t threadId){m_threadId = threadId;}$/;"	f	class:dc::LogEvent
 setTime	dc/log.h	/^        void setTime(int32_t time){m_time = time;}$/;"	f	class:dc::LogEvent
 setTimeout	dc/fd_manager.cc	/^void FdCtx::setTimeout(int type, uint64_t v)$/;"	f	class:FdCtx
 setUserNonblock	dc/fd_manager.h	/^	void setUserNonblock(bool v) { isUserNonblock_ = v; }$/;"	f	class:dc::FdCtx
 setValue	dc/config.h	/^    void setValue(const T & val) {$/;"	f	class:dc::ConfigVar
+setVersion	dc/http/http.h	/^	void setVersion(uint8_t v) { version_ = v; }$/;"	f	class:dc::http::HttpRequest
+setVersion	dc/http/http.h	/^	void setVersion(uint8_t v) { version_ = v; }$/;"	f	class:dc::http::HttpResponse
 set_hook_enable	dc/hook.cc	/^void dc::set_hook_enable(bool flag)$/;"	f	class:dc
 setsockopt	dc/hook.cc	/^int setsockopt(int sockfd, int level, int optname, const void* optval, socklen_t optlen)$/;"	f
 setsysNonblock	dc/fd_manager.h	/^	void setsysNonblock(bool v) { isSysNonblock_ = v; }$/;"	f	class:dc::FdCtx
+size	dc/bytearray.h	/^        size_t size;$/;"	m	struct:dc::ByteArray::Node
+size_	dc/bytearray.h	/^    size_t size_;$/;"	m	class:dc::ByteArray
 sleep	dc/hook.cc	/^unsigned int sleep(unsigned int seconds)$/;"	f
+sock_	dc/socket.h	/^	int sock_;$/;"	m	class:dc::Socket
 socket	dc/hook.cc	/^int socket(int domain, int type, int protocol)$/;"	f
+socket_	dc/socket_stream.h	/^	std::shared_ptr<Socket> socket_;$/;"	m	class:dc::SocketStream
+socks_	dc/tcp_server.h	/^	std::vector<std::shared_ptr<Socket>> socks_;$/;"	m	class:dc::TcpServer
 start	dc/scheduler.cc	/^void Scheduler::start() {$/;"	f	class:dc::Scheduler
+start	dc/tcp_server.cc	/^bool TcpServer::start()$/;"	f	class:TcpServer
+startAcceptr	dc/tcp_server.cc	/^void TcpServer::startAcceptr(std::shared_ptr<Socket> sock)$/;"	f	class:TcpServer
+status	dc/http/httpclient_parser.h	/^  int status;$/;"	m	struct:httpclient_parser
+status_	dc/http/http.h	/^	HttpStatus status_;$/;"	m	class:dc::http::HttpRequest
+status_	dc/http/http.h	/^	HttpStatus status_;$/;"	m	class:dc::http::HttpResponse
+status_code	dc/http/httpclient_parser.h	/^  element_cb status_code;$/;"	m	struct:httpclient_parser
 stop	dc/scheduler.cc	/^void Scheduler::stop() {$/;"	f	class:dc::Scheduler
+stop	dc/tcp_server.cc	/^void TcpServer::stop()$/;"	f	class:TcpServer
 stopping	dc/ioManager.cc	/^bool IOManager::stopping()$/;"	f	class:IOManager
 stopping	dc/ioManager.cc	/^bool IOManager::stopping(uint64_t& timeout)$/;"	f	class:IOManager
 stopping	dc/scheduler.cc	/^bool Scheduler::stopping() {$/;"	f	class:dc::Scheduler
@@ -1237,6 +1721,9 @@ t_thread	dc/thread.cc	/^static thread_local Thread* t_thread = nullptr;\/\/定�
 t_threadFiber	dc/fiber.cc	/^static thread_local Fiber::ptr t_threadFiber = nullptr;$/;"	m	namespace:dc	file:
 t_thread_name	dc/thread.cc	/^static thread_local std::string t_thread_name = "UNKNOWN";$/;"	m	namespace:dc	file:
 test	tests/test_address.cc	/^void test()$/;"	f
+test	tests/test_bytearray.cc	/^void test()$/;"	f
+test	tests/test_http.cc	/^void test()$/;"	f
+test	tests/test_http_parser.cc	/^void test()$/;"	f
 test1	tests/test_iomanager.cc	/^void test1(IOManager& iom)$/;"	f
 test2	tests/test_scheduler.cc	/^void test2()$/;"	f
 test_assert	tests/test_util.cc	/^void test_assert() {$/;"	f
@@ -1245,9 +1732,13 @@ test_config	tests/test_config.cc	/^void test_config(){$/;"	f
 test_fiber	tests/test_fiber.cc	/^void test_fiber() {$/;"	f
 test_fiber	tests/test_iomanager.cc	/^void test_fiber()$/;"	f
 test_fiber	tests/test_scheduler.cc	/^void test_fiber()$/;"	f
+test_iface	tests/test_address.cc	/^void test_iface()$/;"	f
 test_log	tests/test_config.cc	/^void test_log(){$/;"	f
+test_resp	tests/test_http.cc	/^void test_resp()$/;"	f
+test_resp	tests/test_http_parser.cc	/^void test_resp()$/;"	f
 test_sleep	tests/test_hook.cc	/^void test_sleep()$/;"	f
 test_sock	tests/test_hook.cc	/^void test_sock()$/;"	f
+test_socket	tests/test_socket.cc	/^void test_socket()$/;"	f
 test_timer	tests/test_iomanager.cc	/^void test_timer()$/;"	f
 test_yaml	tests/test_config.cc	/^void test_yaml(){$/;"	f
 threadId	dc/scheduler.h	/^		int threadId;$/;"	m	struct:dc::Scheduler::FiberAndThread
@@ -1258,7 +1749,11 @@ tickled_	dc/timer.h	/^	bool tickled_;$/;"	m	class:dc::TimerManager
 timer_info	dc/hook.cc	/^	timer_info() : cancelled(0)$/;"	f	struct:timer_info
 timer_info	dc/hook.cc	/^struct timer_info$/;"	s	file:
 timers_	dc/timer.h	/^	std::set<Timer::ptr, Timer::Comparator> timers_;$/;"	m	class:dc::TimerManager
+toHexString	dc/bytearray.cc	/^std::string ByteArray::toHexString() const$/;"	f	class:ByteArray
 toString	dc/address.cc	/^std::string Address::toString()$/;"	f	class:Address
+toString	dc/bytearray.cc	/^std::string ByteArray::toString() const$/;"	f	class:ByteArray
+toString	dc/http/http.cc	/^std::string HttpRequest::toString() const$/;"	f	class:HttpRequest
+toString	dc/http/http.cc	/^std::string HttpResponse::toString() const$/;"	f	class:HttpResponse
 toString	tests/test_config.cc	/^   std::string toString() const {$/;"	f	class:Person
 toYamlString	dc/log.cc	/^	std::string FileLogAppender::toYamlString(){$/;"	f	class:dc::FileLogAppender
 toYamlString	dc/log.cc	/^	std::string Logger::toYamlString(){$/;"	f	class:dc::Logger
@@ -1266,6 +1761,9 @@ toYamlString	dc/log.cc	/^	std::string LoggerManager::toYamlString(){$/;"	f	class
 toYamlString	dc/log.cc	/^	std::string StdOutLogAppender::toYamlString(){$/;"	f	class:dc::StdOutLogAppender
 triggerEvent	dc/ioManager.h	/^        void triggerEvent(Event event)$/;"	f	struct:dc::IOManager::FdContext
 type	dc/log.cc	/^		int type = 0; \/\/1 File, 2 StdOut$/;"	m	struct:dc::LogAppenderDefine	file:
+type	tests/test_echo.cc	/^int type = 0;$/;"	v
+type_	dc/socket.h	/^	int type_;$/;"	m	class:dc::Socket
+type_	tests/test_echo.cc	/^	int type_ = 0;$/;"	m	class:EchoServer	file:
 unlock	dc/thread.h	/^	void unlock() {$/;"	f	class:dc::CASLock
 unlock	dc/thread.h	/^	void unlock() {$/;"	f	class:dc::Mutex
 unlock	dc/thread.h	/^	void unlock() {$/;"	f	class:dc::RWMutex
@@ -1275,15 +1773,46 @@ unlock	dc/thread.h	/^	void unlock() {$/;"	f	struct:dc::ScopeLockImpl
 unlock	dc/thread.h	/^	void unlock() {$/;"	f	struct:dc::WriteScopeLockImpl
 unlock	dc/thread.h	/^	void unlock() {}$/;"	f	class:dc::NullMutex
 unlock	dc/thread.h	/^	void unlock() {}$/;"	f	class:dc::NullRWMutex
+uri_relaxed	dc/http/http11_parser.h	/^  int uri_relaxed;$/;"	m	struct:http_parser
 usleep	dc/hook.cc	/^int usleep(useconds_t usec)$/;"	f
+version_	dc/http/http.h	/^	uint8_t version_;$/;"	m	class:dc::http::HttpRequest
+version_	dc/http/http.h	/^	uint8_t version_;$/;"	m	class:dc::http::HttpResponse
 volatile	CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 wait	dc/thread.cc	/^void Semaphore::wait(){$/;"	f	class:dc::Semaphore
 warn	dc/log.cc	/^	void Logger::warn(LogEvent::LogEventPtr event)$/;"	f	class:dc::Logger
+worker_	dc/tcp_server.h	/^	IOManager* worker_;$/;"	m	class:dc::TcpServer
+write	dc/bytearray.cc	/^void ByteArray::write(const void* buf, size_t size)$/;"	f	class:ByteArray
 write	dc/hook.cc	/^ssize_t write(int sockfd, const  void* buf, size_t size)$/;"	f
 write	dc/ioManager.h	/^        EventContext write; \/\/ write event$/;"	m	struct:dc::IOManager::FdContext
+write	dc/socket_stream.cc	/^int SocketStream::write(ByteArray::ptr ba, size_t length)$/;"	f	class:SocketStream
+write	dc/socket_stream.cc	/^int SocketStream::write(const void* buffer, size_t length)$/;"	f	class:SocketStream
+writeDouble	dc/bytearray.cc	/^void ByteArray::writeDouble(double value)$/;"	f	class:ByteArray
+writeFint16	dc/bytearray.cc	/^void ByteArray::writeFint16 (int16_t value) {$/;"	f	class:ByteArray
+writeFint32	dc/bytearray.cc	/^void ByteArray::writeFint32 (int32_t value) {$/;"	f	class:ByteArray
+writeFint64	dc/bytearray.cc	/^void ByteArray::writeFint64 (int64_t value) {$/;"	f	class:ByteArray
+writeFint8	dc/bytearray.cc	/^void ByteArray::writeFint8(int8_t value)$/;"	f	class:ByteArray
+writeFixSize	dc/stream.cc	/^int Stream::writeFixSize(ByteArray::ptr ba, size_t length)$/;"	f	class:Stream
+writeFixSize	dc/stream.cc	/^int Stream::writeFixSize(const void* buffer, size_t length)$/;"	f	class:Stream
+writeFloat	dc/bytearray.cc	/^void ByteArray::writeFloat(float value)$/;"	f	class:ByteArray
+writeFuint16	dc/bytearray.cc	/^void ByteArray::writeFuint16(uint16_t value) {$/;"	f	class:ByteArray
+writeFuint32	dc/bytearray.cc	/^void ByteArray::writeFuint32(uint32_t value) {$/;"	f	class:ByteArray
+writeFuint64	dc/bytearray.cc	/^void ByteArray::writeFuint64(uint64_t value) {$/;"	f	class:ByteArray
+writeFuint8	dc/bytearray.cc	/^void ByteArray::writeFuint8(uint8_t value)$/;"	f	class:ByteArray
+writeInt32	dc/bytearray.cc	/^void ByteArray::writeInt32(int32_t value)$/;"	f	class:ByteArray
+writeInt64	dc/bytearray.cc	/^void ByteArray::writeInt64 (int64_t value)$/;"	f	class:ByteArray
+writeStringF16	dc/bytearray.cc	/^void ByteArray::writeStringF16(const string& value)$/;"	f	class:ByteArray
+writeStringF32	dc/bytearray.cc	/^void ByteArray::writeStringF32(const std::string& value)$/;"	f	class:ByteArray
+writeStringF64	dc/bytearray.cc	/^void ByteArray::writeStringF64(const std::string& value)$/;"	f	class:ByteArray
+writeStringVint	dc/bytearray.cc	/^void ByteArray::writeStringVint(const std::string& value)$/;"	f	class:ByteArray
+writeStringWithoutLength	dc/bytearray.cc	/^void ByteArray::writeStringWithoutLength(const std::string& value)$/;"	f	class:ByteArray
+writeToFile	dc/bytearray.cc	/^bool ByteArray::writeToFile(const std::string& name) const$/;"	f	class:ByteArray
+writeUint32	dc/bytearray.cc	/^void ByteArray::writeUint32(uint32_t value)$/;"	f	class:ByteArray
+writeUint64	dc/bytearray.cc	/^void ByteArray::writeUint64(uint64_t value)$/;"	f	class:ByteArray
 writev	dc/hook.cc	/^ssize_t writev(int sockfd, const struct iovec* iov, int iovcnt )$/;"	f
 wrlock	dc/thread.h	/^	void wrlock() {$/;"	f	class:dc::RWMutex
+xml_sent	dc/http/http11_parser.h	/^  int xml_sent;$/;"	m	struct:http_parser
 ~Address	dc/address.h	/^	virtual ~Address() {}$/;"	f	class:dc::Address
+~ByteArray	dc/bytearray.cc	/^ByteArray::~ByteArray()$/;"	f	class:ByteArray
 ~CASLock	dc/thread.h	/^	~CASLock() {$/;"	f	class:dc::CASLock
 ~ConfigVarBase	dc/config.h	/^    virtual ~ConfigVarBase(){}$/;"	f	class:dc::ConfigVarBase
 ~FdCtx	dc/fd_manager.cc	/^FdCtx::~FdCtx()$/;"	f	class:FdCtx
@@ -1295,6 +1824,7 @@ wrlock	dc/thread.h	/^	void wrlock() {$/;"	f	class:dc::RWMutex
 ~LogEvent	dc/log.cc	/^	LogEvent::~LogEvent(){ $/;"	f	class:dc::LogEvent
 ~LogEventWrap	dc/log.cc	/^	LogEventWrap::~LogEventWrap(){$/;"	f	class:dc::LogEventWrap
 ~Mutex	dc/thread.h	/^	~Mutex(){$/;"	f	class:dc::Mutex
+~Node	dc/bytearray.cc	/^ByteArray::Node::~Node()$/;"	f	class:ByteArray::Node
 ~NullMutex	dc/thread.h	/^	~NullMutex() {}$/;"	f	class:dc::NullMutex
 ~NullRWMutex	dc/thread.h	/^	~NullRWMutex() {}$/;"	f	class:dc::NullRWMutex
 ~RWMutex	dc/thread.h	/^	~RWMutex() {$/;"	f	class:dc::RWMutex
@@ -1302,7 +1832,12 @@ wrlock	dc/thread.h	/^	void wrlock() {$/;"	f	class:dc::RWMutex
 ~Scheduler	dc/scheduler.cc	/^Scheduler:: ~Scheduler() {$/;"	f	class:dc::Scheduler
 ~ScopeLockImpl	dc/thread.h	/^	~ScopeLockImpl() {$/;"	f	struct:dc::ScopeLockImpl
 ~Semaphore	dc/thread.cc	/^Semaphore::~Semaphore(){$/;"	f	class:dc::Semaphore
+~Servlet	dc/http/servlet.h	/^	virtual ~Servlet(){}$/;"	f	class:dc::http::Servlet
+~Socket	dc/socket.cc	/^Socket::~Socket()$/;"	f	class:Socket
+~SocketStream	dc/socket_stream.cc	/^SocketStream::~SocketStream()$/;"	f	class:SocketStream
 ~Spinlock	dc/thread.h	/^	~Spinlock() {$/;"	f	class:dc::Spinlock
+~Stream	dc/stream.h	/^	virtual ~Stream() {}$/;"	f	class:dc::Stream
+~TcpServer	dc/tcp_server.cc	/^TcpServer::~TcpServer()$/;"	f	class:TcpServer
 ~Thread	dc/thread.cc	/^Thread::~Thread(){$/;"	f	class:dc::Thread
 ~TimerManager	dc/timer.cc	/^TimerManager::~TimerManager()$/;"	f	class:TimerManager
 ~WriteScopeLockImpl	dc/thread.h	/^	~WriteScopeLockImpl() {$/;"	f	struct:dc::WriteScopeLockImpl

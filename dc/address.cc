@@ -356,7 +356,7 @@ socklen_t IPv4Address::getAddrlen() const
 std::ostream& IPv4Address::insert(std::ostream& os) const  
 {
 	uint32_t addr = byteswapOnLittleEndian(addr_.sin_addr.s_addr);	
-	DC_ASSERT(addr_.sin_addr.s_addr != 0);
+	//DC_ASSERT(addr_.sin_addr.s_addr != 0);
 	os << ((addr >> 24 ) & 0xff ) << "."
 	   << ((addr >> 16 ) & 0xff) << "."
 	   << ((addr >> 8) & 0xff ) << "."
@@ -592,5 +592,10 @@ std::ostream& UnknownAddress::insert(std::ostream& os) const
 {
 	os << "[UnknownAddress family = " << addr_.sa_family << "]";
 	return os;
+}
+
+std::ostream& dc::operator<<(std::ostream& os, const Address& addr)
+{
+	return addr.insert(os);
 }
 

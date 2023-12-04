@@ -10,5 +10,11 @@
 /home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_hook.dir
 /home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_address.dir
 /home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_bytearray.dir
+/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_http.dir
+/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_http_parser.dir
+/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_tcp.dir
+/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_echo.dir
+/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_http_server.dir
+/home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/test_conn.dir
 /home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/edit_cache.dir
 /home/tohsakarin/Documents/sylar/sylar_server_frame/CMakeFiles/rebuild_cache.dir

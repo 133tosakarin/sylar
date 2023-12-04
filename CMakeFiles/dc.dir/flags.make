@@ -6,7 +6,7 @@ CXX_DEFINES = -Ddc_EXPORTS
 
 CXX_INCLUDES = -I/home/tohsakarin/Documents/sylar/sylar_server_frame/.
 
-CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -lyaml-cpp -Wno-builtin-macro-redefined  -fPIC
+CXX_FLAGS =  -rdynamic -O2 -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -lyaml-cpp -Wno-builtin-macro-redefined  -fPIC
 
 # Custom defines: CMakeFiles/dc.dir/dc/log.cc.o_DEFINES = __FILE__="dc/log.cc"
 
@@ -33,4 +33,26 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-u
 # Custom defines: CMakeFiles/dc.dir/dc/socket.cc.o_DEFINES = __FILE__="dc/socket.cc"
 
 # Custom defines: CMakeFiles/dc.dir/dc/bytearray.cc.o_DEFINES = __FILE__="dc/bytearray.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/http/http.cc.o_DEFINES = __FILE__="dc/http/http.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/http/http11_parser.rl.cc.o_DEFINES = __FILE__="dc/http/http11_parser.rl.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/http/httpclient_parser.rl.cc.o_DEFINES = __FILE__="dc/http/httpclient_parser.rl.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/http/http_parser.cc.o_DEFINES = __FILE__="dc/http/http_parser.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/tcp_server.cc.o_DEFINES = __FILE__="dc/tcp_server.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/stream.cc.o_DEFINES = __FILE__="dc/stream.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/socket_stream.cc.o_DEFINES = __FILE__="dc/socket_stream.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/http/session.cc.o_DEFINES = __FILE__="dc/http/session.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/http/http_server.cc.o_DEFINES = __FILE__="dc/http/http_server.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/http/servlet.cc.o_DEFINES = __FILE__="dc/http/servlet.cc"
+
+# Custom defines: CMakeFiles/dc.dir/dc/http/http_connection.cc.o_DEFINES = __FILE__="dc/http/http_connection.cc"
 

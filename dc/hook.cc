@@ -95,13 +95,13 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,
 {
 	if( !t_hook_enable )
 	{
-		DC_LOG_INFO(g_logger) << "no hooked <<< " << hook_fun_name;
+		//DC_LOG_INFO(g_logger) << "no hooked <<< " << hook_fun_name;
 		return fun(fd, std::forward<Args>(args)...);
 	}
 	FdCtx::ptr ctx = FdMgr::GetInstance()->get(fd);
 	if( !ctx )
 	{
-		DC_LOG_INFO(g_logger) << "no hooked << " << hook_fun_name;
+		//DC_LOG_INFO(g_logger) << "no hooked << " << hook_fun_name;
 		return fun(fd, std::forward<Args>(args)...);
 	}
 
@@ -114,14 +114,14 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,
 	if( !ctx->isSocket() || ctx->getUseNonblock() )
 	{
 
-		DC_LOG_INFO(g_logger) << "no hooked <" << hook_fun_name;
+		//DC_LOG_INFO(g_logger) << "no hooked <" << hook_fun_name;
 		return fun(fd, std::forward<Args>(args)...);
 
 	}
 	uint64_t to = ctx->getTimeout(timeout_so);
 	std::shared_ptr<timer_info> tinfo(new timer_info);
 retry:
-	DC_LOG_INFO(g_logger) << "hooked" << hook_fun_name;
+	//DC_LOG_INFO(g_logger) << "hooked" << hook_fun_name;
 	ssize_t n = fun(fd, std::forward<Args>(args)...);
 	while( n == -1 && errno == EINTR)
 	{

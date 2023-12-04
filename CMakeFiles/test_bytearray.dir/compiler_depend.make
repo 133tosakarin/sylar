@@ -86,6 +86,7 @@ CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: tests/test_bytearray.cc
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -158,8 +159,11 @@ CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: tests/test_bytearray.cc
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -168,6 +172,8 @@ CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: tests/test_bytearray.cc
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -195,6 +201,7 @@ CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: tests/test_bytearray.cc
   /usr/include/x86_64-linux-gnu/asm/sockios.h \
   /usr/include/asm-generic/sockios.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/include/x86_64-linux-gnu/bits/socket2.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
@@ -211,6 +218,7 @@ CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: tests/test_bytearray.cc
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   dc/config.h \
@@ -498,6 +506,8 @@ CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: tests/test_bytearray.cc
   /usr/local/include/boost/range/detail/sfinae.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/local/include/boost/range/size.hpp \
   /usr/local/include/boost/range/size_type.hpp \
   /usr/local/include/boost/range/difference_type.hpp \
@@ -795,8 +805,6 @@ dc/fiber.h:
 
 /usr/include/c++/11/bits/slice_array.h:
 
-/usr/include/c++/11/bits/valarray_array.tcc:
-
 /usr/include/c++/11/bits/valarray_array.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
@@ -916,8 +924,6 @@ dc/noncopyable.h:
 /usr/local/include/boost/numeric/conversion/bounds.hpp:
 
 /usr/local/include/boost/numeric/conversion/detail/converter.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
@@ -1073,11 +1079,23 @@ dc/noncopyable.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
-/usr/include/c++/11/bits/parse_numbers.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
-/usr/local/include/boost/assert.hpp:
+/usr/include/c++/11/climits:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+/usr/include/c++/11/bits/mask_array.h:
+
+/usr/local/include/boost/type_traits/is_signed.hpp:
+
+/usr/local/include/boost/type_traits/has_minus_assign.hpp:
+
+/usr/local/include/boost/type_traits/make_unsigned.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/local/include/boost/range/detail/misc_concept.hpp:
+
+/usr/include/c++/11/bits/stl_heap.h:
 
 /usr/local/include/boost/detail/basic_pointerbuf.hpp:
 
@@ -1091,13 +1109,7 @@ dc/noncopyable.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
-/usr/local/include/yaml-cpp/emittermanip.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
 /usr/include/c++/11/bits/streambuf_iterator.h:
-
-/usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/bits/exception.h:
 
@@ -1106,10 +1118,6 @@ dc/noncopyable.h:
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/stdexcept:
-
-/usr/local/include/boost/config/detail/suffix.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
@@ -1133,6 +1141,10 @@ dc/noncopyable.h:
 
 /usr/local/include/boost/preprocessor/repetition/limits/for_256.hpp:
 
+/usr/include/c++/11/bits/valarray_array.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/time.h:
@@ -1153,9 +1165,15 @@ dc/dc.h:
 
 /usr/include/c++/11/bits/stl_vector.h:
 
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
+
 /usr/include/c++/11/bits/valarray_before.h:
 
 /usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -1201,8 +1219,6 @@ dc/dc.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/local/include/boost/mpl/identity.hpp:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/local/include/boost/mpl/aux_/value_wknd.hpp:
@@ -1219,6 +1235,12 @@ dc/dc.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
+/usr/local/include/yaml-cpp/emittermanip.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
 /usr/include/stdio.h:
 
 /usr/include/c++/11/cstdio:
@@ -1229,9 +1251,15 @@ dc/dc.h:
 
 /usr/local/include/boost/preprocessor/list/detail/fold_right.hpp:
 
-/usr/include/c++/11/bits/stl_heap.h:
+/usr/include/c++/11/cwctype:
 
 /usr/include/alloca.h:
+
+/usr/local/include/boost/mpl/identity.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/include/c++/11/cwchar:
 
 /usr/local/include/boost/mpl/placeholders.hpp:
 
@@ -1393,15 +1421,15 @@ dc/macro.h:
 
 /usr/include/stdc-predef.h:
 
-/usr/local/include/boost/preprocessor/seq/seq.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
 
 /usr/local/include/boost/preprocessor/array/size.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/local/include/boost/mpl/aux_/config/forwarding.hpp:
+
+/usr/local/include/boost/preprocessor/comma_if.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -1465,15 +1493,21 @@ dc/macro.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
+/usr/local/include/boost/range/value_type.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
 /usr/include/c++/11/new:
 
 /usr/local/include/boost/type_traits/detail/has_binary_operator.hpp:
 
 /usr/include/c++/11/bits/sstream.tcc:
 
-/usr/include/c++/11/climits:
-
 /usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/stl_algo.h:
+
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
 
 /usr/local/include/boost/mpl/lambda_fwd.hpp:
 
@@ -1481,9 +1515,17 @@ dc/macro.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
 /usr/include/c++/11/bits/functexcept.h:
 
 /usr/local/include/boost/mpl/aux_/arity.hpp:
+
+/usr/include/c++/11/bits/list.tcc:
+
+/usr/local/include/boost/core/enable_if.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/c++/11/tuple:
 
@@ -1511,6 +1553,8 @@ dc/macro.h:
 
 /usr/include/c++/11/memory:
 
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
 /usr/include/c++/11/cstdlib:
 
 /usr/local/include/boost/mpl/aux_/template_arity_fwd.hpp:
@@ -1530,6 +1574,14 @@ dc/macro.h:
 /usr/include/string.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/local/include/boost/mpl/aux_/config/intel.hpp:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/local/include/boost/config/detail/select_compiler_config.hpp:
 
 /usr/local/include/boost/type_traits/add_volatile.hpp:
 
@@ -1551,9 +1603,7 @@ dc/bytearray.h:
 
 /usr/local/include/boost/type_traits/add_lvalue_reference.hpp:
 
-/usr/local/include/boost/type_traits/has_minus_assign.hpp:
-
-/usr/local/include/boost/type_traits/make_unsigned.hpp:
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/11/bits/range_access.h:
 
@@ -1627,13 +1677,21 @@ dc/bytearray.h:
 
 /usr/local/include/boost/type_traits/is_convertible.hpp:
 
-/usr/include/c++/11/cwchar:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-/usr/include/c++/11/bits/list.tcc:
+/usr/local/include/boost/config/detail/suffix.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+/usr/local/include/boost/preprocessor/control/deduce_d.hpp:
 
-/usr/local/include/boost/core/enable_if.hpp:
+/usr/local/include/boost/type_traits/detail/config.hpp:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/local/include/boost/type_traits/declval.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/wchar.h:
 
 /usr/include/locale.h:
 
@@ -1643,11 +1701,9 @@ dc/bytearray.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/local/include/boost/detail/workaround.hpp:
+/usr/local/include/boost/preprocessor/control/limits/while_256.hpp:
 
-/usr/include/c++/11/bits/allocator.h:
-
-/usr/local/include/boost/preprocessor/comparison/equal.hpp:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/c++/11/vector:
 
@@ -1670,12 +1726,6 @@ dc/bytearray.h:
 /usr/local/include/boost/type_traits/is_pod.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/local/include/boost/mpl/aux_/config/gcc.hpp:
-
-/usr/local/include/boost/config/detail/cxx_composite.hpp:
-
-/usr/local/include/boost/preprocessor/tuple/elem.hpp:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
@@ -1733,18 +1783,6 @@ dc/bytearray.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/wchar.h:
-
-/usr/local/include/boost/preprocessor/control/deduce_d.hpp:
-
-/usr/local/include/boost/type_traits/detail/config.hpp:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/local/include/boost/type_traits/declval.hpp:
-
 /usr/local/include/yaml-cpp/traits.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
@@ -1753,6 +1791,14 @@ dc/bytearray.h:
 
 /usr/local/include/boost/mpl/int_fwd.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
+/usr/local/include/boost/detail/workaround.hpp:
+
+/usr/local/include/boost/preprocessor/comparison/equal.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /usr/local/include/boost/preprocessor/repetition/detail/for.hpp:
@@ -1760,6 +1806,20 @@ dc/bytearray.h:
 /usr/local/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/c++/11/ext/concurrence.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/local/include/boost/preprocessor/seq/seq.hpp:
+
+/usr/local/include/boost/mpl/aux_/config/gcc.hpp:
+
+/usr/local/include/boost/config/detail/cxx_composite.hpp:
+
+/usr/local/include/boost/preprocessor/tuple/elem.hpp:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/local/include/boost/assert.hpp:
 
 /usr/local/include/boost/iterator/iterator_traits.hpp:
 
@@ -1808,6 +1868,8 @@ dc/log.h:
 /usr/local/include/boost/mpl/apply.hpp:
 
 /usr/local/include/boost/mpl/aux_/config/static_constant.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/local/include/boost/mpl/next_prior.hpp:
 
@@ -1865,9 +1927,9 @@ dc/log.h:
 
 /usr/include/c++/11/ios:
 
-/usr/local/include/boost/preprocessor/detail/check.hpp:
-
 /usr/local/include/boost/utility/enable_if.hpp:
+
+/usr/local/include/boost/preprocessor/detail/check.hpp:
 
 /usr/local/include/boost/range/size_type.hpp:
 
@@ -1880,10 +1942,6 @@ dc/log.h:
 /usr/local/include/boost/type_traits/is_const.hpp:
 
 /usr/include/strings.h:
-
-/usr/local/include/boost/mpl/aux_/config/forwarding.hpp:
-
-/usr/local/include/boost/preprocessor/comma_if.hpp:
 
 /usr/local/include/boost/preprocessor/control/if.hpp:
 
@@ -1993,10 +2051,6 @@ dc/log.h:
 
 /usr/local/include/boost/preprocessor/control/detail/limits/while_256.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/local/include/boost/preprocessor/control/limits/while_256.hpp:
-
 /usr/local/include/boost/preprocessor/facilities/expand.hpp:
 
 /usr/local/include/boost/preprocessor/logical/bitor.hpp:
@@ -2047,8 +2101,6 @@ dc/log.h:
 
 /usr/local/include/boost/type_traits/intrinsics.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
-
 /usr/local/include/boost/version.hpp:
 
 /usr/local/include/boost/mpl/aux_/arg_typedef.hpp:
@@ -2071,9 +2123,11 @@ dc/singleton.h:
 
 /usr/local/include/boost/type_traits/is_void.hpp:
 
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
 /usr/include/c++/11/bits/locale_facets.tcc:
 
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/local/include/boost/type_traits/is_reference.hpp:
 
@@ -2093,9 +2147,9 @@ dc/singleton.h:
 
 /usr/local/include/boost/type_traits/is_arithmetic.hpp:
 
-/usr/local/include/boost/range/iterator_range_core.hpp:
-
 /usr/include/stdint.h:
+
+/usr/local/include/boost/range/iterator_range_core.hpp:
 
 /usr/local/include/boost/type_traits/is_floating_point.hpp:
 
@@ -2157,9 +2211,9 @@ dc/singleton.h:
 
 /usr/include/x86_64-linux-gnu/bits/socket.h:
 
-/usr/local/include/boost/config/helper_macros.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/local/include/boost/config/helper_macros.hpp:
 
 /usr/local/include/boost/type_traits/add_pointer.hpp:
 
@@ -2294,27 +2348,3 @@ dc/singleton.h:
 /usr/local/include/boost/numeric/conversion/detail/sign_mixture.hpp:
 
 /usr/include/c++/11/algorithm:
-
-/usr/local/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
-
-/usr/include/c++/11/bits/stl_algo.h:
-
-/usr/local/include/boost/mpl/aux_/config/intel.hpp:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/local/include/boost/config/detail/select_compiler_config.hpp:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/local/include/boost/range/value_type.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/local/include/boost/range/detail/misc_concept.hpp:
-
-/usr/include/c++/11/bits/mask_array.h:
-
-/usr/local/include/boost/type_traits/is_signed.hpp:

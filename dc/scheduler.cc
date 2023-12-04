@@ -47,7 +47,6 @@ Scheduler:: ~Scheduler() {
 }
 
 Scheduler* Scheduler::GetThis() {
-
 	return t_scheduler;
 }
 
@@ -113,7 +112,7 @@ void Scheduler::stop() {
 			m_rootFiber->call();
 		}
 	}
-	DC_LOG_INFO(g_logger) << "thread join";
+	//DC_LOG_INFO(g_logger) << "thread join";
 	std::vector<Thread::ptr> thrs;
 	{
 		MutexType::Lock lock(m_mutex);
@@ -176,6 +175,7 @@ void Scheduler::run() {
 				is_active = true;
 				break;
 			}
+			tickle_me |= it != m_fibers.end();
 		}
 		if(tickle_me) {
 			tickle();

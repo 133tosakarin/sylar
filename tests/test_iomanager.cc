@@ -40,26 +40,29 @@ void test1(IOManager& iom)
 
 }
 Timer::ptr g_timer;
-IOManager iom(3);
 void test_timer()
 {
+	
+	IOManager iom(1);
 	const int kNum = 1;
 	for( int i = 0; i < kNum; ++i )
 	{
-		 g_timer = iom.addTimer(1000 + i, 
+		Timer::ptr g_timer = iom.addTimer(1000 + i, 
 			[&]
 			{
 				static int count = 0;
 				if( ++ count == 5 )
 				{
-					g_timer->cancel();
+					DC_LOG_INFO(g_logger) << "reset";
+					count = 0;
+					g_timer->reset(100, true);
 				}
 			}, true);
 	}
-	iom.schedule(test_fiber);
-	Fiber::ptr fiber(new Fiber([]{DC_LOG_INFO(g_logger) << "lambda test";}));
-	iom.schedule(fiber);
-	iom.schedule(std::bind(test1, std::ref(iom)));
+	//iom.schedule(test_fiber);
+	//Fiber::ptr fiber(new Fiber([]{DC_LOG_INFO(g_logger) << "lambda test";}));
+	//iom.schedule(fiber);
+	//iom.schedule(std::bind(test1, std::ref(iom)));
 }
 /* 
  * ===  FUNCTION  ======================================================================
@@ -71,6 +74,6 @@ void test_timer()
 main ( int argc, char *argv[] )
 {
 	test_timer();
-	//test1();
+	//test1(iom);
 	return EXIT_SUCCESS;
 }				/* ----------  end of function main  ---------- */

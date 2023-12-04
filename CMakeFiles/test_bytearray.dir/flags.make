@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/tohsakarin/Documents/sylar/sylar_server_frame/.
 
-CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -lyaml-cpp -Wno-builtin-macro-redefined 
+CXX_FLAGS =  -rdynamic -O2 -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -lyaml-cpp -Wno-builtin-macro-redefined 
 
